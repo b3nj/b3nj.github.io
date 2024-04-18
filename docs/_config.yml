@@ -30,7 +30,7 @@ twitter_username: b3nj
 github_username:  b3nj
 
 # Build settings
-theme: midnight
+theme: Midnight
 plugins:
   - jekyll-feed
 
