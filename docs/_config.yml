@@ -30,10 +30,9 @@ twitter_username: b3nj
 github_username:  b3nj
 
 # Build settings
-remote_theme: pages-themes/midnight@v0.2.0
+theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default.
