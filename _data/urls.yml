@@ -1,0 +1,45 @@
+- name: List of microk8s available addons
+  url: https://microk8s.io/docs/addons
+  date: 2024/04/20
+  done: false
+  comment: false
+  tags: k8s
+
+- name: Argo CD - Declarative GitOps CD for Kubernetes
+  url: https://argo-cd.readthedocs.io/en/stable/understand_the_basics/
+  date: 2024/04/20
+  done: false
+  comment: false
+  tags: k8s
+
+- name: Falco - cloud-native security tool
+  url: https://falco.org/
+  date: 2024/04/20
+  done: false
+  comment: false
+  tags: k8s
+
+- name: Istio service mesh
+  url: https://istio.io/latest/
+  date: 2024/04/20
+  done: false
+  comment: false
+  tags: k8s
+
+- name: Portainer.io
+  url: https://www.portainer.io/deploy-containers
+  done: false
+  comment: false
+  tags: k8s
+
+- name: Trivy - open source security scanner
+  url: https://discuss.kubernetes.io/t/addon-trivy/23797
+  done: false
+  comment: false
+  tags: k8s
+
+- name: Velero - kubernetes resource and persistent volumes backup & migration
+  url: https://velero.io/
+  done: false
+  comment: false
+  tags: k8s
