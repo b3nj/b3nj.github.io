@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Collected URLs, things I want to read or did read
+title: URLs
 permalink: /urls/
 ---
 

@@ -31,7 +31,7 @@ github_username:  b3nj
 
 # Build settings
 # remote_theme: pages-themes/midnight@v0.2.0
-theme: minima
+remote_theme: pages-themes/minimal@v0.2.0
 minima:
   skin: dark
   social_links:
@@ -41,7 +41,7 @@ minima:
     - { platform: telegram, user_url: "@krabe"}
 plugins:
   - jekyll-feed
-#  - jekyll-remote-theme
+  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default.
