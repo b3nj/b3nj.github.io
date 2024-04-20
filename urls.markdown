@@ -4,8 +4,24 @@ title: URLs
 permalink: /urls/
 ---
 
-<ul>
+<table>
+<thead>
+    <tr>
+        <th>Read</th>
+        <th>What</th>
+        <th>Date</th>
+        <th>Comments</th>
+    </tr>
+</thead>
+<tbody>
     {% for url in site.data.urls %}
-    <li><a href="{{url.url}}">{{ url.name }}</a> <small>Added {{ url.date }}</small> Comments: {{ url.comments }}</li>
+    <tr>
+        <td>?</td>
+        <td><a href="{{url.url}}">{{ url.name }}</a></td>
+        <td>{{ url.date }}</td>
+        <td>{{ url.comments }}</td>
+    </tr>
     {% endfor %}
-</ul>
+</tbody>
+
+</table>
