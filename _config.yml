@@ -31,7 +31,7 @@ github_username:  b3nj
 
 # Build settings
 # remote_theme: pages-themes/midnight@v0.2.0
-remote_theme: pages-themes/minima@v0.2.0
+remote_theme: pages-themes/minima
 minima:
   skin: dark
   social_links:
