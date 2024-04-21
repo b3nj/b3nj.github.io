@@ -18,9 +18,9 @@ permalink: /urls/
     <tr>
         <td>
         {% if url.done %}
-            <img sizes="16x16" src="/assets/images/checklist.png" alt="true" />
+            <img width="16px" src="/assets/images/checklist.png" alt="true" />
         {%  else %}
-            <img sizes="16x16" src="/assets/images/remove.png" alt="true" />
+            <img width="16px" src="/assets/images/remove.png" alt="false" />
         {% endif %}
         </td>
         <td><a href="{{url.url}}">{{ url.name }}</a></td>
