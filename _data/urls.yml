@@ -28,18 +28,21 @@
 
 - name: Portainer.io
   url: https://www.portainer.io/deploy-containers
-  done: false
+  date: 2024/04/20
+  done: true
   comment: false
   tags: k8s
 
 - name: Trivy - open source security scanner
   url: https://discuss.kubernetes.io/t/addon-trivy/23797
+  date: 2024/04/20
   done: false
   comment: false
   tags: k8s
 
 - name: Velero - kubernetes resource and persistent volumes backup & migration
   url: https://velero.io/
+  date: 2024/04/20
   done: false
   comment: false
   tags: k8s
