@@ -1,3 +1,10 @@
+- name: Development of the Domain Name System
+  url: https://dl.acm.org/doi/epdf/10.1145/205447.205459
+  date: 2024/04/22
+  done: true
+  comment: Fascinating read of an official document from January 1995 on how DNS system evolves
+  tags: dns
+  
 - name: List of microk8s available addons
   url: https://microk8s.io/docs/addons
   date: 2024/04/20
