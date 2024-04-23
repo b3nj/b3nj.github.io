@@ -25,7 +25,7 @@ permalink: /urls/
         </td>
         <td><a href="{{url.url}}">{{ url.name }}</a></td>
         <td>{{ url.date }}</td>
-        <td>{{ url.comments }}</td>
+        <td>{{ url.comment }}</td>
     </tr>
     {% endfor %}
 </tbody>
