@@ -1,3 +1,10 @@
+- name: Sysadmin friendly high speed ethernet switching
+  url: https://blog.benjojo.co.uk/post/sn2010-linux-hacking-switchdev
+  date: 2024/04/24
+  done: true
+  comment: some incredibly deep dive on using a switch and installing debian on it. loads of things I want to explore from here
+  tags: hacking
+
 - name: Development of the Domain Name System
   url: https://dl.acm.org/doi/epdf/10.1145/205447.205459
   date: 2024/04/22
