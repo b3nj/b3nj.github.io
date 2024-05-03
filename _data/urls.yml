@@ -1,6 +1,7 @@
 - name: How to use JSON Path
   url: https://bump.sh/blog/how-to-use-json-path
   date: 2024/05/03
+  done: true
   comment: Some querying language for JSON inspired by XMLPath. Could be useful. Or not.
   tags: json
   
