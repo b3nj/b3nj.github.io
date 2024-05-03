@@ -1,3 +1,9 @@
+- name: How to use JSON Path
+  url: https://bump.sh/blog/how-to-use-json-path
+  date: 2024/05/03
+  comment: Some querying language for JSON inspired by XMLPath. Could be useful. Or not.
+  tags: json
+  
 - name: Sysadmin friendly high speed ethernet switching
   url: https://blog.benjojo.co.uk/post/sn2010-linux-hacking-switchdev
   date: 2024/04/24
