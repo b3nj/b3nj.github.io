@@ -1,3 +1,10 @@
+- name: text-generation
+  url: https://github.com/oobabooga/text-generation-webui?tab=readme-ov-file
+  date: 2024/05/17
+  done: false
+  content: need to try to build something related to this
+  tags: ia
+
 - name: Keycloak
   url: https://www.keycloak.org/guides
   date: 2024/05/06
