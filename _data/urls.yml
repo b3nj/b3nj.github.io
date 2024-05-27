@@ -2,14 +2,14 @@
   url: https://nocodb.com/
   date: 2024/05/27
   done: false
-  content: Build Databases As Spreadsheets : No-Coding Required
+  comment: Build Databases As Spreadsheets : No-Coding Required
   tags: code
   
 - name: text-generation
   url: https://github.com/oobabooga/text-generation-webui?tab=readme-ov-file
   date: 2024/05/17
   done: false
-  content: need to try to build something related to this
+  comment: need to try to build something related to this
   tags: ia
 
 - name: Keycloak
