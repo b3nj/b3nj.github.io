@@ -1,3 +1,10 @@
+- name: nocodb
+  url: https://nocodb.com/
+  date: 2024/05/27
+  done: false
+  content: Build Databases As Spreadsheets : No-Coding Required
+  tags: code
+  
 - name: text-generation
   url: https://github.com/oobabooga/text-generation-webui?tab=readme-ov-file
   date: 2024/05/17
