@@ -1,7 +1,21 @@
+- name: DuckDB usage with S3
+  url: https://www.nikolasgoebel.com/2024/05/28/duckdb-doesnt-need-data.html
+  date: 2024/05/30
+  done: false
+  comment: Showing how to use duckdb from S3 ... might be handful someday
+  tags: code
+
+- name: FrankenPHP
+  url: https://frankenphp.dev/
+  date: 2024/05/30
+  done: false
+  comment: if at somepoint I would like to run something in php quickly, this might come handy
+  tags: code
+  
 - name: nocodb
   url: https://nocodb.com/
   date: 2024/05/27
-  done: false
+  done: true
   comment: "Build Databases As Spreadsheets : No-Coding Required"
   tags: code
   
