@@ -1,3 +1,6 @@
+---
+layout: post
+title:  "GitHub pages"
 date:   2024-06-09 21:00:00 +0200
 categories: code
 ---
@@ -70,8 +73,8 @@ Then:
 * Open the Gemfile that Jekyll created.
 * Add "#" to the beginning of the line that starts with gem "jekyll" to comment out this line.
 * Add the github-pages gem by editing the line starting with # gem "github-pages". Change this line to:
-* gem "github-pages", "~> GITHUB-PAGES-VERSION", group: :jekyll_plugins
-Replace GITHUB-PAGES-VERSION with the latest supported version of the github-pages gem. You can find this version here: "Dependency versions."
+{% highlight bash %}gem "github-pages", "~> GITHUB-PAGES-VERSION", group: :jekyll_plugins{% endhighlight %}
+* Replace GITHUB-PAGES-VERSION with the latest supported version of the github-pages gem. You can find this version here: "Dependency versions."
 The correct version Jekyll will be installed as a dependency of the github-pages gem.
 * Save and close the Gemfile.
 * From the command line, run bundle install.
