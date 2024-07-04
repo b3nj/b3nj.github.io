@@ -1,3 +1,10 @@
+- name: Complete Guide for Server-Side Rendering (SSR) in Angular
+  url: https://www.angulararchitects.io/en/blog/complete-guide-for-server-side-rendering-ssr-in-angular/
+  date: 2024/07/04
+  done: false
+  comment: Might be handy
+  tags: code
+
 - name: OpenSSH introduces options to penalize undesirable behavior
   url: https://undeadly.org/cgi?action=article;sid=20240607042157
   date: 2024/06/07
