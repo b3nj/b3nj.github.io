@@ -1,3 +1,9 @@
+- name: "Reverse Engineering TicketMaster's Rotating Barcodes (SafeTix)"
+  url: https://conduition.io/coding/ticketmaster/
+  date: 2024/07/09
+  done: true
+  comment: "The technical analysis is interesting, comments and political positions, I don't care"
+
 - name: Complete Guide for Server-Side Rendering (SSR) in Angular
   url: https://www.angulararchitects.io/en/blog/complete-guide-for-server-side-rendering-ssr-in-angular/
   date: 2024/07/04
