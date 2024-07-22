@@ -1,8 +1,16 @@
+- name: onceupon/Bash-Oneliner
+  url: https://github.com/onceupon/Bash-Oneliner
+  date: 2024/07/22
+  done: false
+  comment: "Some other one-liner page"
+  tags: code
+  
 - name: "Reverse Engineering TicketMaster's Rotating Barcodes (SafeTix)"
   url: https://conduition.io/coding/ticketmaster/
   date: 2024/07/09
   done: true
   comment: "The technical analysis is interesting, comments and political positions, I don't care"
+  tags: code
 
 - name: Complete Guide for Server-Side Rendering (SSR) in Angular
   url: https://www.angulararchitects.io/en/blog/complete-guide-for-server-side-rendering-ssr-in-angular/
