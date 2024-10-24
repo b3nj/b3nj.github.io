@@ -1,3 +1,10 @@
+- name: Claude AI
+  url: https://claude.ai
+  date: 2024/10/24
+  done: true
+  comment: "super useful to write projects"
+  tags: code
+  
 - name: onceupon/Bash-Oneliner
   url: https://github.com/onceupon/Bash-Oneliner
   date: 2024/07/22
