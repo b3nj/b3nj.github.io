@@ -1,3 +1,10 @@
+- name: Curated list of awesome awesomeness
+  url: https://github.com/bayandin/awesome-awesomeness
+  date: 2024/11/06
+  done: true
+  comment: "list of lists"
+  tags: list
+
 - name: Claude AI
   url: https://claude.ai
   date: 2024/10/24
