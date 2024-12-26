@@ -60,3 +60,29 @@ Volume group "lvmspace" successfully created
 {% endhighlight %}
 
 The volume group is now created and is of 6.1GB, fact that we can check with the vgdisplay command :
+
+{% highlight bash %}
+osiris ~ # vgdisplay
+ --- Volume group ---
+ VG Name               lvmspace
+ System ID
+ Format                lvm2
+ Metadata Areas        1
+ Metadata Sequence No  1
+ VG Access             read/write
+ VG Status             resizable
+ MAX LV                0
+ Cur LV                0
+ Open LV               0
+ Max PV                0
+ Cur PV                1
+ Act PV                1
+ VG Size               6.00 GB
+ PE Size               4.00 MB
+ Total PE              1537
+ Alloc PE / Size       0 / 0
+ Free  PE / Size       1537 / 6.00 GB
+ VG UUID               W7zp0w-pYZk-xkg1-9u37-9kiI-30uM-yA6Yji
+{% endhighlight %}
+
+![Volume group creation](assets/images/using-lvm/volume_group_creation.png)
