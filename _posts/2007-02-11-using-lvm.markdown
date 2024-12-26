@@ -23,3 +23,40 @@ Physical volume "/dev/hdb" successfully created
 osiris ~ # pvcreate /dev/hde
 Physical volume "/dev/hde" successfully created
 {% endhighlight %}
+
+We can verify that the two physical volumes are presented to the system using the pvdisplay command :
+
+{% highlight bash %}
+osiris ~ # pvdisplay
+ --- NEW Physical volume ---
+ PV Name               /dev/hde
+ VG Name
+ PV Size               37.27 GB
+ Allocatable           NO
+ PE Size (KByte)       0
+ Total PE              0
+ Free PE               0
+ Allocated PE          0
+ PV UUID               f0iIbU-ayPe-kpoy-d3bP-hfDP-JqPO-5MVLT7
+
+ --- NEW Physical volume ---
+ PV Name               /dev/hdb
+ VG Name
+ PV Size               6.01 GB
+ Allocatable           NO
+ PE Size (KByte)       0
+ Total PE              0
+ Free PE               0
+ Allocated PE          0
+ PV UUID               yV0Qht-jGSe-jdDo-jErn-cgYi-tbR6-ITqrz1
+{% endhighlight %}
+
+
+We now have two disks prepared to use in a volume group. It is now necessary to create a volume group using the vgcreate command (we will call the volume group in this exemple the lvmspace) :
+
+{% highlight bash %}
+osiris ~ # vgcreate lvmspace /dev/hdb
+Volume group "lvmspace" successfully created
+{% endhighlight %}
+
+The volume group is now created and is of 6.1GB, fact that we can check with the vgdisplay command :
