@@ -85,4 +85,4 @@ osiris ~ # vgdisplay
  VG UUID               W7zp0w-pYZk-xkg1-9u37-9kiI-30uM-yA6Yji
 {% endhighlight %}
 
-![Volume group creation](assets/images/using-lvm/volume_group_creation.png)
+![Volume group creation](../../../../assets/images/using-lvm/volume_group_creation.png)
