@@ -1,0 +1,25 @@
+---
+layout: post
+title:  "Using LVM"
+date:   2007-02-11 21:00:00 +0200
+categories: system
+---
+
+# Flexible volume management
+
+LVM2 permits you to create partitions spreading on multiple disk by grouping them in virtual volumes. It also enables the easy growing of existing partitions (but only if the filesystem permits it). That leads to a more scalable disk management because adding or deleting space is really easy without having to repartition the whole machine (most the time a server reinstallation is necessary).
+
+## Basic notions
+
+The method used by LVM2 to manage many disks as one unit is to group them in what is so called a volume group
+For this, it is mandatory to create a physical volume, operation that prepares one partition, one entire disk or one file in a LVM2 usable format.
+
+This can be done by the pvcreate commmand.
+As an exemple, if I have one 6.4GB disk located in /dev/hdb and one 40GB disk located in /dev/hde, this is how I would initilize them :
+
+{% highlight bash %}
+osiris ~ # pvcreate /dev/hdb
+Physical volume "/dev/hdb" successfully created
+osiris ~ # pvcreate /dev/hde
+Physical volume "/dev/hde" successfully created
+{% endhighlight %}
