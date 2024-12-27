@@ -15,19 +15,19 @@ The method used by LVM2 to manage many disks as one unit is to group them in wha
 For this, it is mandatory to create a physical volume, operation that prepares one partition, one entire disk or one file in a LVM2 usable format.
 
 This can be done by the pvcreate commmand.
-As an exemple, if I have one 6.4GB disk located in /dev/hdb and one 40GB disk located in /dev/hde, this is how I would initilize them :
+As an exemple, if I have one 6.4GB disk located in `/dev/hdb` and one 40GB disk located in `/dev/hde`, this is how I would initilize them :
 
 {% highlight bash %}
-osiris ~ # pvcreate /dev/hdb
+pvcreate /dev/hdb
 Physical volume "/dev/hdb" successfully created
-osiris ~ # pvcreate /dev/hde
+pvcreate /dev/hde
 Physical volume "/dev/hde" successfully created
 {% endhighlight %}
 
 We can verify that the two physical volumes are presented to the system using the pvdisplay command :
 
 {% highlight bash %}
-osiris ~ # pvdisplay
+pvdisplay
  --- NEW Physical volume ---
  PV Name               /dev/hde
  VG Name
@@ -55,14 +55,14 @@ osiris ~ # pvdisplay
 We now have two disks prepared to use in a volume group. It is now necessary to create a volume group using the vgcreate command (we will call the volume group in this exemple the lvmspace) :
 
 {% highlight bash %}
-osiris ~ # vgcreate lvmspace /dev/hdb
+vgcreate lvmspace /dev/hdb
 Volume group "lvmspace" successfully created
 {% endhighlight %}
 
 The volume group is now created and is of 6.1GB, fact that we can check with the vgdisplay command :
 
 {% highlight bash %}
-osiris ~ # vgdisplay
+vgdisplay
  --- Volume group ---
  VG Name               lvmspace
  System ID
@@ -86,3 +86,74 @@ osiris ~ # vgdisplay
 {% endhighlight %}
 
 ![Volume group creation](../../../../assets/images/using-lvm/volume_group_creation.png)
+
+The next operation will extend the volume group with `/dev/hde` disk size using the vgextend.
+
+{% highlight bash %}
+vgextend lvmspace /dev/hde
+ /dev/cdrom: open failed: Read-only file system
+ /dev/cdrom: open failed: Read-only file system
+ Attempt to close device '/dev/cdrom' which is not open.
+ Volume group "lvmspace" successfully extended
+{% endhighlight %}
+
+> **Info:** Don’t pay attention to the warnings related to the cdrom drive.
+
+Here is a representation of the operation that we just did, aggregate two physical disk spaces in one virtual.
+
+![Volume group](../../../../assets/images/using-lvm/volume_group.png)
+
+We can verify that the volume group size has changed:
+
+{% highlight bash %}
+vgdisplay
+ --- Volume group ---
+ VG Name               lvmspace
+ System ID
+ Format                lvm2
+ Metadata Areas        2
+ Metadata Sequence No  2
+ VG Access             read/write
+ VG Status             resizable
+ MAX LV                0
+ Cur LV                0
+ Open LV               0
+ Max PV                0
+ Cur PV                2
+ Act PV                2
+ VG Size               43.27 GB
+ PE Size               4.00 MB
+ Total PE              11078
+ Alloc PE / Size       0 / 0
+ Free  PE / Size       11078 / 43.27 GB
+ VG UUID               W7zp0w-pYZk-xkg1-9u37-9kiI-30uM-yA6Yji
+ {% endhighlight %}
+
+And now pvdisplay show that the disks have been completely affected to the volume group :
+
+{% highlight bash %}
+pvdisplay
+ --- Physical volume ---
+ PV Name               /dev/hdb
+ VG Name               lvmspace
+ PV Size               6.00 GB / not usable 0
+ Allocatable           yes
+ PE Size (KByte)       4096
+ Total PE              1537
+ Free PE               1537
+ Allocated PE          0
+ PV UUID               yV0Qht-jGSe-jdDo-jErn-cgYi-tbR6-ITqrz1
+
+ --- Physical volume ---
+ PV Name               /dev/hde
+ VG Name               lvmspace
+ PV Size               37.27 GB / not usable 0
+ Allocatable           yes
+ PE Size (KByte)       4096
+ Total PE              9541
+ Free PE               9541
+ Allocated PE          0
+ PV UUID               f0iIbU-ayPe-kpoy-d3bP-hfDP-JqPO-5MVLT7
+{% endhighlight %}
+
+Now that we have an usable virtual disk space, we can create partitions on it. These partitions are called logical volumes. Let’s create a 7GB logical volume with the `lvcreate` command :
