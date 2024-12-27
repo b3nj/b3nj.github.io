@@ -99,6 +99,24 @@ vgextend lvmspace /dev/hde
 > [!NOTE]
 > Don’t pay attention to the warnings related to the cdrom drive.
 
+
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
+
+
+
 Here is a representation of the operation that we just did, aggregate two physical disk spaces in one virtual.
 
 ![Volume group](../../../../assets/images/using-lvm/volume_group.png)
