@@ -97,7 +97,8 @@ vgextend lvmspace /dev/hde
  Volume group "lvmspace" successfully extended
 {% endhighlight %}
 
-> **Info:** Don’t pay attention to the warnings related to the cdrom drive.
+> [!NOTE]
+> Don’t pay attention to the warnings related to the cdrom drive.
 
 Here is a representation of the operation that we just did, aggregate two physical disk spaces in one virtual.
 
