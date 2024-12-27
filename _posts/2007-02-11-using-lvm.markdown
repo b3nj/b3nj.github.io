@@ -15,7 +15,7 @@ The method used by LVM2 to manage many disks as one unit is to group them in wha
 For this, it is mandatory to create a physical volume, operation that prepares one partition, one entire disk or one file in a LVM2 usable format.
 
 This can be done by the pvcreate commmand.
-As an exemple, if I have one 6.4GB disk located in `/dev/hdb` and one 40GB disk located in `/dev/hde`, this is how I would initilize them :
+As an exemple, if I have one 6.4GB disk located in `/dev/hdb` and one 40GB disk located in `/dev/hde`, this is how I would initilize them:
 
 ```bash
 pvcreate /dev/hdb
@@ -24,7 +24,7 @@ pvcreate /dev/hde
 Physical volume "/dev/hde" successfully created
 ```
 
-We can verify that the two physical volumes are presented to the system using the pvdisplay command :
+We can verify that the two physical volumes are presented to the system using the pvdisplay command:
 
 ```bash
 pvdisplay
@@ -51,14 +51,14 @@ pvdisplay
  PV UUID               yV0Qht-jGSe-jdDo-jErn-cgYi-tbR6-ITqrz1
 ```
 
-We now have two disks prepared to use in a volume group. It is now necessary to create a volume group using the vgcreate command (we will call the volume group in this exemple the lvmspace) :
+We now have two disks prepared to use in a volume group. It is now necessary to create a volume group using the vgcreate command (we will call the volume group in this exemple the lvmspace):
 
 ```bash
 vgcreate lvmspace /dev/hdb
 Volume group "lvmspace" successfully created
 ```
 
-The volume group is now created and is of 6.1GB, fact that we can check with the vgdisplay command :
+The volume group is now created and is of 6.1GB, fact that we can check with the vgdisplay command:
 
 ```bash
 vgdisplay
@@ -84,7 +84,7 @@ vgdisplay
  VG UUID               W7zp0w-pYZk-xkg1-9u37-9kiI-30uM-yA6Yji
 ```
 
-![Volume group creation](../../../../assets/images/using-lvm/volume_group_creation.png)
+![Volume group creation](/assets/images/using-lvm/volume_group_creation.png)
 
 The next operation will extend the volume group with `/dev/hde` disk size using the vgextend.
 
@@ -99,27 +99,9 @@ vgextend lvmspace /dev/hde
 > [!NOTE]
 > Don’t pay attention to the warnings related to the cdrom drive.
 
-
-> [!NOTE]
-> Useful information that users should know, even when skimming content.
-
-> [!TIP]
-> Helpful advice for doing things better or more easily.
-
-> [!IMPORTANT]
-> Key information users need to know to achieve their goal.
-
-> [!WARNING]
-> Urgent info that needs immediate user attention to avoid problems.
-
-> [!CAUTION]
-> Advises about risks or negative outcomes of certain actions.
-
-
-
 Here is a representation of the operation that we just did, aggregate two physical disk spaces in one virtual.
 
-![Volume group](../../../../assets/images/using-lvm/volume_group.png)
+![Volume group](/assets/images/using-lvm/volume_group.png)
 
 We can verify that the volume group size has changed:
 
@@ -147,7 +129,7 @@ vgdisplay
  VG UUID               W7zp0w-pYZk-xkg1-9u37-9kiI-30uM-yA6Yji
 ```
 
-And now pvdisplay show that the disks have been completely affected to the volume group :
+And now pvdisplay show that the disks have been completely affected to the volume group:
 
 {% highlight bash %}
 pvdisplay
@@ -174,4 +156,343 @@ pvdisplay
  PV UUID               f0iIbU-ayPe-kpoy-d3bP-hfDP-JqPO-5MVLT7
 {% endhighlight %}
 
-Now that we have an usable virtual disk space, we can create partitions on it. These partitions are called logical volumes. Let’s create a 7GB logical volume with the `lvcreate` command :
+Now that we have an usable virtual disk space, we can create partitions on it. These partitions are called logical volumes. Let’s create a 7GB logical volume with the `lvcreate` command:
+
+```bash
+lvcreate -L 7G -n home lvmspace
+ Logical volume "home" created
+```
+
+![First logical volume](/assets/images/using-lvm/first_lv.png)
+
+We can see the results of the precedent operation with the `lvdisplay` command:
+
+```bash
+lvdisplay
+ --- Logical volume ---
+ LV Name                /dev/lvmspace/home
+ VG Name                lvmspace
+ LV UUID                icrus5-H10v-GqTG-NW0L-cwUR-FW2P-T5eqy1
+ LV Write Access        read/write
+ LV Status              available
+ # open                 0
+ LV Size                7.00 GB
+ Current LE             1792
+ Segments               2
+ Allocation             inherit
+ Read ahead sectors     0
+ Block device           253:0
+```
+
+We can also see that the created logical volume consumes all the space of `/dev/hdb` and a small part of `/dev/hde`:
+
+```bash
+pvdisplay
+ --- Physical volume ---
+ PV Name               /dev/hdb
+ VG Name               lvmspace
+ PV Size               6.00 GB / not usable 0
+ Allocatable           yes (but full)
+ PE Size (KByte)       4096
+ Total PE              1537
+ Free PE               0
+ Allocated PE          1537
+ PV UUID               yV0Qht-jGSe-jdDo-jErn-cgYi-tbR6-ITqrz1
+
+ --- Physical volume ---
+ PV Name               /dev/hde
+ VG Name               lvmspace
+ PV Size               37.27 GB / not usable 0
+ Allocatable           yes
+ PE Size (KByte)       4096
+ Total PE              9541
+ Free PE               9286
+ Allocated PE          255
+ PV UUID               f0iIbU-ayPe-kpoy-d3bP-hfDP-JqPO-5MVLT7
+ ```
+
+Let’s now create a logical volume of 20GB named `var`:
+
+```bash
+lvcreate -L 20G -n var lvmspace
+ Logical volume "var" created
+```
+
+And as result we have:
+
+```bash
+lvdisplay
+ --- Logical volume ---
+ LV Name                /dev/lvmspace/home
+ VG Name                lvmspace
+ LV UUID                icrus5-H10v-GqTG-NW0L-cwUR-FW2P-T5eqy1
+ LV Write Access        read/write
+ LV Status              available
+ # open                 0
+ LV Size                7.00 GB
+ Current LE             1792
+ Segments               2
+ Allocation             inherit
+ Read ahead sectors     0
+ Block device           253:0
+
+ --- Logical volume ---
+ LV Name                /dev/lvmspace/var
+ VG Name                lvmspace
+ LV UUID                GNPaI1-7jlr-oUYZ-6qot-1cS8-gN8G-Ig6cJ2
+ LV Write Access        read/write
+ LV Status              available
+ # open                 0
+ LV Size                20.00 GB
+ Current LE             5120
+ Segments               1
+ Allocation             inherit
+ Read ahead sectors     0
+ Block device           253:1
+```
+
+We now see that 27GB are occupied in the lvmspace.
+
+```bash
+vgdisplay
+ --- Volume group ---
+ VG Name               lvmspace
+ System ID
+ Format                lvm2
+ Metadata Areas        2
+ Metadata Sequence No  4
+ VG Access             read/write
+ VG Status             resizable
+ MAX LV                0
+ Cur LV                2
+ Open LV               0
+ Max PV                0
+ Cur PV                2
+ Act PV                2
+ VG Size               43.27 GB
+ PE Size               4.00 MB
+ Total PE              11078
+ Alloc PE / Size       6912 / 27.00 GB
+ Free  PE / Size       4166 / 16.27 GB
+ VG UUID               W7zp0w-pYZk-xkg1-9u37-9kiI-30uM-yA6Yji
+```
+
+Let’s now create two logical volumes, one of 3GB named `tmp` and one of 13.27GB named `portage` to fulfill the whole available space:
+
+```bash
+lvcreate -L 3G -n tmp lvmspace
+ Logical volume "tmp" created
+lvcreate -L 13.27G -n portage lvmspace
+ Rounding up size to full physical extent 13.27 GB
+ Logical volume "portage" created
+```
+
+We now see that there’s no more available space in the volume group:
+
+```bash
+vgdisplay
+ --- Volume group ---
+ VG Name               lvmspace
+ System ID
+ Format                lvm2
+ Metadata Areas        2
+ Metadata Sequence No  6
+ VG Access             read/write
+ VG Status             resizable
+ MAX LV                0
+ Cur LV                4
+ Open LV               0
+ Max PV                0
+ Cur PV                2
+ Act PV                2
+ VG Size               43.27 GB
+ PE Size               4.00 MB
+ Total PE              11078
+ Alloc PE / Size       11078 / 43.27 GB
+ Free  PE / Size       0 / 0
+ VG UUID               W7zp0w-pYZk-xkg1-9u37-9kiI-30uM-yA6Yji
+```
+
+We are now in the following situation:
+
+```bash
+ls /dev/lvmspace/
+home  portage  tmp  var
+```
+
+![Full volume group](/assets/images/using-lvm/vg_full.png)
+
+Let’s now create filesystems on these logical volumes to use them as normal partitions:
+
+```bash
+mkfs.ext3 /dev/lvmspace/tmp -L "/tmp"
+mkfs.ext3 /dev/lvmspace/var -L "/var"
+mkfs.reiserfs /dev/lvmspace/portage -l "/usr/portage"
+mkfs.reiserfs /dev/lvmspace/home -l "/home"
+```
+
+We have now the following:
+
+![All LVS with FS](/assets/images/using-lvm/all_lvs_with_FS.png)
+
+In the next chapter, we’ll see how convenient the usage of `LVM2` is.
+
+## Logical volume resizing
+
+Let’s add a new physical hard drive to the system, and prepare it for LVM:
+
+```bash
+pvcreate /dev/hdg
+ Physical volume "/dev/hdg" successfully created
+```
+
+Now, extend the volume group:
+
+```bash
+vgextend lvmspace /dev/hdg
+ /dev/cdrom: open failed: Read-only file system
+ Attempt to close device '/dev/cdrom' which is not open.
+ Volume group "lvmspace" successfully extended
+```
+
+![Extended volume group](/assets/images/using-lvm/vg_extended.png)
+
+```bash
+vgdisplay
+ --- Volume group ---
+ VG Name               lvmspace
+ System ID
+ Format                lvm2
+ Metadata Areas        3
+ Metadata Sequence No  7
+ VG Access             read/write
+ VG Status             resizable
+ MAX LV                0
+ Cur LV                4
+ Open LV               0
+ Max PV                0
+ Cur PV                3
+ Act PV                3
+ VG Size               81.62 GB
+ PE Size               4.00 MB
+ Total PE              20894
+ Alloc PE / Size       11078 / 43.27 GB
+ Free  PE / Size       9816 / 38.34 GB
+ VG UUID               W7zp0w-pYZk-xkg1-9u37-9kiI-30uM-yA6Yji
+```
+
+We will now extend the home logical volume by 3GB. Now, it’s really important to get the fact that we will extend the backend, now the partition that we created on it. It will be necessary to resize the filesystem in order to use the space in it’s totality. The following scheme explains the difference:
+
+```bash
+lvextend -L +3G /dev/lvmspace/home
+ Extending logical volume home to 10.00 GB
+ Logical volume home successfully resized
+```
+
+![home extended](/assets/images/using-lvm/home_extended.png)
+
+We now see that `home` is now 10GB big.
+
+```bash
+lvdisplay /dev/lvmspace/home
+ --- Logical volume ---
+ LV Name                /dev/lvmspace/home
+ VG Name                lvmspace
+ LV UUID                icrus5-H10v-GqTG-NW0L-cwUR-FW2P-T5eqy1
+ LV Write Access        read/write
+ LV Status              available
+ # open                 0
+ LV Size                10.00 GB
+ Current LE             2560
+ Segments               3
+ Allocation             inherit
+ Read ahead sectors     0
+ Block device           253:0
+ ```
+
+We will now extend the filesystem on home using a reiserfs specific command called resize_reiserfs:
+
+> [!WARNING] Warning: This can only be done on one unmounted partition.
+
+```bash
+resize_reiserfs -s+3G /dev/lvmspace/home
+resize_reiserfs 3.6.19 (2003 www.namesys.com)
+
+ReiserFS report:
+blocksize             4096
+block count           2621440 (1835008)
+free blocks           2613149 (1826741)
+bitmap block count    80 (56)
+
+Syncing..done
+
+resize_reiserfs: Resizing finished successfully.
+```
+
+We will now extend var and the filesystem with the resize2fs command by 5GB :
+
+> [!NOTE] Info: Unlike resize_reiserfs, it’s possible to extend a ext3 filesystem without having to dismount the logical volume. This should be considered as an serious asset of ext3 over reiserfs on production systems.
+
+```bash
+lvextend -L +5G /dev/lvmspace/var
+ Extending logical volume var to 25.00 GB
+ Logical volume var successfully resized
+resize2fs /dev/lvmspace/var 25G
+resize2fs 1.38 (30-Jun-2005)
+Resizing the filesystem on /dev/lvmspace/var to 6553600 (4k) blocks.
+The filesystem on /dev/lvmspace/var is now 6553600 blocks long.
+```
+
+We have the following situation:
+
+![var extended](/assets/images/using-lvm/var_extended.png)
+
+## Logical volume shrinking
+
+Let’s say for some reason that we don’t want to have 10GB on home. The method to follow to proceed with the shrinking is first to shrink the existing filesystem then shrink the logical volume :
+
+> [!WARNING] Alert: You can crash you data when shrinking, so be carefull !
+
+Filesystem shrink :
+```bash
+osiris ~ # resize_reiserfs -s-1G /dev/lvmspace/home
+resize_reiserfs 3.6.19 (2003 www.namesys.com)
+
+You are running BETA version of reiserfs shrinker.
+This version is only for testing or VERY CAREFUL use.
+Backup of you data is recommended.
+
+Do you want to continue? [y/N]:y
+Processing the tree: 0%....20%....40%....60%....80%....100%    left 0, 0 /sec
+
+nodes processed (moved):
+int        0 (0),
+leaves     1 (0),
+unfm       0 (0),
+total      1 (0).
+
+check for used blocks in truncated region
+
+ReiserFS report:
+blocksize             4096
+block count           2359296 (2621440)
+free blocks           2351013 (2613149)
+bitmap block count    72 (80)
+
+Syncing..done
+
+resize_reiserfs: Resizing finished successfully.
+```
+
+Logical volume resize :
+
+```bash
+lvresize -L -1G /dev/lvmspace/home
+ WARNING: Reducing active logical volume to 9.00 GB
+ THIS MAY DESTROY YOUR DATA (filesystem etc.)
+Do you really want to reduce home? [y/n]: y
+ Reducing logical volume home to 9.00 GB
+ Logical volume home successfully resized
+```
+
+You now know how to embiggen and shrink logical volumes and extend volume groups, you can now do many things with this awesome technology that LVM is !
