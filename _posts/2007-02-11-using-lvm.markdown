@@ -5,6 +5,8 @@ date:   2007-02-11 21:00:00 +0200
 categories: system
 ---
 
+{:toc}
+
 # Flexible volume management
 
 LVM2 permits you to create partitions spreading on multiple disk by grouping them in virtual volumes. It also enables the easy growing of existing partitions (but only if the filesystem permits it). That leads to a more scalable disk management because adding or deleting space is really easy without having to repartition the whole machine (most the time a server reinstallation is necessary).
