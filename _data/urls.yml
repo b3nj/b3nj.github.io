@@ -1,3 +1,10 @@
+- name: github's Markdown documentation
+  url: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+  date: 2024/12/29
+  done: true
+  comment: "well ... stop searching continuously for it"
+  tags: code
+
 - name: maxsiedentopf.com
   url: https://maxsiedentopf.com/passport-photos/
   date: 2024/11/07
