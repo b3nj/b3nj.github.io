@@ -74,7 +74,7 @@ include "/etc/named.root.key";
 
 Once configured and started, let’s query the resolver without asking for `DNSSEC` validation.
 
-```bind
+```bash
 dig bkraft.fr @localhost
 
 	; <<>> DiG 9.8.2-RedHat-9.8.2-0.el6 <<>> bkraft.fr @localhost
@@ -102,7 +102,7 @@ dig bkraft.fr @localhost
 
 Fine, now query with validation enabled :
 
-```bind
+```bash
 dig +dnssec dns.be @localhost
 
 	; <<>> DiG 9.8.2-RedHat-9.8.2-0.el6 <<>> +dnssec dns.be @localhost
