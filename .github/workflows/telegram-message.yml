@@ -20,7 +20,7 @@ jobs:
         COMMIT_URL=${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}
         echo "COMMIT_URL=${COMMIT_URL}" >> $GITHUB_ENV
         # Extract and sanitize the diff content
-        DIFF_CONTENT=$(git show --no-color --pretty=format:'%b' --unified=0 --stat)
+        DIFF_CONTENT=$(git show --no-color --online --unified=0 --stat)
         SANITIZED_DIFF=$(echo "${DIFF_CONTENT}" | sed 's/|/-/g')
         echo "COMMIT_DIFF=${SANITIZED_DIFF}" >> $GITHUB_ENV
 
