@@ -20,9 +20,8 @@ jobs:
         COMMIT_URL=${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}
         echo "COMMIT_URL=${COMMIT_URL}" >> $GITHUB_ENV
         # Extract and sanitize the diff content
-        DIFF_CONTENT=$(git show --no-color --oneline --unified=0 --stat | head -n 200)
-        SANITIZED_DIFF=$(echo "${DIFF_CONTENT}" | sed 's/|/-/g')
-        echo "COMMIT_DIFF=${SANITIZED_DIFF}" >> $GITHUB_ENV
+        
+        git show --no-color --pretty=format:'%b' --unified=0 --stat | sed 's/|/-/g' | head -n 200 > commit_diff.txt
 
     - name: Get Branch Name
       id: branch-name
@@ -35,10 +34,9 @@ jobs:
       env:
         TELEGRAM_API_TOKEN: ${{ secrets.TELEGRAM_API_TOKEN }}
         TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        COMMIT_MESSAGE: ${{ env.COMMIT_MESSAGE }}
-        COMMIT_AUTHOR: ${{ env.COMMIT_AUTHOR }}
+        COMMIT_DIFF=$(cat commit_diff.txt)
       run: |
         curl -s -X POST https://api.telegram.org/bot${TELEGRAM_API_TOKEN}/sendMessage \
           -d chat_id=${TELEGRAM_CHAT_ID} \
           -d parse_mode="Markdown" \
-          -d text="🚀 New commit pushed to your repository in *${BRANCH_NAME}*.\u0D *Author*: \`${COMMIT_AUTHOR}\`\u0D *Message*: \`${COMMIT_MESSAGE}\` [View Commit](${COMMIT_URL}). *Changes:* \`\`\`${TRUNCATED_DIFF}\`\`\`"
+          -d text="🚀 New commit pushed to your repository in *${BRANCH_NAME}*.\u0D *Author*: \`${COMMIT_AUTHOR}\`\u0D *Message*: \`${COMMIT_MESSAGE}\` [View Commit](${COMMIT_URL}). *Changes:* \`\`\`${COMMIT_DIFF}\`\`\`"
