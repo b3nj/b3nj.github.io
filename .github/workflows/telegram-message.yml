@@ -18,7 +18,7 @@ jobs:
         echo "COMMIT_MESSAGE=$(git log -1 --pretty=format:'%s')" >> $GITHUB_ENV
         echo "COMMIT_AUTHOR=$(git log -1 --pretty=format:'%an')" >> $GITHUB_ENV
         # Extract and sanitize the diff content
-        DIFF_CONTENT=$(git show --no-color | sed 's/|/-/g')
+        DIFF_CONTENT=$(git show --no-color --oneline   | sed 's/|/-/g')
         echo "COMMIT_DIFF=${DIFF_CONTENT}" >> $GITHUB_ENV
 
     - name: Send Telegram message
