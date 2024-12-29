@@ -37,4 +37,4 @@ jobs:
         curl -s -X POST https://api.telegram.org/bot${TELEGRAM_API_TOKEN}/sendMessage \
           -d chat_id=${TELEGRAM_CHAT_ID} \
           -d parse_mode="MarkdownV2" \
-          -d text="🚀 New commit pushed to your repository in *${BRANCH_NAME}*! *Author*: \`${COMMIT_AUTHOR}\` *Message*: \`${COMMIT_MESSAGE}\` see more [here](${COMMIT_URL})"
+          -d text="🚀 New commit pushed to your repository in *${BRANCH_NAME}*! *Author*: \`${COMMIT_AUTHOR}\` *Message*: \`${COMMIT_MESSAGE}\` see more ${COMMIT_URL}"
