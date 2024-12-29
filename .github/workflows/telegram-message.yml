@@ -24,7 +24,7 @@ jobs:
       id: branch-name
       run: |
         # Extract the branch name from GITHUB_REF
-        BRANCH_NAME=${GITHUB_REF#refs/heads/}
+        BRANCH_NAME=$(${GITHUB_REF#refs/heads/} | sed 's/-/\\-/g')
         echo "BRANCH_NAME=${BRANCH_NAME}" >> $GITHUB_ENV
 
     - name: Send Telegram message
