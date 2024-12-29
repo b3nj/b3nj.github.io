@@ -1,9 +1,7 @@
 name: Send Telegram Message
 
 on:
-  push:
-    branches:
-      - gh-pages
+  push
 
 jobs:
   send-message:
