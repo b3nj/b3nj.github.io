@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Using LVM Snapshots"
+title:  "Setup RPM build environment"
 date:   2014-06-02 21:00:00 +0200
 categories: system
 ---
