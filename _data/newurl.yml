@@ -1,0 +1,6 @@
+- name: this website
+  url: https://bkraft.fr
+  date: 2025/01/05
+  done: true
+  comment: "testing auto concat from gh action"
+  tags: code
