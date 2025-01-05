@@ -9,6 +9,8 @@ on:
 
 jobs:
   validate_and_concatenate:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
 
     steps:
