@@ -23,7 +23,7 @@ jobs:
         sudo apt-get install -y yamllint
 
     - name: Validate individual YML files
-      run: yamllint -d '{extends: relaxed, rules: {line-length: {max: 180}}}' _data/newurl.yml _data/urls.yml
+      run: 'yamllint -d "{extends: relaxed, rules: {line-length: {max: 180}}}" _data/newurl.yml _data/urls.yml'
 
     - name: Concatenate YAML files (newurl at the start of urls)
       run: |
@@ -31,7 +31,7 @@ jobs:
         cat _data/newurl.yml _data/temp.yml > _data/urls.yml
 
     - name: Validate concatenated YML file
-      run: yamllint -d '{extends: relaxed, rules: {line-length: {max: 180}}}' _data/urls.yaml
+      run: 'yamllint -d "{extends: relaxed, rules: {line-length: {max: 180}}}" _data/urls.yaml'
 
     - name: Commit concatenated file
       if: success()
