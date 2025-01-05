@@ -9,13 +9,14 @@ on:
 
 jobs:
   validate_and_concatenate:
+  # because we're adding a file and deleting one existing from the current commit, it is required that write permissions are given
     permissions:
       contents: write
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v2
       with:
         ref: 'gh-pages'
 

@@ -1,10 +1,4 @@
 ---
-- name: this website
-  url: https://bkraft.fr/urls/
-  date: 2025/01/05
-  done: true
-  comment: "testing auto concat from gh action"
-  tags: code
 - name: github's Markdown documentation
   url: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
   date: 2024/12/29
