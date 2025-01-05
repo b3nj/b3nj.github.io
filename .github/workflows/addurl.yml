@@ -27,7 +27,7 @@ jobs:
 
     - name: Concatenate YAML files (newurl at the start of urls)
       run: |
-        cp _data/urls.yml _data/temp.yml
+        tail -n +2 _data/urls.yml _data/temp.yml
         cat _data/newurl.yml _data/temp.yml > _data/urls.yml
 
     - name: Validate concatenated YML file
