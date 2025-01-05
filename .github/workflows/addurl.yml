@@ -1,0 +1,42 @@
+name: Automatically concatenate new url yaml with existing one
+
+on:
+  push:
+    branches:
+      - gh-pages
+    paths:
+      - _data/newurl.yml
+
+jobs:
+  validate_and_concatenate:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Install yamllint
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y yamllint
+
+    - name: Validate individual YML files
+      run: yamllint newurl.yml urls.yml
+
+    - name: Concatenate YAML files (newurl at the start of urls)
+      run: |
+        cp urls.yml temp.yml
+        cat newurl.yml temp.yml > urls.yml
+
+    - name: Validate concatenated YML file
+      run: yamllint urls.yaml
+
+    - name: Commit concatenated file
+      if: success()
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+        git rm newurl.yml
+        git add urls.yml
+        git commit -m 'Automatically added new url ...'
+        git push
