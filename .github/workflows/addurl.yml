@@ -23,22 +23,22 @@ jobs:
         sudo apt-get install -y yamllint
 
     - name: Validate individual YML files
-      run: yamllint newurl.yml urls.yml
+      run: yamllint _data/newurl.yml _data/urls.yml
 
     - name: Concatenate YAML files (newurl at the start of urls)
       run: |
-        cp urls.yml temp.yml
-        cat newurl.yml temp.yml > urls.yml
+        cp _data/urls.yml _data/temp.yml
+        cat _data/newurl.yml _data/temp.yml > _data/urls.yml
 
     - name: Validate concatenated YML file
-      run: yamllint urls.yaml
+      run: yamllint _data/urls.yaml
 
     - name: Commit concatenated file
       if: success()
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
-        git rm newurl.yml
-        git add urls.yml
+        git rm _data/newurl.yml
+        git add _data/urls.yml
         git commit -m 'Automatically added new url ...'
         git push
