@@ -31,7 +31,7 @@ jobs:
         cat _data/newurl.yml _data/temp.yml > _data/urls.yml
 
     - name: Validate concatenated YML file
-      run: 'yamllint -d "{extends: relaxed, rules: {line-length: {max: 180}}}" _data/urls.yaml'
+      run: 'yamllint -d "{extends: relaxed, rules: {line-length: {max: 180}}}" _data/urls.yml'
 
     - name: Commit concatenated file
       if: success()
