@@ -1,5 +1,5 @@
 - name: this website
-  url: https://bkraft.fr/
+  url: https://bkraft.fr/urls/
   date: 2025/01/05
   done: true
   comment: "testing auto concat from gh action"
