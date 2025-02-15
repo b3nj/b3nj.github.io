@@ -1,0 +1,8 @@
+
+---
+- name: Hacker News
+  url: https://news.ycombinator.com/
+  date: 2025/02/15
+  done: true
+  comment: 'Added with bot'
+  tags: news
