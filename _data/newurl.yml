@@ -1,8 +1,0 @@
----
-- name: {user_data['title']}
-  url: {user_data['url']}
-  date: {user_data['date']}
-  done: {'true' if user_data['read_status'] == 'yes' else 'false'}
-"
-  comment: 'Added with bot'
-  tags: {', '.join(user_data['tags'])}
