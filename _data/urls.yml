@@ -1,4 +1,10 @@
 ---
+- name: "yamllint — Homebrew Formulae"
+  url: https://formulae.brew.sh/formula/yamllint
+  date: 2025/02/16
+  done: true
+  comment: 'Added with bot'
+  tags: code
 - name: "GitHub - dvershinin/gixy: NGINX configuration static analyzer"
   url: https://github.com/dvershinin/gixy
   date: 2025/02/16
