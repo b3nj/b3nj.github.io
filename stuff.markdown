@@ -1,10 +1,12 @@
 ---
-layout: stuff
-title: Stuff I read, watch and listen to
+layout: page
+title: 
 permalink: /stuff/
 ---
 
-<h1>Books that I read</h1>
+<h1>Stuff I read, watch and listen to</h1>
+
+<h2>Books that I read</h2>
 <table>
 <thead>
     <tr>
