@@ -1,9 +1,10 @@
 ---
-- Title: "Le Bûcher d'un roi"
+- title: "Le Bûcher d'un roi"
   ISBN-13:	"9782756405865"
-  Authors:
+  authors:
     - "George R. R. Martin"
-  Cover:	"https://covers.openlibrary.org/b/isbn/978-2-7564-0586-5-L.jpg"
-  Language:	"fr"
-  Publisher: ""
-  Year:	"2012"
+  cover:	"https://covers.openlibrary.org/b/isbn/978-2-7564-0586-5-L.jpg"
+  language:	"fr"
+  publisher: ""
+  year:	"2012"
+  read: yes

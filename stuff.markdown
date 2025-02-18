@@ -8,6 +8,7 @@ permalink: /stuff/
 <table>
 <thead>
     <tr>
+        <th>Read</th>
         <th>Title</th>
         <th>Authors</th>
         <th>ISBN</th>
@@ -20,18 +21,23 @@ permalink: /stuff/
 <tbody>
     {% for book in site.data.books %}
     <tr>
-        <td><a href="https://www.google.com/search?q={{book.Title}}" target="_blank">{{book.Title}}</a></td>
+        {% if book.read %}
+            <img width="16px" src="/assets/images/checklist.png" alt="true" />
+        {%  else %}
+            <img width="16px" src="/assets/images/remove.png" alt="false" />
+        {% endif %}
+        <td><a href="https://www.google.com/search?q={{book.title}}" target="_blank">{{book.title}}</a></td>
         <td>
-        {% for Author in book.Authors %}
-            {{Author}}
+        {% for author in book.authors %}
+            {{author}}
         {% endfor %}
         </td>
         <td>{{ book.ISBN-13 }}</td>
-        <td>{{ book.Language }}</td>
-        <td>{{ book.Publisher }}</td>
-        <td>{{ book.Year }}</td>
+        <td>{{ book.language }}</td>
+        <td>{{ book.publisher }}</td>
+        <td>{{ book.year }}</td>
         <td>
-            <img src="{{book.Cover}}" alt="Cover for {{book.Title}}" />
+            <img src="{{book.cover}}" alt="Cover for {{book.title}}" />
         </td>
     </tr>
     {% endfor %}
