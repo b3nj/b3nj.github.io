@@ -1,10 +1,8 @@
 ---
 layout: page
-title: Stuff ...
+title: Stuff
 permalink: /stuff/
 ---
-
-<h1>That I read, watch and listen to</h1>
 
 <h2>Books that I read</h2>
 <table>
@@ -28,10 +26,10 @@ permalink: /stuff/
             "{{Author}}"
         {% endfor %}
         </td>
-        <td>"{{ book.ISBN-13 }}"</td>
-        <td>"{{ book.Language }}"</td>
-        <td>"{{ book.Publisher }}"</td>
-        <td>"{{ book.Year }}"</td>
+        <td>{{ book.ISBN-13 }}</td>
+        <td>{{ book.Language }}</td>
+        <td>{{ book.Publisher }}</td>
+        <td>{{ book.Year }}</td>
         <td>
             <img src="{{book.Cover}}" alt="Cover for {{book.Title}}" />
         </td>
