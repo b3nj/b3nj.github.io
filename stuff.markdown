@@ -20,7 +20,7 @@ permalink: /stuff/
 <tbody>
     {% for book in site.data.books %}
     <tr>
-        <td>{{book.Title}}</td>
+        <td><a href="https://www.google.com/search?q={{book.Title}}" target="_blank">{{book.Title}}</a></td>
         <td>
         {% for Author in book.Authors %}
             {{Author}}
