@@ -20,10 +20,10 @@ permalink: /stuff/
 <tbody>
     {% for book in site.data.books %}
     <tr>
-        <td>"{{book.Title}}"</td>
+        <td>{{book.Title}}</td>
         <td>
         {% for Author in book.Authors %}
-            "{{Author}}"
+            {{Author}}
         {% endfor %}
         </td>
         <td>{{ book.ISBN-13 }}</td>
