@@ -1,4 +1,10 @@
 ---
+- name: "macOS Tips & Tricks - saurabhs.org"
+  url: https://saurabhs.org/macos-tips
+  date: 2025/02/28
+  done: false
+  comment: 'Added with bot'
+  tags: macos
 - name: "Introduction — Podman  documentation"
   url: https://docs.podman.io/en/latest/Introduction.html
   date: 2025/02/16
