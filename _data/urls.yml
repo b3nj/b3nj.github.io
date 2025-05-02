@@ -1,4 +1,10 @@
 ---
+- name: Anubis
+  url: https://anubis.techaro.lol/docs/admin/installation
+  date: 2025/05/02
+  done: true
+  comment: 'Protection against bots'
+  tags: security
 - name: "macOS Tips & Tricks - saurabhs.org"
   url: https://saurabhs.org/macos-tips
   date: 2025/02/28
