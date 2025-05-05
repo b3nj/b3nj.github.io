@@ -1,4 +1,10 @@
 ---
+- name: 
+  url: https://typst.app/
+  date: 2025/05/05
+  done: false
+  comment: 'Contender to replace LaTeX'
+  tags: 'typing'
 - name: Anubis
   url: https://anubis.techaro.lol/docs/admin/installation
   date: 2025/05/02
