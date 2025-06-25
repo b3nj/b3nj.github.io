@@ -1,4 +1,10 @@
 ---
+- name:
+  url: https://xtool.sh/tutorials/xtool/first-app/
+  date: 2025/06/25
+  done: false
+  comment: 'Build first iOS app'
+  tags: 'dev'
 - name: 
   url: https://typst.app/
   date: 2025/05/05
