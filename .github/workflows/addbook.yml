@@ -31,7 +31,8 @@ jobs:
     - name: Concatenate YAML files (newbook at the start of books)
       run: |
         tail -n +2 _data/books.yml > _data/tempbooks.yml
-        cat _data/newbook.yml _data/tempbooks.yml > _data/urls.yml
+        cat _data/tempbooks.yml _data/newbook.yml > _data/urls.yml
+        rm -f _data/tempbooks.yml
 
     - name: Validate concatenated YML file
       run: 'yamllint -d "{extends: relaxed, rules: {line-length: {max: 180}}}" _data/urls.yml'
@@ -42,6 +43,6 @@ jobs:
         git config --global user.name 'github-actions[bot]'
         git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
         git rm _data/newbook.yml
-        git add _data/bookss.yml
+        git add _data/books.yml
         git commit -m 'Automatically added new book ...'
         git push
