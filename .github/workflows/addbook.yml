@@ -1,0 +1,47 @@
+name: Automatically concatenate new book yaml with existing one
+
+on:
+  push:
+    branches:
+      - gh-pages
+    paths:
+      - _data/newbook.yml
+
+jobs:
+  validate_and_concatenate:
+  # because we're adding a file and deleting one existing from the current commit, it is required that write permissions are given
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+      with:
+        ref: 'gh-pages'
+
+    - name: Install yamllint
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y yamllint
+
+    - name: Validate individual YML files
+      run: 'yamllint -d "{extends: relaxed, rules: {line-length: {max: 180}}}" _data/newbook.yml _data/books.yml'
+
+    - name: Concatenate YAML files (newbook at the start of books)
+      run: |
+        tail -n +2 _data/books.yml > _data/tempbooks.yml
+        cat _data/newbook.yml _data/tempbooks.yml > _data/urls.yml
+
+    - name: Validate concatenated YML file
+      run: 'yamllint -d "{extends: relaxed, rules: {line-length: {max: 180}}}" _data/urls.yml'
+
+    - name: Commit concatenated file
+      if: success()
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+        git rm _data/newbook.yml
+        git add _data/bookss.yml
+        git commit -m 'Automatically added new book ...'
+        git push
