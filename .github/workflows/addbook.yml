@@ -30,12 +30,12 @@ jobs:
 
     - name: Concatenate YAML files (newbook at the start of books)
       run: |
-        tail -n +2 _data/books.yml > _data/tempbooks.yml
-        cat _data/tempbooks.yml _data/newbook.yml > _data/urls.yml
+        cp _data/books.yml _data/tempbooks.yml
+        cat _data/tempbooks.yml _data/newbook.yml > _data/books.yml
         rm -f _data/tempbooks.yml
 
     - name: Validate concatenated YML file
-      run: 'yamllint -d "{extends: relaxed, rules: {line-length: {max: 180}}}" _data/urls.yml'
+      run: 'yamllint -d "{extends: relaxed, rules: {line-length: {max: 180}}}" _data/books.yml'
 
     - name: Commit concatenated file
       if: success()
