@@ -21,11 +21,6 @@ permalink: /stuff/
 <tbody>
     {% for book in site.data.books %}
     <tr>
-        {% if book.read %}
-            <img width="16px" src="/assets/images/checklist.png" alt="true" />
-        {%  else %}
-            <img width="16px" src="/assets/images/remove.png" alt="false" />
-        {% endif %}
         <td><a href="https://www.google.com/search?q={{book.title}}" target="_blank">{{book.title}}</a></td>
         <td>
         {% for author in book.authors %}
@@ -36,6 +31,13 @@ permalink: /stuff/
         <td>{{ book.language }}</td>
         <td>{{ book.publisher }}</td>
         <td>{{ book.year }}</td>
+        <td>        
+        {% if book.read %}
+            <img width="16px" src="/assets/images/checklist.png" alt="true" />
+        {%  else %}
+            <img width="16px" src="/assets/images/remove.png" alt="false" />
+        {% endif %}
+        </td>
         <td>
             <img src="{{book.cover}}" alt="Cover for {{book.title}}" />
         </td>
