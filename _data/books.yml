@@ -39,3 +39,13 @@
   cover: "No Cover Available"
   read: true
   comment: 'Added with bot'
+
+- title: "Marque de Cthulhu"
+  ISBN-13: 9782266025300
+  authors: "H.P. Lovecraft"
+  publisher: "Pocket (FR)"
+  year: "November 1991"
+  language: "Unknown Language"
+  cover: "https://covers.openlibrary.org/b/id/979488-L.jpg"
+  read: true
+  comment: 'Added with bot'
