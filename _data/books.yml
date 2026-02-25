@@ -109,3 +109,13 @@
   cover: "https://covers.openlibrary.org/b/id/12566258-L.jpg"
   read: true
   comment: 'Added with bot'
+
+- title: "Le temple des vents"
+  ISBN-13: 9782915549294
+  authors: "Terry Goodkind"
+  publisher: "Bragelonne"
+  year: "2005"
+  language: "Unknown Language"
+  cover: "https://covers.openlibrary.org/b/id/10440358-L.jpg"
+  read: true
+  comment: 'Added with bot'
