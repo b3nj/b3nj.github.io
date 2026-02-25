@@ -129,3 +129,13 @@
   cover: "https://covers.openlibrary.org/b/id/12565801-L.jpg"
   read: true
   comment: 'Added with bot'
+
+- title: "La Pierre des Larmes (L'Épée de Vérité T02)"
+  ISBN-13: 9782914370585
+  authors: "Terry Goodkind"
+  publisher: "Bragelonne"
+  year: "Oct 28, 2003"
+  language: "Unknown Language"
+  cover: "https://covers.openlibrary.org/b/id/10705805-L.jpg"
+  read: true
+  comment: 'Added with bot'
