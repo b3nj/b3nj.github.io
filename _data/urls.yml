@@ -1,5 +1,11 @@
 ---
 - name:
+  url: https://nightingale.cafe/
+  date: 2026/03/18
+  comment: 'Karaoke for with any song'
+  tags: 'stuff'
+  done: false
+- name:
   url: https://monodraw.helftone.com/
   date: 2025/08/27
   done: true
