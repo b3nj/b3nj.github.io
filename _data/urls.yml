@@ -1,29 +1,29 @@
 ---
-- name:
+- name: "Karaoke"
   url: https://nightingale.cafe/
   date: 2026/03/18
   comment: 'Karaoke for with any song'
   tags: 'stuff'
   done: false
-- name:
+- name: "ASCII art editor"
   url: https://monodraw.helftone.com/
   date: 2025/08/27
   done: true
   comment: ' Powerful ASCII art editor designed for the Mac'
   tags: 'dev'
-- name:
+- name: "xtool first iOS app"
   url: https://xtool.sh/tutorials/xtool/first-app/
   date: 2025/06/25
   done: false
   comment: 'Build first iOS app'
   tags: 'dev'
-- name: 
+- name: "typst"
   url: https://typst.app/
   date: 2025/05/05
   done: false
   comment: 'Contender to replace LaTeX'
   tags: 'typing'
-- name: Anubis
+- name: "Anubis"
   url: https://anubis.techaro.lol/docs/admin/installation
   date: 2025/05/02
   done: true
