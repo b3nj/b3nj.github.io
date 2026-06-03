@@ -15,187 +15,187 @@
   authors: "Jocko Willink"
   publisher: "St. Martin's Press"
   year: "2017"
-  language: "Unknown Language"
-  cover: "https://covers.openlibrary.org/b/id/8312790-L.jpg"
-  read: true
-  comment: 'Added with bot'
+  language: "en"
+  cover: "https://books.google.com/books/content?vid=ISBN9781250183866&printsec=frontcover&img=1&zoom=1"
+  read: false
+  comment: 'Added by Claude'
 
 - title: "Le Passager sans visage"
   ISBN-13: 9782266323734
   authors: "Nicolas Beuglet"
   publisher: "POCKET"
   year: "Sep 22, 2022"
-  language: "Unknown Language"
-  cover: "No Cover Available"
-  read: true
-  comment: 'Added with bot'
+  language: "fr"
+  cover: "https://books.google.com/books/content?vid=ISBN9782266323734&printsec=frontcover&img=1&zoom=1"
+  read: false
+  comment: 'Added by Claude'
 
 - title: "Labyrinthes"
   ISBN-13: 9782266332576
   authors: ""
   publisher: ""
   year: "Unknown Year"
-  language: "Unknown Language"
-  cover: "No Cover Available"
-  read: true
-  comment: 'Added with bot'
+  language: "fr"
+  cover: "https://books.google.com/books/content?vid=ISBN9782266332576&printsec=frontcover&img=1&zoom=1"
+  read: false
+  comment: 'Added by Claude'
 
 - title: "Marque de Cthulhu"
   ISBN-13: 9782266025300
   authors: "H.P. Lovecraft"
   publisher: "Pocket (FR)"
   year: "November 1991"
-  language: "Unknown Language"
-  cover: "https://covers.openlibrary.org/b/id/979488-L.jpg"
-  read: true
-  comment: 'Added with bot'
+  language: "fr"
+  cover: "https://books.google.com/books/content?vid=ISBN9782266025300&printsec=frontcover&img=1&zoom=1"
+  read: false
+  comment: 'Added by Claude'
 
 - title: "Le fantôme du souvenir"
   ISBN-13: 9782352943839
   authors: "Terry Goodkind"
   publisher: "Bragelonne"
   year: "2010"
-  language: "Unknown Language"
-  cover: "https://covers.openlibrary.org/b/id/12567185-L.jpg"
-  read: true
-  comment: 'Added with bot'
+  language: "fr"
+  cover: "https://books.google.com/books/content?vid=ISBN9782352943839&printsec=frontcover&img=1&zoom=1"
+  read: false
+  comment: 'Added by Claude'
 
 - title: "L'Épée de Vérité T09 La Chaîne de Flammes"
   ISBN-13: 9782352943006
   authors: "Terry Goodkind"
   publisher: "BRAGELONNE"
   year: "Jun 18, 2009"
-  language: "Unknown Language"
-  cover: "https://covers.openlibrary.org/b/id/12565816-L.jpg"
-  read: true
-  comment: 'Added with bot'
+  language: "fr"
+  cover: "https://books.google.com/books/content?vid=ISBN9782352943006&printsec=frontcover&img=1&zoom=1"
+  read: false
+  comment: 'Added by Claude'
 
 - title: "L'Épée de Vérité T07 Les Piliers de la Création"
   ISBN-13: 9782352940784
   authors: "Terry Goodkind"
   publisher: "BRAGELONNE"
   year: "Nov 30, 2007"
-  language: "Unknown Language"
-  cover: "https://covers.openlibrary.org/b/id/12565968-L.jpg"
-  read: true
-  comment: 'Added with bot'
+  language: "fr"
+  cover: "https://books.google.com/books/content?vid=ISBN9782352940784&printsec=frontcover&img=1&zoom=1"
+  read: false
+  comment: 'Added by Claude'
 
 - title: "L'Épée de Vérité T06 La Foi des Réprouvés"
   ISBN-13: 9782352940173
   authors: "Terry Goodkind"
   publisher: "BRAGELONNE"
   year: "Jan 05, 2007"
-  language: "Unknown Language"
-  cover: "No Cover Available"
-  read: true
-  comment: 'Added with bot'
+  language: "fr"
+  cover: "https://books.google.com/books/content?vid=ISBN9782352940173&printsec=frontcover&img=1&zoom=1"
+  read: false
+  comment: 'Added by Claude'
 
 - title: "L'empire des vaincus"
   ISBN-13: 9782352942153
   authors: "Terry Goodkind"
   publisher: "Bragelonne"
   year: "2008"
-  language: "Unknown Language"
-  cover: "https://covers.openlibrary.org/b/id/14589715-L.jpg"
-  read: true
-  comment: 'Added with bot'
+  language: "fr"
+  cover: "https://books.google.com/books/content?vid=ISBN9782352942153&printsec=frontcover&img=1&zoom=1"
+  read: false
+  comment: 'Added by Claude'
 
 - title: "L'Épée de Vérité T05 L'Âme du Feu"
   ISBN-13: 9782915549621
   authors: "Terry Goodkind"
   publisher: "BRAGELONNE"
   year: "Feb 23, 2006"
-  language: "Unknown Language"
-  cover: "https://covers.openlibrary.org/b/id/12566258-L.jpg"
-  read: true
-  comment: 'Added with bot'
+  language: "fr"
+  cover: "https://books.google.com/books/content?vid=ISBN9782915549621&printsec=frontcover&img=1&zoom=1"
+  read: false
+  comment: 'Added by Claude'
 
 - title: "Le temple des vents"
   ISBN-13: 9782915549294
   authors: "Terry Goodkind"
   publisher: "Bragelonne"
   year: "2005"
-  language: "Unknown Language"
-  cover: "https://covers.openlibrary.org/b/id/10440358-L.jpg"
-  read: true
-  comment: 'Added with bot'
+  language: "fr"
+  cover: "https://books.google.com/books/content?vid=ISBN9782915549294&printsec=frontcover&img=1&zoom=1"
+  read: false
+  comment: 'Added by Claude'
 
 - title: "L'Épée de Vérité T03 Le Sang de la Déchirure"
   ISBN-13: 9782914370882
   authors: "Terry Goodkind"
   publisher: "BRAGELONNE"
   year: "Aug 27, 2004"
-  language: "Unknown Language"
-  cover: "https://covers.openlibrary.org/b/id/12565801-L.jpg"
-  read: true
-  comment: 'Added with bot'
+  language: "fr"
+  cover: "https://books.google.com/books/content?vid=ISBN9782914370882&printsec=frontcover&img=1&zoom=1"
+  read: false
+  comment: 'Added by Claude'
 
 - title: "La Pierre des Larmes (L'Épée de Vérité T02)"
   ISBN-13: 9782914370585
   authors: "Terry Goodkind"
   publisher: "Bragelonne"
   year: "Oct 28, 2003"
-  language: "Unknown Language"
-  cover: "https://covers.openlibrary.org/b/id/10705805-L.jpg"
-  read: true
-  comment: 'Added with bot'
+  language: "fr"
+  cover: "https://books.google.com/books/content?vid=ISBN9782914370585&printsec=frontcover&img=1&zoom=1"
+  read: false
+  comment: 'Added by Claude'
 
 - title: "Dette d'Os"
   ISBN-13: 9782352942429
   authors: "Terry Goodkind"
   publisher: "BRAGELONNE"
   year: "Dec 04, 2008"
-  language: "Unknown Language"
-  cover: "https://covers.openlibrary.org/b/id/10513470-L.jpg"
-  read: true
-  comment: 'Added with bot'
+  language: "fr"
+  cover: "https://books.google.com/books/content?vid=ISBN9782352942429&printsec=frontcover&img=1&zoom=1"
+  read: false
+  comment: 'Added by Claude'
 
 - title: "Les cités des anciens"
   ISBN-13: 9782756405926
   authors: "Robin Hobb"
   publisher: "Pygmalion"
   year: "2010"
-  language: "Unknown Language"
-  cover: "https://covers.openlibrary.org/b/id/12450657-L.jpg"
-  read: true
-  comment: 'Added with bot'
+  language: "fr"
+  cover: "https://books.google.com/books/content?vid=ISBN9782756405926&printsec=frontcover&img=1&zoom=1"
+  read: false
+  comment: 'Added by Claude'
 
 - title: "Les cités des anciens"
   ISBN-13: 9782756405919
   authors: "Robin Hobb"
   publisher: "Pygmalion"
   year: "2010"
-  language: "Unknown Language"
-  cover: "https://covers.openlibrary.org/b/id/12450657-L.jpg"
-  read: true
-  comment: 'Added with bot'
+  language: "fr"
+  cover: "https://books.google.com/books/content?vid=ISBN9782756405919&printsec=frontcover&img=1&zoom=1"
+  read: false
+  comment: 'Added by Claude'
 
 - title: "Les cités des anciens"
   ISBN-13: 9782756404288
   authors: "Robin Hobb"
   publisher: "Pygmalion"
   year: "2010"
-  language: "Unknown Language"
-  cover: "https://covers.openlibrary.org/b/id/12450657-L.jpg"
-  read: true
-  comment: 'Added with bot'
+  language: "fr"
+  cover: "https://books.google.com/books/content?vid=ISBN9782756404288&printsec=frontcover&img=1&zoom=1"
+  read: false
+  comment: 'Added by Claude'
 
 - title: "Les cités des anciens"
   ISBN-13: 9782756402871
   authors: "Robin Hobb"
   publisher: "Pygmalion"
   year: "2010"
-  language: "Unknown Language"
-  cover: "https://covers.openlibrary.org/b/id/12450657-L.jpg"
-  read: true
-  comment: 'Added with bot'
+  language: "fr"
+  cover: "https://books.google.com/books/content?vid=ISBN9782756402871&printsec=frontcover&img=1&zoom=1"
+  read: false
+  comment: 'Added by Claude'
 
 - title: "Après"
   ISBN-13: 9782226466167
   authors: "Stephen King"
   publisher: "Albin Michel"
   year: "2021"
-  language: "fre"
-  cover: "https://covers.openlibrary.org/b/isbn/9782226466167-L.jpg"
-  read: true
-  comment: 'Added with bot'
+  language: "fr"
+  cover: "https://books.google.com/books/content?vid=ISBN9782226466167&printsec=frontcover&img=1&zoom=1"
+  read: false
+  comment: 'Added by Claude'
