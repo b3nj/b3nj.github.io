@@ -199,3 +199,83 @@
   cover: "https://covers.openlibrary.org/b/isbn/2226459766-M.jpg"
   read: false
   comment: 'Added by Claude'
+
+- title: "450 fleurs"
+  ISBN-13: 9782603025710
+  authors: "Margot Spohn, Roland Spohn"
+  publisher: "Delachaux et Niestlé"
+  year: "2017"
+  language: "fr"
+  cover: "https://covers.openlibrary.org/b/isbn/2603025716-M.jpg"
+  read: false
+  comment: 'Added by Claude'
+
+- title: "Les légendes du mythe de Cthulhu T1"
+  ISBN-13: 9782266173933
+  authors: "H.P. Lovecraft"
+  publisher: "Pocket"
+  year: "2007"
+  language: "fr"
+  cover: "https://covers.openlibrary.org/b/isbn/2266173936-M.jpg"
+  read: false
+  comment: 'Added by Claude'
+
+- title: "Les légendes du mythe de Cthulhu T2"
+  ISBN-13: 9782266173940
+  authors: "H.P. Lovecraft"
+  publisher: "Pocket"
+  year: "2007"
+  language: "fr"
+  cover: "https://covers.openlibrary.org/b/isbn/2266173944-M.jpg"
+  read: false
+  comment: 'Added by Claude'
+
+- title: "Deus Irae"
+  ISBN-13: 9782207502389
+  authors: "Philip K. Dick, Roger Zelazny"
+  publisher: "Denoël"
+  year: "1997"
+  language: "fr"
+  cover: "https://covers.openlibrary.org/b/isbn/2207502384-M.jpg"
+  read: false
+  comment: 'Added by Claude'
+
+- title: "Les fusils d'Avalon"
+  ISBN-13: 9782277115632
+  authors: "Roger Zelazny"
+  publisher: "J'ai Lu"
+  year: "1990"
+  language: "fr"
+  cover: "https://covers.openlibrary.org/b/isbn/2277115630-M.jpg"
+  read: false
+  comment: 'Added by Claude'
+
+- title: "Le signe de la licorne"
+  ISBN-13: 9782253043119
+  authors: "Roger Zelazny"
+  publisher: "Le Livre de Poche"
+  year: "1994"
+  language: "fr"
+  cover: "https://covers.openlibrary.org/b/isbn/2253043117-M.jpg"
+  read: false
+  comment: 'Added by Claude'
+
+- title: "Homo Deus"
+  ISBN-13: 9782917689349
+  authors: "Yuval Noah Harari"
+  publisher: "Albin Michel"
+  year: "2017"
+  language: "fr"
+  cover: "https://covers.openlibrary.org/b/isbn/2917689344-M.jpg"
+  read: false
+  comment: 'Added by Claude'
+
+- title: "L'Archipel des oubliés"
+  ISBN-13: 9782266334280
+  authors: "Nicolas Beuglet"
+  publisher: "Pocket"
+  year: "2023"
+  language: "fr"
+  cover: "https://covers.openlibrary.org/b/isbn/2266334284-M.jpg"
+  read: false
+  comment: 'Added by Claude'
