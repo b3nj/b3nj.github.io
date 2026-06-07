@@ -1,1 +1,54 @@
-[]
+[
+  {
+    "ISBN:9782266025300": {
+      "weight": "4.8 ounces",
+      "ebooks": [
+        {
+          "preview_url": "https://archive.org/details/lemasquedecthulh0000love",
+          "availability": "borrow",
+          "borrow_url": "https://openlibrary.org/books/OL8889694M/Marque_de_Cthulhu/borrow",
+          "formats": {},
+          "checkedout": false
+        }
+      ],
+      "authors": [
+        {
+          "url": "http://openlibrary.org/authors/OL22161A/H.P._Lovecraft",
+          "name": "H.P. Lovecraft"
+        }
+      ],
+      "identifiers": {
+        "librarything": [
+          "2780230"
+        ],
+        "isbn_10": [
+          "2266025309"
+        ],
+        "openlibrary": [
+          "OL8889694M"
+        ],
+        "isbn_13": [
+          "9782266025300"
+        ],
+        "goodreads": [
+          "2569956"
+        ]
+      },
+      "title": "Marque de Cthulhu",
+      "publishers": [
+        {
+          "name": "Pocket (FR)"
+        }
+      ],
+      "publish_date": "November 1991",
+      "key": "/books/OL8889694M",
+      "cover": {
+        "small": "https://covers.openlibrary.org/b/id/979488-S.jpg",
+        "large": "https://covers.openlibrary.org/b/id/979488-L.jpg",
+        "medium": "https://covers.openlibrary.org/b/id/979488-M.jpg"
+      },
+      "number_of_pages": 239,
+      "url": "http://openlibrary.org/books/OL8889694M/Marque_de_Cthulhu"
+    }
+  }
+]
