@@ -31,10 +31,7 @@ jobs:
       - name: Append JSON to file
         run: |
           mkdir -p "$(dirname "${{ inputs.target_file }}")"
-          jq '. += $new' --argjson new "$(cat <<'EOF'
-          ${{ inputs.json_content }}
-          EOF
-          ") "${{ inputs.target_file }}" > _data/tmp.json && mv _data/tmp.json "${{ inputs.target_file }}"
+          jq '. += [${{ inputs.json_content }}]' "${{ inputs.target_file }}" > _data/tmp.json && mv _data/tmp.json "${{ inputs.target_file }}"
 
       - name: Commit and push
         run: |
