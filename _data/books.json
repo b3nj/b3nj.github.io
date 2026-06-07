@@ -80,5 +80,36 @@
       "key": "/books/OL45929624M",
       "url": "http://openlibrary.org/books/OL45929624M/Au_bout_du_labyrinthe"
     }
+  },
+  {
+    "ISBN:9782277115632": {
+      "identifiers": {
+        "isbn_10": [
+          "2277115630"
+        ],
+        "openlibrary": [
+          "OL27262865M"
+        ],
+        "amazon": [
+          "2277115630"
+        ],
+        "isbn_13": [
+          "9782277115632"
+        ]
+      },
+      "publishers": [
+        {
+          "name": "J Ai Lu"
+        }
+      ],
+      "key": "/books/OL27262865M",
+      "title": "Dr Bloodmoney",
+      "url": "http://openlibrary.org/books/OL27262865M/Dr_Bloodmoney",
+      "cover": {
+        "small": "https://covers.openlibrary.org/b/id/8752679-S.jpg",
+        "large": "https://covers.openlibrary.org/b/id/8752679-L.jpg",
+        "medium": "https://covers.openlibrary.org/b/id/8752679-M.jpg"
+      }
+    }
   }
 ]
