@@ -31,7 +31,7 @@ jobs:
       - name: Append JSON to file
         run: |
           mkdir -p "$(dirname "${{ inputs.target_file }}")"
-          jq '. += [{"id": 1, "name": "foo"}]' "${{ inputs.target_file }}" > tmp.json && mv tmp.json "${{ inputs.target_file }}"
+          jq '. += ${{ inputs.target_file }}' "${{ inputs.target_file }}" > _data/tmp.json && mv _data/tmp.json "${{ inputs.target_file }}"
 
       - name: Commit and push
         run: |
