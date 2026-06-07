@@ -50,5 +50,35 @@
       "number_of_pages": 239,
       "url": "http://openlibrary.org/books/OL8889694M/Marque_de_Cthulhu"
     }
+  },
+  {
+    "ISBN:9782253043119": {
+      "authors": [
+        {
+          "url": "http://openlibrary.org/authors/OL12283169A/Dick-P._K",
+          "name": "Dick-P. K"
+        }
+      ],
+      "identifiers": {
+        "isbn_10": [
+          "2253043117"
+        ],
+        "isbn_13": [
+          "9782253043119"
+        ],
+        "openlibrary": [
+          "OL45929624M"
+        ]
+      },
+      "title": "Au bout du labyrinthe",
+      "publishers": [
+        {
+          "name": "Le Livre de Poche"
+        }
+      ],
+      "publish_date": "1996-01-01",
+      "key": "/books/OL45929624M",
+      "url": "http://openlibrary.org/books/OL45929624M/Au_bout_du_labyrinthe"
+    }
   }
 ]
