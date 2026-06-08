@@ -111,5 +111,41 @@
         "medium": "https://covers.openlibrary.org/b/id/8752679-M.jpg"
       }
     }
+  },
+  {
+    "ISBN:9782841770250": {
+      "weight": "3.4 pounds",
+      "subtitle": "Guide du programmeur (avec disquette)",
+      "authors": [
+        {
+          "url": "http://openlibrary.org/authors/OL194343A/Steven_Feuerstein",
+          "name": "Steven Feuerstein"
+        }
+      ],
+      "identifiers": {
+        "isbn_10": [
+          "2841770257"
+        ],
+        "openlibrary": [
+          "OL8942728M"
+        ],
+        "isbn_13": [
+          "9782841770250"
+        ],
+        "librarything": [
+          "42057"
+        ]
+      },
+      "title": "Oracle PL/SQL",
+      "publishers": [
+        {
+          "name": "O Reilly"
+        }
+      ],
+      "publish_date": "November 1, 1997",
+      "key": "/books/OL8942728M",
+      "number_of_pages": 928,
+      "url": "http://openlibrary.org/books/OL8942728M/Oracle_PL_SQL"
+    }
   }
 ]
