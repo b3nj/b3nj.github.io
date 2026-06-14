@@ -1,14 +1,14 @@
-name: Automatically concatenate new book yaml with existing one
+name: Automatically generate new jekyll page per book
 
 on:
   push:
     branches:
       - gh-pages
     paths:
-      - _data/newbook.yml
+      - _data/books.json
 
 jobs:
-  validate_and_concatenate:
+  generatefiles:
   # because we're adding a file and deleting one existing from the current commit, it is required that write permissions are given
     permissions:
       contents: write
@@ -20,29 +20,25 @@ jobs:
       with:
         ref: 'gh-pages'
 
-    - name: Install yamllint
+    - name: Per book generate a page
       run: |
-        sudo apt-get update
-        sudo apt-get install -y yamllint
+        jq -c '.[]' _data/books.json | while read entry; do
+          isbn=$(echo "$entry" | jq -r 'keys[0]' | sed 's/ISBN://')
+          title=$(echo "$entry" | jq -r '.[].title')
+          mkdir -p "books/$isbn"
+          cat > "books/$isbn/index.md" <<EOF
+          ---
+          layout: book
+          isbn: $isbn
+          title: "$title"
+          ---
+          EOF
+          done
 
-    - name: Validate individual YML files
-      run: 'yamllint -d "{extends: relaxed, rules: {line-length: {max: 180}}}" _data/newbook.yml _data/books.yml'
-
-    - name: Concatenate YAML files (newbook at the start of books)
-      run: |
-        cp _data/books.yml _data/tempbooks.yml
-        cat _data/tempbooks.yml _data/newbook.yml > _data/books.yml
-        rm -f _data/tempbooks.yml
-
-    - name: Validate concatenated YML file
-      run: 'yamllint -d "{extends: relaxed, rules: {line-length: {max: 180}}}" _data/books.yml'
-
-    - name: Commit concatenated file
-      if: success()
+    - name: Add new files and commit
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
-        git rm _data/newbook.yml
-        git add _data/books.yml
+        git add books/*
         git commit -m 'Automatically added new book ...'
         git push
