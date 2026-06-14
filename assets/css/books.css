@@ -1,8 +1,3 @@
----
----
-
-@import "{{ site.theme }}";
-
 .book-search {
   display: block;
   width: 100%;
