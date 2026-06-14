@@ -1,0 +1,53 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.book-search {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1.5rem;
+}
+
+.book-card {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-card img,
+.book-cover-placeholder {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  background: #eee;
+}
+
+.book-cover-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 0.85rem;
+}
+
+.book-card h3 {
+  font-size: 0.95rem;
+  margin: 0.5rem 0 0.2rem;
+}
+
+.book-author {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0;
+}

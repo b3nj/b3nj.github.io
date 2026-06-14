@@ -1,23 +1,61 @@
 ---
 layout: page
-title: Books
+title: My Library
 permalink: /books/
 ---
-
-<h2>Books that I read</h2>
 <h1>My Library</h1>
-<div class="book-grid">
+<p>{{ site.data.books.size }} books</p>
+
+<input type="text" id="book-search" placeholder="Search by title or author..." class="book-search">
+
+<div class="book-grid" id="book-grid">
+  {% assign sorted_books = "" | split: "" %}
   {% for entry in site.data.books %}
-    {% assign isbn = entry | first %}
-    {% assign book = entry[isbn] %}
-    <a href="/books/{{ book.identifiers.isbn_13[0] }}/" class="book-card">
+    {% assign isbn_key = entry | first %}
+    {% assign book = entry[isbn_key] %}
+    {% assign sorted_books = sorted_books | push: book %}
+  {% endfor %}
+  {% assign sorted_books = sorted_books | sort: "title" %}
+
+  {% for book in sorted_books %}
+    {% assign isbn = book.identifiers.isbn_13[0] | default: book.identifiers.isbn_10[0] %}
+    {% assign authors = book.authors | map: "name" | join: ", " %}
+    <a href="/books/{{ isbn }}/"
+       class="book-card"
+       data-title="{{ book.title | downcase }}"
+       data-authors="{{ authors | downcase }}">
       {% if book.cover %}
-        <img src="{{ book.cover.medium }}" alt="{{ book.title }}">
+        <img src="{{ book.cover.medium }}" alt="{{ book.title }}" loading="lazy">
+      {% else %}
+        <div class="book-cover-placeholder">No cover</div>
       {% endif %}
       <h3>{{ book.title }}</h3>
-      {% if book.authors %}
-        <p>{{ book.authors | map: "name" | join: ", " }}</p>
+      {% if authors != "" %}
+        <p class="book-author">{{ authors }}</p>
       {% endif %}
     </a>
   {% endfor %}
 </div>
+
+<p id="no-results" style="display:none;">No books match your search.</p>
+
+<script>
+  const searchInput = document.getElementById('book-search');
+  const cards = document.querySelectorAll('.book-card');
+  const noResults = document.getElementById('no-results');
+
+  searchInput.addEventListener('input', () => {
+    const query = searchInput.value.trim().toLowerCase();
+    let visibleCount = 0;
+
+    cards.forEach(card => {
+      const matches =
+        card.dataset.title.includes(query) ||
+        card.dataset.authors.includes(query);
+      card.style.display = matches ? '' : 'none';
+      if (matches) visibleCount++;
+    });
+
+    noResults.style.display = visibleCount === 0 ? '' : 'none';
+  });
+</script>
