@@ -1,4 +1,6 @@
-[{"ISBN:9782266025300": {
+[
+  {
+    "ISBN:9782266025300": {
       "weight": "4.8 ounces",
       "ebooks": [
         {
@@ -218,6 +220,89 @@
         "medium": "https://covers.openlibrary.org/b/id/982245-M.jpg"
       },
       "number_of_pages": 183
+    }
+  },
+  {
+    "ISBN:9782070426065": {
+      "subjects": [
+        {
+          "name": "American Science fiction",
+          "url": "https://openlibrary.org/subjects/american_science_fiction"
+        },
+        {
+          "name": "Fiction, science fiction, general",
+          "url": "https://openlibrary.org/subjects/fiction,_science_fiction,_general"
+        },
+        {
+          "name": "Crime prevention",
+          "url": "https://openlibrary.org/subjects/crime_prevention"
+        },
+        {
+          "name": "Fiction",
+          "url": "https://openlibrary.org/subjects/fiction"
+        },
+        {
+          "name": "Science Fiction",
+          "url": "https://openlibrary.org/subjects/science_fiction"
+        },
+        {
+          "name": "American Short stories",
+          "url": "https://openlibrary.org/subjects/american_short_stories"
+        }
+      ],
+      "authors": [
+        {
+          "url": "http://openlibrary.org/authors/OL274606A/Philip_K._Dick",
+          "name": "Philip K. Dick"
+        },
+        {
+          "url": "http://openlibrary.org/authors/OL3113922A/Hélène_Collon",
+          "name": "Hélène Collon"
+        }
+      ],
+      "identifiers": {
+        "isbn_10": [
+          "2070426068"
+        ],
+        "openlibrary": [
+          "OL27264315M"
+        ],
+        "amazon": [
+          "2070426068"
+        ],
+        "isbn_13": [
+          "9782070426065"
+        ]
+      },
+      "title": "Minority Report",
+      "publishers": [
+        {
+          "name": "Gallimard"
+        }
+      ],
+      "publish_date": "Oct 02, 2002",
+      "key": "/books/OL27264315M",
+      "excerpts": [
+        {
+          "comment": "",
+          "text": "TENSION hung over the three waiting men.",
+          "first_sentence": true
+        },
+        {
+          "comment": "",
+          "text": "TENSION hung over the three waiting men."
+        },
+        {
+          "comment": "",
+          "text": "TENSION hung over the three waiting men."
+        }
+      ],
+      "cover": {
+        "small": "https://covers.openlibrary.org/b/id/8753554-S.jpg",
+        "large": "https://covers.openlibrary.org/b/id/8753554-L.jpg",
+        "medium": "https://covers.openlibrary.org/b/id/8753554-M.jpg"
+      },
+      "url": "http://openlibrary.org/books/OL27264315M/Minority_Report"
     }
   }
 ]
