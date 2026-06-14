@@ -147,5 +147,79 @@
       "number_of_pages": 928,
       "url": "http://openlibrary.org/books/OL8942728M/Oracle_PL_SQL"
     }
+  },
+  {
+    "ISBN:9782290332870": {
+      "subjects": [
+        {
+          "name": "Lotteries",
+          "url": "https://openlibrary.org/subjects/lotteries"
+        },
+        {
+          "name": "Fiction",
+          "url": "https://openlibrary.org/subjects/fiction"
+        },
+        {
+          "name": "Science Fiction",
+          "url": "https://openlibrary.org/subjects/science_fiction"
+        },
+        {
+          "name": "Fiction, science fiction, general",
+          "url": "https://openlibrary.org/subjects/fiction,_science_fiction,_general"
+        },
+        {
+          "name": "American Science fiction",
+          "url": "https://openlibrary.org/subjects/american_science_fiction"
+        }
+      ],
+      "subject_times": [
+        {
+          "name": "2203",
+          "url": "https://openlibrary.org/subjects/time:2203"
+        }
+      ],
+      "publish_date": "March 31, 2003",
+      "publishers": [
+        {
+          "name": "J ai lu"
+        }
+      ],
+      "url": "http://openlibrary.org/books/OL8911044M/Loterie_solaire",
+      "authors": [
+        {
+          "url": "http://openlibrary.org/authors/OL274606A/Philip_K._Dick",
+          "name": "Philip K. Dick"
+        }
+      ],
+      "weight": "3.5 ounces",
+      "key": "/books/OL8911044M",
+      "title": "Loterie solaire",
+      "identifiers": {
+        "librarything": [
+          "128173"
+        ],
+        "isbn_10": [
+          "2290332879"
+        ],
+        "openlibrary": [
+          "OL8911044M"
+        ],
+        "isbn_13": [
+          "9782290332870"
+        ],
+        "oclc": [
+          "491806425"
+        ],
+        "goodreads": [
+          "226479"
+        ]
+      },
+      "cover": {
+        "small": "https://covers.openlibrary.org/b/id/982245-S.jpg",
+        "large": "https://covers.openlibrary.org/b/id/982245-L.jpg",
+        "medium": "https://covers.openlibrary.org/b/id/982245-M.jpg"
+      },
+      "number_of_pages": 183
+    }
   }
 ]
