@@ -3,7 +3,8 @@ layout: page
 title: My Library
 permalink: /books/
 ---
-<h1>My Library</h1>
+<link rel="stylesheet" href="{{ '/assets/css/books.css' | relative_url }}">
+
 <p>{{ site.data.books.size }} books</p>
 
 <input type="text" id="book-search" placeholder="Search by title or author..." class="book-search">
