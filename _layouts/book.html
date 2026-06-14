@@ -1,0 +1,39 @@
+---
+layout: default
+---
+<div class="book-detail">
+  {% if page.cover %}
+    <img src="{{ page.cover.large }}" alt="{{ page.title }}" class="book-cover">
+  {% endif %}
+
+  <h1>{{ page.title }}</h1>
+  {% if page.subtitle %}<p class="subtitle">{{ page.subtitle }}</p>{% endif %}
+
+  {% if page.authors %}
+    <p><strong>Author{% if page.authors.size > 1 %}s{% endif %}:</strong> {{ page.authors | join: ", " }}</p>
+  {% endif %}
+
+  {% if page.publishers %}
+    <p><strong>Publisher:</strong> {{ page.publishers | join: ", " }}</p>
+  {% endif %}
+
+  {% if page.publish_date %}
+    <p><strong>Published:</strong> {{ page.publish_date }}</p>
+  {% endif %}
+
+  {% if page.number_of_pages %}
+    <p><strong>Pages:</strong> {{ page.number_of_pages }}</p>
+  {% endif %}
+
+  {% if page.weight %}
+    <p><strong>Weight:</strong> {{ page.weight }}</p>
+  {% endif %}
+
+  <p><strong>ISBN-13:</strong> {{ page.isbn }}</p>
+
+  {% if page.source_url %}
+    <p><a href="{{ page.source_url }}">View on Open Library →</a></p>
+  {% endif %}
+
+  <p><a href="/books/">← Back to library</a></p>
+</div>

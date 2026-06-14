@@ -20,20 +20,16 @@ jobs:
       with:
         ref: 'gh-pages'
 
-    - name: Per book generate a page
-      run: |
-        jq -c '.[]' _data/books.json | while read entry; do
-          isbn=$(echo "$entry" | jq -r 'keys[0]' | sed 's/ISBN://')
-          title=$(echo "$entry" | jq -r '.[].title')
-          mkdir -p "books/$isbn"
-          cat > "books/$isbn/index.md" <<EOF
-          ---
-          layout: book
-          isbn: $isbn
-          title: "$title"
-          ---
-          EOF
-          done
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.x"
+
+    - name: Install dependencies
+      run: pip install pyyaml
+
+    - name: Generate book pages
+      run: python3 scripts/generate_book_pages.py
 
     - name: Add new files and commit
       run: |
