@@ -27,6 +27,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: 'gh-pages'
+          token: ${{ secrets.GH_PAT }}
 
       - name: Append JSON to file
         run: |
