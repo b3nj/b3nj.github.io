@@ -36,8 +36,6 @@ jobs:
 
       - name: Commit and push
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add "${{ inputs.target_file }}"
-          git commit -m "Book import from Apple Shortcuts `echo ${{ inputs.json_content }} | jq -r 'to_entries[0].value.title'`"
+          git commit -m "Book import from Apple Shortcuts via Shortcuts `echo ${{ inputs.json_content }} | jq -r 'to_entries[0].value.title'`"
           git push
