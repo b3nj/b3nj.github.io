@@ -37,5 +37,5 @@ jobs:
       - name: Commit and push
         run: |
           git add "${{ inputs.target_file }}"
-          git commit -m "Book import from Apple Shortcuts via Shortcuts `echo ${{ inputs.json_content }} | jq -r 'to_entries[0].value.title'`"
+          git commit -m "Book import from Apple Shortcuts via Shortcuts"
           git push
