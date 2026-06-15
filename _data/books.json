@@ -304,5 +304,568 @@
       },
       "url": "http://openlibrary.org/books/OL27264315M/Minority_Report"
     }
+  },
+  {
+    "ISBN:9782259251365": {
+      "classifications": {
+        "lc_classifications": [
+          "BL783 .F47 2016"
+        ]
+      },
+      "subjects": [
+        {
+          "name": "Greek Mythology",
+          "url": "https://openlibrary.org/subjects/greek_mythology"
+        }
+      ],
+      "subtitle": "le sens des grands mythes grecs",
+      "publish_date": "2016",
+      "publishers": [
+        {
+          "name": "Plon-Le Figaro"
+        }
+      ],
+      "url": "http://openlibrary.org/books/OL61315206M/Mythologie_et_philosophie",
+      "authors": [
+        {
+          "url": "http://openlibrary.org/authors/OL44455A/Luc_Ferry",
+          "name": "Luc Ferry"
+        }
+      ],
+      "key": "/books/OL61315206M",
+      "title": "Mythologie et philosophie",
+      "by_statement": "Luc Ferry",
+      "identifiers": {
+        "isbn_13": [
+          "9782259251365"
+        ],
+        "oclc": [
+          "964387924"
+        ],
+        "openlibrary": [
+          "OL61315206M"
+        ]
+      },
+      "notes": "Includes bibliographical references.",
+      "table_of_contents": [
+        {
+          "label": "",
+          "title": "1.",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "L Odyssée ou le \"miracle grec\" --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Liminaire --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Mise en perspective. La signification du voyage d Ulysse : de Troie à Ithaque ou du chaos à l harmonie --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Trois questions en guise de conclusion -- -- 2.",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "L Iliade et la guerre de Troie --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Liminaire --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Les principaux épisodes de l Iliade --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "En guise de conclusion -- -- 3.",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "La naissance des dieux et du monde --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Liminaire --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "L histoire de la naissance des dieux --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "La guerre des dieux et ses suites --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Tableau récapitulatif de la naissance des principaux dieux --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "En guise de conclusion -- -- 4.",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Typhon et les géants --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Liminaire --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Le combat contre Typhon --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "La lutte contre les Géants -- -- 5.",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Prométhée et la boîte de Pandore --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Liminaire --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Le mythe de Prométhée d après Platon : la création de l humanité, source de mouvement mais aussi d hybris --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Une autre version du mythe de Prométhée : le mauvais partage dans la plaine de Mécôné et la \"boîte de Pandore\" selon Hésiode --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "La question de l espérance : un bien ou un mal ? --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Trois leçons philosophiques du mythe de Prométhée et de Pandore --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Pour compléter les deux versions précédentes d après Les Travaux et les Jours d Hésiode : le mythe de l âge d or et les cinq races humaines --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Le plaidoyer de Prométhée selon Eschyle -- -- 6.",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Midas contre Apollon --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Liminaire --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Midas, Pan et Apollon --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Une variante du mythe : Marsyas contre Apollon --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "De l hybris grecque à l orgueil chrétien : Midas et Frankenstein -- -- 7.",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Les amours de Zeus --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Les amours de Zeus et leurs significations --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "La légende d Héraclès --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Le nom d Héraclès et l origine des douze travaux -- -- 8.",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Mort et résurrection d Héraclès --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Héraclès contre les forces résurgentes du chaos --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Mort et résurrection : \"l apothéose\" d Héraclès --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Le type idéal du tragique grec -- -- 9.",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Thésée contre le Minotaure --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "L enfance de Thésée à Trézène, dans le palais de Pitthée, avec sa mère Aethra --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Les premiers exploits de Thésée --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Les retrouvailles de Thésée et de son père Égée à Athènes --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Hippolyte, Phèdre et la mort de Thésée -- -- 10.",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Persée et la Gorgone Méduse --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "La légende de Persée --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Peut-on, doit-on regarder la mort en face ? -- -- 11.",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Jason et la Toison d or --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "La Toison d or et son histoire --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Jason et la quête de la justice --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "À la conquête de la Toison d or --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Le retour à Iolcos avec Médée -- -- 12.",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Dionysos, dieu de la fête --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Dionysos, l altérité au coeur du cosmos --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Quelques interprétations du personnage de Dionysos -- -- 13.",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Pyrrha, Deucalion, Noé et Gilgamesh --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Le déluge vu du monde grec : le mythe de Deucalion et Pyrrha --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Du mythe grec au mythe biblique --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Les leçons d Abraham : la transcendance de la loi et la conscience malheureuse --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Le message de Jésus : ne pas suivre mécaniquement la loi, ne pas l abolir non plus, mais la remplir grâce au miracle de l amour -- -- 14.",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "OEdipe et son complexe --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Le mythe d OEdipe tel qu en lui-même --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "L interprétation psychanalytique : l oubli de la Grèce et l incompréhension du véritable sens du tragique --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Comprendre la notion grecque de destin : l interprétation de Vernant --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Pour aller plus loin : l interprétation cosmologique de la légende d OEdipe -- -- 15.",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Antigone",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Les six grands moments de la pièce de Sophocle --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "L interprétation hégélienne --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Une conception ancienne, cosmologique, du droit en arrière-fond de l Antigone de Sophocle : les thèses de Michel Villey -- -- 16.",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Sisyphe et Asclépios --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Platon et les trois voies du dépassement de la mort --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Aux origines du mythe de Frankenstein : Asclépios (Esculape), le médecin qui rend la vie aux morts --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Les deux ruses de Sisyphe -- -- 17.",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Orphée, Eurydice, Éros, Déméter --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "La philosophie de l amour chez Platon : Éros imparfait ou le désir d éternité --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Éros chez Platon : de la théorie de la vérité à la théorie du plaisir et de la douleur --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "La naissance d Éros selon le personnage de Diotime dans le Banquet --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Orphée aux enfers ou pourquoi la mort est plus forte que l amour --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Déméter, ou comment le retour des enfers devient possible quand on est immortelle. -- -- 18.",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Tantale, Dédale, Lycaon, Icare, Phaéton --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Encore quelques mythes de Vhybris Tantale, Niobé, Phaéton, Icare, Ixion, Bellérophon et les autres --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Hans Jonas et le principe responsabilité -- -- 19.",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Un grand mythe de l amour --",
+          "level": 0,
+          "pagenum": ""
+        },
+        {
+          "label": "",
+          "title": "Conclusion. Mythologie et philosophie.",
+          "level": 0,
+          "pagenum": ""
+        }
+      ],
+      "publish_places": [
+        {
+          "name": "Paris"
+        }
+      ],
+      "pagination": "580 pages",
+      "number_of_pages": 580
+    }
   }
 ]
