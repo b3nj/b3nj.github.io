@@ -36,6 +36,8 @@ jobs:
 
       - name: Commit and push
         run: |
+          git config --global user.email "benj@bkraft.fr"
+          git config --global user.name "b3nj (via actions)"
           git add "${{ inputs.target_file }}"
           git commit -m "Book import from Apple Shortcuts via Shortcuts"
           git push
