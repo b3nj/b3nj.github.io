@@ -899,5 +899,23 @@
       "number_of_pages": 384,
       "url": "http://openlibrary.org/books/OL42849462M/Le_Passager_sans_visage"
     }
+  },
+  {
+    "ISBN:9782266332576": {
+      "identifiers": {
+        "isbn_10": [
+          "2266332570"
+        ],
+        "isbn_13": [
+          "9782266332576"
+        ],
+        "openlibrary": [
+          "OL49902426M"
+        ]
+      },
+      "key": "/books/OL49902426M",
+      "title": "Labyrinthes",
+      "url": "http://openlibrary.org/books/OL49902426M/Labyrinthes"
+    }
   }
 ]
