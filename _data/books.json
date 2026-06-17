@@ -917,5 +917,47 @@
       "title": "Labyrinthes",
       "url": "http://openlibrary.org/books/OL49902426M/Labyrinthes"
     }
+  },
+  {
+    "ISBN:9782917689349": {
+      "ebooks": [
+        {
+          "formats": {},
+          "availability": "restricted",
+          "preview_url": "https://archive.org/details/skintradeperlesd0000geor"
+        }
+      ],
+      "authors": [
+        {
+          "url": "http://openlibrary.org/authors/OL234664A/George_R._R._Martin",
+          "name": "George R. R. Martin"
+        }
+      ],
+      "identifiers": {
+        "isbn_10": [
+          "291768934X"
+        ],
+        "isbn_13": [
+          "9782917689349"
+        ],
+        "openlibrary": [
+          "OL47825059M"
+        ]
+      },
+      "title": "Skin Trade",
+      "publishers": [
+        {
+          "name": "ActuSF"
+        }
+      ],
+      "publish_date": "2012",
+      "key": "/books/OL47825059M",
+      "cover": {
+        "small": "https://covers.openlibrary.org/b/id/15125355-S.jpg",
+        "large": "https://covers.openlibrary.org/b/id/15125355-L.jpg",
+        "medium": "https://covers.openlibrary.org/b/id/15125355-M.jpg"
+      },
+      "url": "http://openlibrary.org/books/OL47825059M/Skin_Trade"
+    }
   }
 ]
