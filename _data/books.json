@@ -868,5 +868,36 @@
       "number_of_pages": 580
     }
   },
-  {}
+  {},
+  {
+    "ISBN:9782266323734": {
+      "authors": [
+        {
+          "url": "http://openlibrary.org/authors/OL8026738A/Nicolas_Beuglet",
+          "name": "Nicolas Beuglet"
+        }
+      ],
+      "identifiers": {
+        "isbn_10": [
+          "2266323733"
+        ],
+        "isbn_13": [
+          "9782266323734"
+        ],
+        "openlibrary": [
+          "OL42849462M"
+        ]
+      },
+      "title": "Le Passager sans visage",
+      "publishers": [
+        {
+          "name": "POCKET"
+        }
+      ],
+      "publish_date": "Sep 22, 2022",
+      "key": "/books/OL42849462M",
+      "number_of_pages": 384,
+      "url": "http://openlibrary.org/books/OL42849462M/Le_Passager_sans_visage"
+    }
+  }
 ]
