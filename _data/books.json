@@ -959,7 +959,6 @@
       "url": "http://openlibrary.org/books/OL47825059M/Skin_Trade"
     }
   },
-  {},
   {
     "ISBN:9782266173933": {
       "authors": [
@@ -998,6 +997,5 @@
       "number_of_pages": 256,
       "url": "http://openlibrary.org/books/OL37834960M/Légendes_du_mythe_de_Cthulhu_-_tome_1"
     }
-  },
-  {}
+  }
 ]
