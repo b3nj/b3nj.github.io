@@ -960,5 +960,44 @@
       "url": "http://openlibrary.org/books/OL47825059M/Skin_Trade"
     }
   },
-  {}
+  {},
+  {
+    "ISBN:9782266173933": {
+      "authors": [
+        {
+          "url": "http://openlibrary.org/authors/OL22161A/H.P._Lovecraft",
+          "name": "H.P. Lovecraft"
+        },
+        {
+          "url": "http://openlibrary.org/authors/OL244300A/August_Derleth",
+          "name": "August Derleth"
+        }
+      ],
+      "identifiers": {
+        "isbn_10": [
+          "2266173936"
+        ],
+        "isbn_13": [
+          "9782266173933"
+        ],
+        "openlibrary": [
+          "OL37834960M"
+        ]
+      },
+      "notes": "Source title: Légendes du mythe de Cthulhu - tome 1 (1)",
+      "title": "Légendes du mythe de Cthulhu - tome 1",
+      "publishers": [
+        {
+          "name": "Pocket"
+        },
+        {
+          "name": "POCKET"
+        }
+      ],
+      "publish_date": "Nov 15, 2007",
+      "key": "/books/OL37834960M",
+      "number_of_pages": 256,
+      "url": "http://openlibrary.org/books/OL37834960M/Légendes_du_mythe_de_Cthulhu_-_tome_1"
+    }
+  }
 ]
