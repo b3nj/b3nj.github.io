@@ -1,7 +1,7 @@
 ---
 layout: book
 isbn: '9782266025300'
-title: Marque de Cthulhu
+title: Masque de Cthulhu
 authors:
 - H.P. Lovecraft
 publishers:
