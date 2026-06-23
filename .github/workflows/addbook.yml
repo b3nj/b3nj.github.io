@@ -31,12 +31,31 @@ jobs:
     - name: Generate book pages
       run: |
         python3 - << 'EOF'
-        import json
-        with open("_data/books.json", encoding="utf-8") as f:
+        import json, os, re, urllib.request, yaml, traceback
+
+        DATA_FILE = "_data/books.json"
+        OUTPUT_DIR = "books"
+
+        def slugify(text):
+            text = re.sub(r"[^\w\s-]", "", text.lower())
+            return re.sub(r"[-\s]+", "-", text).strip("-")
+
+        with open(DATA_FILE, encoding="utf-8") as f:
             books = json.load(f)
-        print(f"Type: {type(books)}")
-        print(f"Count: {len(books)}")
-        print(f"First entry: {json.dumps(books[0] if books else {}, indent=2)}")
+
+        for i, book in enumerate(books):
+            try:
+                isbn_list = book.get("isbn", [])
+                isbn = isbn_list[0] if isbn_list else None
+                title = book.get("title", "Untitled")
+                slug = slugify(title) or isbn or "unknown"
+                page_dir = os.path.join(OUTPUT_DIR, isbn if isbn else slug)
+                print(f"[{i}] Processing: {title} → {page_dir}")
+                os.makedirs(page_dir, exist_ok=True)
+                print(f"[{i}] Folder created OK")
+            except Exception:
+                print(f"[{i}] ERROR on book {i}:")
+                traceback.print_exc()
         EOF
         python3 scripts/generate_book_pages.py
         echo "Books folder contents:"
