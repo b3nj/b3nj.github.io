@@ -30,6 +30,14 @@ jobs:
 
     - name: Generate book pages
       run: |
+        python3 - << 'EOF'
+        import json
+        with open("_data/books.json", encoding="utf-8") as f:
+            books = json.load(f)
+        print(f"Type: {type(books)}")
+        print(f"Count: {len(books)}")
+        print(f"First entry: {json.dumps(books[0] if books else {}, indent=2)}")
+        EOF
         python3 scripts/generate_book_pages.py
         echo "Books folder contents:"
         find books/ -type f || echo "books/ folder is empty or missing"
