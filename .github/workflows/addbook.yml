@@ -30,34 +30,42 @@ jobs:
 
     - name: Generate book pages
       run: |
-        python3 - << 'EOF'
-        import json, os, re, urllib.request, yaml, traceback
+        python3 -c "
+        import json, os, re, urllib.request, yaml, traceback, sys
 
-        DATA_FILE = "_data/books.json"
-        OUTPUT_DIR = "books"
+        DATA_FILE = '_data/books.json'
+        OUTPUT_DIR = 'books'
 
         def slugify(text):
-            text = re.sub(r"[^\w\s-]", "", text.lower())
-            return re.sub(r"[-\s]+", "-", text).strip("-")
+            text = re.sub(r'[^\w\s-]', '', text.lower())
+            return re.sub(r'[-\s]+', '-', text).strip('-')
 
-        with open(DATA_FILE, encoding="utf-8") as f:
+        with open(DATA_FILE, encoding='utf-8') as f:
             books = json.load(f)
 
         for i, book in enumerate(books):
             try:
-                isbn_list = book.get("isbn", [])
+                isbn_list = book.get('isbn', [])
                 isbn = isbn_list[0] if isbn_list else None
-                title = book.get("title", "Untitled")
-                slug = slugify(title) or isbn or "unknown"
+                title = book.get('title', 'Untitled')
+                slug = slugify(title) or isbn or 'unknown'
+                front_matter = {'layout': 'book'}
+                front_matter.update(book)
                 page_dir = os.path.join(OUTPUT_DIR, isbn if isbn else slug)
-                print(f"[{i}] Processing: {title} → {page_dir}")
                 os.makedirs(page_dir, exist_ok=True)
-                print(f"[{i}] Folder created OK")
+                out_path = os.path.join(page_dir, 'index.md')
+                with open(out_path, 'w', encoding='utf-8') as f:
+                    f.write('---\n')
+                    yaml.dump(front_matter, f, allow_unicode=True, default_flow_style=False, sort_keys=False)
+                    f.write('---\n')
+                print(f'[{i}] OK: {out_path}')
             except Exception:
-                print(f"[{i}] ERROR on book {i}:")
+                print(f'[{i}] ERROR:')
                 traceback.print_exc()
-        EOF
-        head -30 scripts/generate_book_pages.py
+        "
+        find books/ -type f || echo "books/ folder is empty or missing"
+
+        cat scripts/generate_book_pages.py
         python3 scripts/generate_book_pages.py
         echo "Books folder contents:"
         find books/ -type f || echo "books/ folder is empty or missing"
