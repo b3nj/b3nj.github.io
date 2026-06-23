@@ -2,6 +2,7 @@
 import json
 import os
 import re
+import urllib.request
 import yaml
 
 DATA_FILE = "_data/books.json"
@@ -11,58 +12,45 @@ def slugify(text):
     text = re.sub(r"[^\w\s-]", "", text.lower())
     return re.sub(r"[-\s]+", "-", text).strip("-")
 
+def download_cover(cover_edition_key, dest_path):
+    url = f"https://covers.openlibrary.org/b/olid/{cover_edition_key}-M.jpg"
+    try:
+        urllib.request.urlretrieve(url, dest_path)
+        return True
+    except Exception as e:
+        print(f"Cover download failed for {cover_edition_key}: {e}")
+        return False
+
+
 def main():
     with open(DATA_FILE, encoding="utf-8") as f:
         books = json.load(f)
 
-    for entry in books:
-        isbn_key = next(iter(entry))
-        book = entry[isbn_key]
-        isbn = isbn_key.replace("ISBN:", "")
+    for book in books:
+        isbn_list = book.get("isbn", [])
+        isbn = isbn_list[0] if isbn_list else None
 
         title = book.get("title", "Untitled")
-        slug = slugify(title) or isbn
+        slug = slugify(title) or isbn or "unknown"
 
-        front_matter = {
-            "layout": "book",
-            "isbn": isbn,
-            "title": title,
-        }
+        # Start with layout, then dump everything from the JSON
+        front_matter = {"layout": "book"}
+        front_matter.update(book)
 
-        if book.get("subtitle"):
-            front_matter["subtitle"] = book["subtitle"]
-
-        if book.get("authors"):
-            front_matter["authors"] = [a.get("name") for a in book["authors"] if a.get("name")]
-
-        if book.get("publishers"):
-            front_matter["publishers"] = [p.get("name") for p in book["publishers"] if p.get("name")]
-
-        if book.get("publish_date"):
-            front_matter["publish_date"] = book["publish_date"]
-
-        if book.get("number_of_pages"):
-            front_matter["number_of_pages"] = book["number_of_pages"]
-
-        if book.get("weight"):
-            front_matter["weight"] = book["weight"]
-
-        if book.get("cover"):
-            front_matter["cover"] = book["cover"]
-
-        if book.get("url"):
-            front_matter["source_url"] = book["url"]
-
-        if book.get("identifiers"):
-            front_matter["identifiers"] = book["identifiers"]
-
-        page_dir = os.path.join(OUTPUT_DIR, isbn)
+        page_dir = os.path.join(OUTPUT_DIR, isbn if isbn else slug)
         os.makedirs(page_dir, exist_ok=True)
+
+        # Download cover
+        cover_edition_key = book.get("cover_edition_key")
+        if cover_edition_key:
+            cover_path = os.path.join(page_dir, "cover.jpg")
+            if not os.path.exists(cover_path):
+                if download_cover(cover_edition_key, cover_path):
+                    front_matter["cover_local"] = f"/books/{isbn if isbn else slug}/cover.jpg"
+            else:
+                front_matter["cover_local"] = f"/books/{isbn if isbn else slug}/cover.jpg"
 
         with open(os.path.join(page_dir, "index.md"), "w", encoding="utf-8") as f:
             f.write("---\n")
             yaml.dump(front_matter, f, allow_unicode=True, default_flow_style=False, sort_keys=False)
             f.write("---\n")
-
-if __name__ == "__main__":
-    main()
