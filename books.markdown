@@ -12,9 +12,7 @@ permalink: /books/
 <div class="book-grid" id="book-grid">
   {% assign sorted_books = "" | split: "" %}
   {% for entry in site.data.books %}
-    {% for pair in entry %}
-      {% assign sorted_books = sorted_books | push: pair[1] %}
-    {% endfor %}
+    {% assign sorted_books = sorted_books | push: entry[1] %}
   {% endfor %}
   {% assign sorted_books = sorted_books | sort: "title" %}
 
