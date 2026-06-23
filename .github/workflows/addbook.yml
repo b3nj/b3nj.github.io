@@ -29,12 +29,14 @@ jobs:
       run: pip install pyyaml
 
     - name: Generate book pages
-      run: python3 scripts/generate_book_pages.py
+      run: |
+        python3 scripts/generate_book_pages.py
+        echo "Books folder contents:"
+        find books/ -type f || echo "books/ folder is empty or missing"
 
     - name: Add new files and commit
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
-        git add books/*
-        git commit -m 'Automatically added new book ...'
-        git push
+        git add -A books/
+        git diff --cached --quiet || git commit -m 'Automatically added new book' && git push
