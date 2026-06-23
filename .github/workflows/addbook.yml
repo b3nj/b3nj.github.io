@@ -57,6 +57,7 @@ jobs:
                 print(f"[{i}] ERROR on book {i}:")
                 traceback.print_exc()
         EOF
+        head -30 scripts/generate_book_pages.py
         python3 scripts/generate_book_pages.py
         echo "Books folder contents:"
         find books/ -type f || echo "books/ folder is empty or missing"
