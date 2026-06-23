@@ -54,3 +54,6 @@ def main():
             f.write("---\n")
             yaml.dump(front_matter, f, allow_unicode=True, default_flow_style=False, sort_keys=False)
             f.write("---\n")
+
+if __name__ == "__main__":
+    main()
