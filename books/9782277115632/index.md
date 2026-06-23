@@ -30,4 +30,5 @@ _version_: 1843494046721376256
 ebook_count_i: 0
 publisher_facet:
 - J Ai Lu
+cover_local: /books/9782277115632/cover.jpg
 ---

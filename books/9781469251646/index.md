@@ -293,4 +293,5 @@ isbn:
 - '9782264041937'
 - '9780547572499'
 trending_score_hourly_3: 0
+cover_local: /books/9781469251646/cover.jpg
 ---

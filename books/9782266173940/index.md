@@ -61,4 +61,5 @@ ebook_count_i: 0
 publisher_facet:
 - POCKET
 - Pocket
+cover_local: /books/9782266173940/cover.jpg
 ---
