@@ -1,39 +1,72 @@
 ---
 layout: page
 ---
+
 <link rel="stylesheet" href="{{ '/assets/css/books.css' | relative_url }}">
+
+{% assign known_fields = "layout,title,cover_local,cover_i,cover_edition_key,subtitle,author_name,publisher,first_publish_year,publish_date,number_of_pages_median,isbn,format,key" | split: "," %}
+
 <div class="book-detail">
-  {% if page.cover %}
-    <img src="{{ page.cover.large }}" alt="{{ page.title }}" class="book-cover">
+
+  {% if page.cover_local %}
+    <img src="{{ page.cover_local }}" alt="{{ page.title }}" class="book-cover">
+  {% elsif page.cover_i %}
+    <img src="https://covers.openlibrary.org/b/id/{{ page.cover_i }}-M.jpg" alt="{{ page.title }}" class="book-cover">
   {% endif %}
 
-  {% if page.subtitle %}<p class="subtitle">{{ page.subtitle }}</p>{% endif %}
-
-  {% if page.authors %}
-    <p><strong>Author{% if page.authors.size > 1 %}s{% endif %}:</strong> {{ page.authors | join: ", " }}</p>
+  {% if page.subtitle %}
+    <p class="subtitle">{{ page.subtitle }}</p>
   {% endif %}
 
-  {% if page.publishers %}
-    <p><strong>Publisher:</strong> {{ page.publishers | join: ", " }}</p>
+  {% if page.author_name %}
+    <p><strong>Author{% if page.author_name.size > 1 %}s{% endif %}:</strong> {{ page.author_name | join: ", " }}</p>
+  {% endif %}
+
+  {% if page.publisher %}
+    <p><strong>Publisher:</strong> {{ page.publisher | first }}</p>
+  {% endif %}
+
+  {% if page.first_publish_year %}
+    <p><strong>First published:</strong> {{ page.first_publish_year }}</p>
   {% endif %}
 
   {% if page.publish_date %}
-    <p><strong>Published:</strong> {{ page.publish_date }}</p>
+    <p><strong>Edition date:</strong> {{ page.publish_date | first }}</p>
   {% endif %}
 
-  {% if page.number_of_pages %}
-    <p><strong>Pages:</strong> {{ page.number_of_pages }}</p>
+  {% if page.number_of_pages_median %}
+    <p><strong>Pages:</strong> {{ page.number_of_pages_median }}</p>
   {% endif %}
 
-  {% if page.weight %}
-    <p><strong>Weight:</strong> {{ page.weight }}</p>
+  {% if page.isbn %}
+    <p><strong>ISBN:</strong> {{ page.isbn | join: " · " }}</p>
   {% endif %}
 
-  <p><strong>ISBN-13:</strong> {{ page.isbn }}</p>
-
-  {% if page.source_url %}
-    <p><a href="{{ page.source_url }}">View on Open Library →</a></p>
+  {% if page.format %}
+    <p><strong>Format:</strong> {{ page.format | join: ", " }}</p>
   {% endif %}
+
+  {% if page.key %}
+    <p><a href="https://openlibrary.org{{ page.key }}">View on Open Library →</a></p>
+  {% endif %}
+
+  {% comment %}Catch-all: display any field not already handled above{% endcomment %}
+  {% for field in page %}
+    {% assign field_name = field[0] %}
+    {% assign field_value = field[1] %}
+    {% unless known_fields contains field_name %}
+      {% if field_value != blank and field_value != nil %}
+        <p><strong>{{ field_name | replace: "_", " " | capitalize }}:</strong>
+          {% if field_value.first %}
+            {{ field_value | join: ", " }}
+          {% else %}
+            {{ field_value }}
+          {% endif %}
+        </p>
+      {% endif %}
+    {% endunless %}
+  {% endfor %}
 
   <p><a href="/books/">← Back to library</a></p>
+
 </div>
