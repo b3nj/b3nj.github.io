@@ -40,3 +40,117 @@ jobs:
         git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
         git add -A books/
         git diff --cached --quiet || git commit -m 'Automatically added new book' && git push
+
+  notify-new-book:
+    runs-on: ubuntu-latest
+    needs: send-message
+    if: contains(github.event.commits[0].modified, '_data/books.json') || contains(github.event.commits[0].added, '_data/books.json')
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Extract new book and send notification
+        env:
+          TELEGRAM_API_TOKEN: ${{ secrets.TELEGRAM_API_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SITE_URL: https://bkraft.fr
+        run: |
+          python3 << 'EOF'
+          import json, os, subprocess, html
+
+          # Find the book that was added by diffing books.json
+          old = subprocess.run(
+              ["git", "show", "HEAD~1:_data/books.json"],
+              capture_output=True, text=True
+          )
+          new = subprocess.run(
+              ["git", "show", "HEAD:_data/books.json"],
+              capture_output=True, text=True
+          )
+
+          old_books = json.loads(old.stdout) if old.returncode == 0 else []
+          new_books = json.loads(new.stdout)
+
+          # Find added entries by comparing keys
+          old_keys = {b.get("key") for b in old_books}
+          added = [b for b in new_books if b.get("key") not in old_keys]
+
+          if not added:
+              print("No new book detected, skipping notification")
+              exit(0)
+
+          book = added[0]
+
+          title       = html.escape(book.get("title", "Unknown title"))
+          authors     = html.escape(", ".join(book.get("author_name", ["Unknown author"])))
+          publisher   = html.escape(book.get("publisher", [""])[0]) if book.get("publisher") else ""
+          year        = book.get("first_publish_year", "")
+          pages       = book.get("number_of_pages_median", "")
+          ol_key      = book.get("key", "")
+          isbn_list   = book.get("isbn", [])
+          isbn        = next((i for i in isbn_list if len(i) == 13), isbn_list[0] if isbn_list else None)
+          cover_key   = book.get("cover_edition_key", "")
+          cover_i     = book.get("cover_i", "")
+          languages   = html.escape(", ".join(book.get("language", [])))
+          subjects    = book.get("subject", [])[:5]
+
+          site_url    = os.environ.get("SITE_URL", "")
+          book_url    = f"{site_url}/books/{isbn}/" if isbn else ""
+          ol_url      = f"https://openlibrary.org{ol_key}" if ol_key else ""
+          cover_url   = f"https://covers.openlibrary.org/b/olid/{cover_key}-M.jpg" if cover_key else \
+                        f"https://covers.openlibrary.org/b/id/{cover_i}-M.jpg" if cover_i else ""
+
+          lines = [f"📖 <b>{title}</b>"]
+          lines.append(f"✍️ {authors}")
+          if publisher:  lines.append(f"🏢 {publisher}")
+          if year:       lines.append(f"📅 {year}")
+          if pages:      lines.append(f"📄 {pages} pages")
+          if isbn:       lines.append(f"🔖 <code>{isbn}</code>")
+          if languages:  lines.append(f"🌐 {languages}")
+          if subjects:
+              lines.append("")
+              lines.append("🏷 " + html.escape(", ".join(subjects)))
+
+          message = "\n".join(lines)
+
+          # Build inline keyboard
+          buttons = []
+          if book_url:
+              buttons.append({"text": "📚 My library", "url": book_url})
+          if ol_url:
+              buttons.append({"text": "🔍 Open Library", "url": ol_url})
+
+          payload = {
+              "chat_id": os.environ["TELEGRAM_CHAT_ID"],
+              "parse_mode": "HTML",
+              "text": message,
+              "reply_markup": {"inline_keyboard": [buttons]}
+          }
+
+          # Send photo if cover available, else text
+          import urllib.request
+          token = os.environ["TELEGRAM_API_TOKEN"]
+
+          if cover_url:
+              photo_payload = {**payload, "photo": cover_url, "caption": message}
+              photo_payload.pop("text", None)
+              req = urllib.request.Request(
+                  f"https://api.telegram.org/bot{token}/sendPhoto",
+                  data=json.dumps(photo_payload).encode(),
+                  headers={"Content-Type": "application/json"}
+              )
+          else:
+              req = urllib.request.Request(
+                  f"https://api.telegram.org/bot{token}/sendMessage",
+                  data=json.dumps(payload).encode(),
+                  headers={"Content-Type": "application/json"}
+              )
+
+          with urllib.request.urlopen(req) as resp:
+              result = json.loads(resp.read())
+              print("Telegram response:", result.get("ok"))
+
+          EOF
