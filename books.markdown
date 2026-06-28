@@ -4,7 +4,10 @@ title: My Library
 permalink: /books/
 ---
 
-{{ site.data.books.size }} books
+<link rel="stylesheet" href="{{ '/assets/css/books.css' | relative_url }}">
+<p>{{ site.data.books.size }} books</p>
+<input type="text" id="book-search" placeholder="Search by title or author..." class="book-search">
+<div class="book-grid" id="book-grid">
 
 {% assign sorted_books = site.data.books | sort: "title" %}
 {% for book in sorted_books %}
@@ -18,23 +21,23 @@ permalink: /books/
 {% assign authors = book.author_name | join: ", " %}
 {% assign cover_local = "/books/" | append: isbn | append: "/cover.jpg" %}
 
-<div class="book-card" data-title="{{ book.title | downcase }}" data-authors="{{ authors | downcase }}">
-  <a href="/books/{{ isbn }}/">
-    {% if book.cover_edition_key %}
-      <img src="{{ cover_local }}" alt="{{ book.title }}" loading="lazy"
-           onerror="this.src='https://covers.openlibrary.org/b/id/{{ book.cover_i }}-M.jpg'">
-    {% elsif book.cover_i %}
-      <img src="https://covers.openlibrary.org/b/id/{{ book.cover_i }}-M.jpg" alt="{{ book.title }}" loading="lazy">
-    {% else %}
-      <div class="book-cover-placeholder">No cover</div>
-    {% endif %}
-    <h3>{{ book.title }}</h3>
-    {% if authors != "" %}
-      <p class="book-author">{{ authors }}</p>
-    {% endif %}
-  </a>
+  <div class="book-card" data-title="{{ book.title | downcase }}" data-authors="{{ authors | downcase }}">
+    <a href="/books/{{ isbn }}/">
+      {% if book.cover_edition_key %}
+        <img src="{{ cover_local }}" alt="{{ book.title }}" loading="lazy"
+            onerror="this.src='https://covers.openlibrary.org/b/id/{{ book.cover_i }}-M.jpg'">
+      {% elsif book.cover_i %}
+        <img src="https://covers.openlibrary.org/b/id/{{ book.cover_i }}-M.jpg" alt="{{ book.title }}" loading="lazy">
+      {% else %}
+        <div class="book-cover-placeholder">No cover</div>
+      {% endif %}
+      <h3>{{ book.title }}</h3>
+      {% if authors != "" %}
+        <p class="book-author">{{ authors }}</p>
+      {% endif %}
+    </a>
+  </div>
 </div>
-
 {% endfor %}
 
 <p id="no-results" style="display:none">No books match your search.</p>
