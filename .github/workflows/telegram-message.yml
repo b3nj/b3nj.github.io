@@ -9,16 +9,26 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 2
 
-    - name: Get Commit Details
-      id: commit-info
+    - name: Get commit details
       run: |
-        # Extract commit details
         echo "COMMIT_MESSAGE=$(git log -1 --pretty=format:'%s')" >> $GITHUB_ENV
         echo "COMMIT_AUTHOR=$(git log -1 --pretty=format:'%an')" >> $GITHUB_ENV
-        COMMIT_URL=${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}
-        echo "COMMIT_URL=${COMMIT_URL}" >> $GITHUB_ENV
+        echo "COMMIT_SHA=$(git log -1 --pretty=format:'%h')" >> $GITHUB_ENV
+        echo "COMMIT_DATE=$(git log -1 --pretty=format:'%cd' --date=format:'%d %b %Y %H:%M')" >> $GITHUB_ENV
+        # Guard: if HEAD~1 doesn't exist (first commit), fall back to empty
+        if git rev-parse HEAD~1 >/dev/null 2>&1; then
+          echo "FILES_CHANGED=true" >> $GITHUB_ENV
+        else
+          echo "FILES_CHANGED=false" >> $GITHUB_ENV
+        fi
+        echo "COMMIT_URL=${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}" >> $GITHUB_ENV
+        BRANCH_NAME=${GITHUB_REF#refs/heads/}
+        echo "BRANCH_NAME=${BRANCH_NAME}" >> $GITHUB_ENV
+        echo "SITE_URL=https://bkraft.fr" >> $GITHUB_ENV
 
     - name: Get Branch Name
       id: branch-name
