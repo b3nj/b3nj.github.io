@@ -14,7 +14,9 @@ permalink: /books/
 
 {% assign isbn13 = "" %}
 {% for i in book.isbn %}
-  {% if i.size == 13 %}{% assign isbn13 = i %}{% endif %}
+  {% if i.size == 13 and isbn13 == "" %}
+    {% assign isbn13 = i %}
+  {% endif %}
 {% endfor %}
 {% assign isbn = isbn13 | default: book.isbn[0] %}
 
