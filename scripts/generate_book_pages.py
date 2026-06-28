@@ -32,8 +32,21 @@ def main():
 
     for i, book in enumerate(books):
         try:
+            # Prefer ISBN-13 (13 digits) over ISBN-10
             isbn_list = book.get("isbn", [])
-            isbn = isbn_list[0] if isbn_list else None
+            isbn = next((i for i in isbn_list if len(i) == 13), None) or (isbn_list[0] if isbn_list else None)
+
+            page_dir = os.path.join(OUTPUT_DIR, isbn if isbn else slug)
+
+            # Rename any existing folder that used a different ISBN
+            if isbn_list:
+                for old_isbn in isbn_list:
+                    old_dir = os.path.join(OUTPUT_DIR, old_isbn)
+                    if old_dir != page_dir and os.path.exists(old_dir):
+                        print(f"    ↩ Renaming {old_dir} → {page_dir}")
+                        os.rename(old_dir, page_dir)
+                        break
+
             title = book.get("title", "Untitled")
             slug = slugify(title) or isbn or "unknown"
             page_dir = os.path.join(OUTPUT_DIR, isbn if isbn else slug)
