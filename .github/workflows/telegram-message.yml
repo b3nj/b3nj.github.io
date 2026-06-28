@@ -8,31 +8,55 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
 
-    - name: Get Commit Details
-      id: commit-info
-      run: |
-        # Extract commit details
-        echo "COMMIT_MESSAGE=$(git log -1 --pretty=format:'%s')" >> $GITHUB_ENV
-        echo "COMMIT_AUTHOR=$(git log -1 --pretty=format:'%an')" >> $GITHUB_ENV
-        COMMIT_URL=${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}
-        echo "COMMIT_URL=${COMMIT_URL}" >> $GITHUB_ENV
+      - name: Get commit details
+        run: |
+          echo "COMMIT_MESSAGE=$(git log -1 --pretty=format:'%s')" >> $GITHUB_ENV
+          echo "COMMIT_AUTHOR=$(git log -1 --pretty=format:'%an')" >> $GITHUB_ENV
+          echo "COMMIT_SHA=$(git log -1 --pretty=format:'%h')" >> $GITHUB_ENV
+          echo "COMMIT_DATE=$(git log -1 --pretty=format:'%cd' --date=format:'%d %b %Y %H:%M')" >> $GITHUB_ENV
+          echo "FILES_CHANGED=$(git diff --name-only HEAD~1 HEAD | head -10 | tr '\n' '\n' | sed 's/^/• /' | tr '\n' '|' | sed 's/|$//')" >> $GITHUB_ENV
+          echo "COMMIT_URL=${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}" >> $GITHUB_ENV
+          echo "REPO_URL=${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}" >> $GITHUB_ENV
+          BRANCH_NAME=${GITHUB_REF#refs/heads/}
+          echo "BRANCH_NAME=${BRANCH_NAME}" >> $GITHUB_ENV
+          echo "SITE_URL=https://bkraft.fr" >> $GITHUB_ENV
 
-    - name: Get Branch Name
-      id: branch-name
-      run: |
-        # Extract the branch name from GITHUB_REF
-        BRANCH_NAME=${GITHUB_REF#refs/heads/}
-        echo "BRANCH_NAME=${BRANCH_NAME}" >> $GITHUB_ENV
+      - name: Send Telegram message
+        env:
+          TELEGRAM_API_TOKEN: ${{ secrets.TELEGRAM_API_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          FILES_LIST=$(git diff --name-only HEAD~1 HEAD | head -10 | sed 's/^/• /' | tr '\n' '\n')
 
-    - name: Send Telegram message
-      env:
-        TELEGRAM_API_TOKEN: ${{ secrets.TELEGRAM_API_TOKEN }}
-        TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-      run: |
-        curl -s -X POST https://api.telegram.org/bot${TELEGRAM_API_TOKEN}/sendMessage \
-          -d chat_id=${TELEGRAM_CHAT_ID} \
-          -d parse_mode="Markdown" \
-          -d text="🚀 New commit pushed to your repository in *${BRANCH_NAME}*. *Author*: \`${COMMIT_AUTHOR}\`. *Message*: \`${COMMIT_MESSAGE}\` [View Commit](${COMMIT_URL})."
+          MESSAGE=$(cat <<EOF
+          📦 *New push on \`${BRANCH_NAME}\`*
+
+          🗓 ${COMMIT_DATE}
+          👤 ${COMMIT_AUTHOR}
+          💬 ${COMMIT_MESSAGE}
+          🔖 \`${COMMIT_SHA}\`
+
+          📁 *Changed files:*
+          ${FILES_LIST}
+          EOF
+          )
+
+          curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_API_TOKEN}/sendMessage" \
+            -H "Content-Type: application/json" \
+            -d "{
+              \"chat_id\": \"${TELEGRAM_CHAT_ID}\",
+              \"parse_mode\": \"Markdown\",
+              \"text\": $(echo "$MESSAGE" | python3 -c 'import json,sys; print(json.dumps(sys.stdin.read()))'),
+              \"reply_markup\": {
+                \"inline_keyboard\": [[
+                  {\"text\": \"🔍 View commit\", \"url\": \"${COMMIT_URL}\"},
+                  {\"text\": \"📚 Open library\", \"url\": \"${SITE_URL}/books/\"},
+                  {\"text\": \"🌐 Open site\", \"url\": \"${SITE_URL}\"}
+                ]]
+              }
+            }"
