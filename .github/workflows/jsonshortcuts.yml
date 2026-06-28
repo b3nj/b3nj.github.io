@@ -36,8 +36,10 @@ jobs:
 
       - name: Commit and push
         run: |
+          TITLE=$(echo '${{ inputs.json_content }}' | jq -r '.title // "Unknown title"')
+          AUTHOR=$(echo '${{ inputs.json_content }}' | jq -r '.author_name[0] // "Unknown author"')
           git config --global user.email "benj@bkraft.fr"
           git config --global user.name "b3nj (via actions)"
           git add "${{ inputs.target_file }}"
-          git commit -m "Book import from Apple Shortcuts via Shortcuts"
+          git commit -m "📚 Add: ${TITLE} - ${AUTHOR}"
           git push
