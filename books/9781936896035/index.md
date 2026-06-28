@@ -140,5 +140,5 @@ public_scan_b: false
 trending_score_hourly_13: 0
 trending_score_hourly_20: 0
 trending_score_hourly_21: 0
-cover_local: /books/1936896044/cover.jpg
+cover_local: /books/9781936896035/cover.jpg
 ---

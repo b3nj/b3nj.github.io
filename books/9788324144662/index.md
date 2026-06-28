@@ -1463,5 +1463,5 @@ place_key:
 - middle_earth_(imaginary_place)
 - númenor
 - valinor
-cover_local: /books/0008669147/cover.jpg
+cover_local: /books/9788324144662/cover.jpg
 ---
