@@ -32,7 +32,43 @@ jobs:
         TELEGRAM_API_TOKEN: ${{ secrets.TELEGRAM_API_TOKEN }}
         TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       run: |
-        curl -s -X POST https://api.telegram.org/bot${TELEGRAM_API_TOKEN}/sendMessage \
-          -d chat_id=${TELEGRAM_CHAT_ID} \
-          -d parse_mode="Markdown" \
-          -d text="🚀 New commit pushed to your repository in *${BRANCH_NAME}*. *Author*: \`${COMMIT_AUTHOR}\`. *Message*: \`${COMMIT_MESSAGE}\` [View Commit](${COMMIT_URL})."
+        FILES_LIST=$(git diff --name-only HEAD~1 HEAD | head -10 | sed 's/^/• /' | python3 -c '
+        import sys, html
+        for line in sys.stdin:
+            print(html.escape(line.rstrip()))
+        ' | tr '\n' '\n')
+
+        MESSAGE=$(python3 -c "
+        import sys, html, os
+
+        branch   = html.escape(os.environ.get('BRANCH_NAME',''))
+        date     = html.escape(os.environ.get('COMMIT_DATE',''))
+        author   = html.escape(os.environ.get('COMMIT_AUTHOR',''))
+        message  = html.escape(os.environ.get('COMMIT_MESSAGE',''))
+        sha      = html.escape(os.environ.get('COMMIT_SHA',''))
+
+        print(f'''📦 <b>New push on <code>{branch}</code></b>
+
+        🗓 {date}
+        👤 {author}
+        💬 {message}
+        🔖 <code>{sha}</code>
+
+        📁 <b>Changed files:</b>
+        $FILES_LIST''')
+        ")
+
+        curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_API_TOKEN}/sendMessage" \
+          -H "Content-Type: application/json" \
+          -d "{
+            \"chat_id\": \"${TELEGRAM_CHAT_ID}\",
+            \"parse_mode\": \"HTML\",
+            \"text\": $(echo "$MESSAGE" | python3 -c 'import json,sys; print(json.dumps(sys.stdin.read()))'),
+            \"reply_markup\": {
+              \"inline_keyboard\": [[
+                {\"text\": \"🔍 View commit\", \"url\": \"${COMMIT_URL}\"},
+                {\"text\": \"📚 Open library\", \"url\": \"${SITE_URL}/books/\"},
+                {\"text\": \"🌐 Open site\", \"url\": \"${SITE_URL}\"}
+              ]]
+            }
+          }"
