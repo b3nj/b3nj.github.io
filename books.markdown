@@ -37,8 +37,9 @@ permalink: /books/
       {% endif %}
     </a>
   </div>
-</div>
 {% endfor %}
+</div>
+
 
 <p id="no-results" style="display:none">No books match your search.</p>
 
