@@ -1155,6 +1155,8 @@
     "panelizationSummary": {
       "containsImageBubbles": false,
       "containsEpubBubbles": false
-    }
+    },
+    "slug": "oedipe",
+    "cover_local": "/books/oedipe/cover.jpg"
   }
 ]
