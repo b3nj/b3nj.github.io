@@ -314,5 +314,42 @@
     "previewLink": "http://books.google.fr/books?id=xxZoSgAACAAJ&dq=isbn:9782277217688&hl=&cd=1&source=gbs_api",
     "slug": "blade-runner",
     "cover_local": "/books/blade-runner/cover.jpg"
+  },
+  {
+    "description": "\" C était le reflet vampirique de la pourriture, des temps disparus et de la désolation; le phantasme, putride et gras d égouttures, d une révélation pernicieuse dont la terre pitoyable aurait dû pour toujours masquer l apparence nue. Dieu sait que cette chose n était pas de ce monde - ou n était plus de ce monde - et pourtant au sein de mon effroi, je pus reconnaître dans sa matière rongée, rognée, où transparaissaient des os, comme un grotesque et ricanant travesti de la forme humaine. Il y avait, dans cet appareil pourrissant et décomposé, une sorte de qualité innommable qui me glaça encore plus. \"",
+    "categories": [
+      "Fiction"
+    ],
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "averageRating": 4,
+    "contentVersion": "preview-1.0.0",
+    "infoLink": "http://books.google.fr/books?id=3UOXGAAACAAJ&dq=isbn:9782070421206&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Je_suis_d_ailleurs.html?hl=&id=3UOXGAAACAAJ",
+    "authors": [
+      "Howard Phillips Lovecraft"
+    ],
+    "publishedDate": "2002-01",
+    "title": "Je suis d ailleurs",
+    "publisher": "Gallimard Education",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2070421201"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782070421206"
+      }
+    ],
+    "printType": "BOOK",
+    "ratingsCount": 1,
+    "pageCount": 237,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=3UOXGAAACAAJ&dq=isbn:9782070421206&hl=&cd=1&source=gbs_api"
   }
 ]
