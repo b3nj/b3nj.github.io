@@ -1036,6 +1036,8 @@
     "panelizationSummary": {
       "containsImageBubbles": false,
       "containsEpubBubbles": false
-    }
+    },
+    "slug": "time-corridor",
+    "cover_local": "/books/time-corridor/cover.jpg"
   }
 ]
