@@ -744,5 +744,41 @@
     "previewLink": "http://books.google.fr/books?id=Nt6dPQAACAAJ&dq=isbn:9782070416172&hl=&cd=1&source=gbs_api",
     "slug": "dans-l-abîme-du-temps",
     "cover_local": "/books/dans-l-abîme-du-temps/cover.jpg"
+  },
+  {
+    "description": "Cryogénisé à sa mort, le très puissant et richissime Louis Sarapis n a pu être ranimé ; pourtant, il continue à diriger son entreprise et à intervenir dans la vie politique américaine ! Impossible de téléphoner, d écouter la radio, de lire le journal ou d allumer la télévision sans entendre ses paroles venues de l espace. Grand écrivain de l imaginaire, Philip K Dick abolit les frontières entre la vie et la mort, la réalité et la fiction.",
+    "categories": [
+      "Fiction"
+    ],
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "contentVersion": "preview-1.0.0",
+    "infoLink": "http://books.google.fr/books?id=1nRPKAAACAAJ&dq=isbn:9782070337590&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Ce_que_disent_les_morts.html?hl=&id=1nRPKAAACAAJ",
+    "authors": [
+      "Philip K. Dick",
+      "Hélène Collon"
+    ],
+    "publishedDate": "2006",
+    "title": "Ce que disent les morts",
+    "publisher": "Gallimard Education",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2070337596"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782070337590"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "pageCount": 124,
+    "allowAnonLogging": false,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=1nRPKAAACAAJ&dq=isbn:9782070337590&hl=&cd=1&source=gbs_api"
   }
 ]
