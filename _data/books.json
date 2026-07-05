@@ -456,6 +456,8 @@
     "allowAnonLogging": false,
     "pageCount": 250,
     "language": "fr",
-    "previewLink": "http://books.google.fr/books?id=6uGGAAAACAAJ&dq=isbn:9782277241331&hl=&cd=1&source=gbs_api"
+    "previewLink": "http://books.google.fr/books?id=6uGGAAAACAAJ&dq=isbn:9782277241331&hl=&cd=1&source=gbs_api",
+    "slug": "le-temps-désarticulé",
+    "cover_local": "/books/le-temps-désarticulé/cover.jpg"
   }
 ]
