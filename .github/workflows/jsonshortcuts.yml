@@ -30,11 +30,38 @@ jobs:
           token: ${{ secrets.GH_PAT }}
 
       - name: Append JSON to file
+        id: append
         run: |
           mkdir -p "$(dirname "${{ inputs.target_file }}")"
+
+          NEW_ISBN=$(echo '${{ inputs.json_content }}' | jq -r '
+            .industryIdentifiers // [] |
+            map(select(.type == "ISBN_13")) |
+            first | .identifier // ""
+          ')
+
+          EXISTS=$(jq --arg isbn "$NEW_ISBN" '
+            map(select(
+              .industryIdentifiers // [] |
+              map(select(.type == "ISBN_13" and .identifier == $isbn)) |
+              length > 0
+            )) | length
+          ' "${{ inputs.target_file }}")
+
+          if [ "$EXISTS" -gt "0" ]; then
+            echo "duplicate=true" >> $GITHUB_OUTPUT
+            echo "isbn=$NEW_ISBN" >> $GITHUB_OUTPUT
+            TITLE=$(echo '${{ inputs.json_content }}' | jq -r '.title // "Unknown title"')
+            echo "title=$TITLE" >> $GITHUB_OUTPUT
+            echo "Book with ISBN $NEW_ISBN already exists, skipping."
+            exit 0
+          fi
+
+          echo "duplicate=false" >> $GITHUB_OUTPUT
           jq '. += [${{ inputs.json_content }}]' "${{ inputs.target_file }}" > _data/tmp.json && mv _data/tmp.json "${{ inputs.target_file }}"
 
       - name: Commit and push
+        if: steps.append.outputs.duplicate == 'false'
         run: |
           TITLE=$(echo '${{ inputs.json_content }}' | jq -r '.title // "Unknown title"')
           AUTHOR=$(echo '${{ inputs.json_content }}' | jq -r '.authors[0] // "Unknown author"')
@@ -43,3 +70,50 @@ jobs:
           git add "${{ inputs.target_file }}"
           git commit -m "📚 Add: ${TITLE} - ${AUTHOR}"
           git push
+
+      - name: Notify duplicate via Telegram
+        if: steps.append.outputs.duplicate == 'true'
+        env:
+          TELEGRAM_API_TOKEN: ${{ secrets.TELEGRAM_API_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SITE_URL: https://bkraft.fr
+        run: |
+          python3 << 'EOF'
+          import json, os, re, urllib.request
+
+          def slugify(text):
+              text = re.sub(r"[^\w\s-]", "", text.lower())
+              return re.sub(r"[-\s]+", "-", text).strip("-")
+
+          title = "${{ steps.append.outputs.title }}"
+          isbn  = "${{ steps.append.outputs.isbn }}"
+          slug  = slugify(title)
+          site_url = os.environ.get("SITE_URL", "")
+          book_url = f"{site_url}/books/{slug}/" if slug else ""
+
+          message = (
+              f"📚 <b>{title}</b> is already in your library.\n"
+              f"🔖 <code>{isbn}</code>"
+          )
+
+          buttons = []
+          if book_url:
+              buttons.append({"text": "📖 View in library", "url": book_url})
+
+          payload = {
+              "chat_id": os.environ["TELEGRAM_CHAT_ID"],
+              "parse_mode": "HTML",
+              "text": message,
+              "reply_markup": {"inline_keyboard": [buttons]}
+          }
+
+          req = urllib.request.Request(
+              f"https://api.telegram.org/bot{os.environ['TELEGRAM_API_TOKEN']}/sendMessage",
+              data=json.dumps(payload).encode(),
+              headers={"Content-Type": "application/json"}
+          )
+
+          with urllib.request.urlopen(req) as resp:
+              result = json.loads(resp.read())
+              print("Telegram response:", result.get("ok"))
+          EOF
