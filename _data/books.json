@@ -820,5 +820,40 @@
     },
     "slug": "le-dieu-venu-du-centaure",
     "cover_local": "/books/le-dieu-venu-du-centaure/cover.jpg"
+  },
+  {
+    "description": "\" La ferme tout entière baignait dans cette couleur mêlée, inconnue et hideuse ; les arbres, les bâtiments, et même la verdure et l herbage qui n avaient pas complètement tourné à la fatale désintégration dans la grisaille. Les branches se tendaient toutes vers le ciel, coiffées de langues d un feu immonde, et des ruissellements chatoyants de ce même feu monstrueux se glissaient autour des poutres de faîtage de la maison, de la grange, des appentis. C était une scène inspirée d une vision de Füssli, et sur tout le reste régnait cette débauche de lumineuse inconsistance, cet arc-en-ciel hors du monde et hors mesure de secret poison, qui naissait du puits - bouillonnant, palpant, enveloppant, s étendant, scintillant, étreignant, et faisant malignement des bulles dans son cosmique et identifiable chromatisme. \"",
+    "categories": [
+      "Fiction"
+    ],
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "contentVersion": "preview-1.0.0",
+    "infoLink": "http://books.google.fr/books?id=6gvPPAAACAAJ&dq=isbn:9782070415809&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/La_couleur_tomb%C3%A9e_du_ciel.html?hl=&id=6gvPPAAACAAJ",
+    "authors": [
+      "Howard Phillips Lovecraft"
+    ],
+    "publishedDate": "2000",
+    "title": "La couleur tombée du ciel",
+    "publisher": "Gallimard Education",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2070415805"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782070415809"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "pageCount": 332,
+    "allowAnonLogging": false,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=6gvPPAAACAAJ&dq=isbn:9782070415809&hl=&cd=1&source=gbs_api"
   }
 ]
