@@ -931,5 +931,37 @@
     "previewLink": "http://books.google.fr/books?id=MIpgAAAACAAJ&dq=isbn:9782070426065&hl=&cd=1&source=gbs_api",
     "slug": "minority-report",
     "cover_local": "/books/minority-report/cover.jpg"
+  },
+  {
+    "description": "Au XXIIIe siècle, n importe qui peut accéder au pouvoir. Le dirigeant du monde, ou meneur de jeu, est désigné par tirage au sort. Et comme dans toute société ludique, ce sont les règles qui régissent la vie, le hasard venant régulièrement en remettre en cause le déroulement. C est ce que découvre Ted Benteley, un scientifique tout juste licencié, qui décide de prêter allégeance à Reese Verrick, le meneur de jeu. C est ce que découvre aussi Leon Cartwright, un électronicien que la grande loterie, ou \" bouteille \", vient de désigner comme nouveau meneur, alors qu il comptait quitter la Terre. Deux destins contrariés, deux destins liés. Car Verrick veut reprendre sa place. Benteley tombe bien...",
+    "contentVersion": "preview-1.0.0",
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "infoLink": "http://books.google.fr/books?id=Z_DbPAAACAAJ&dq=isbn:9782290332870&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Loterie_solaire.html?hl=&id=Z_DbPAAACAAJ",
+    "authors": [
+      "Philip Kindred Dick"
+    ],
+    "publishedDate": "2003",
+    "title": "Loterie solaire",
+    "publisher": "J ai lu",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2290332879"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782290332870"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "pageCount": 182,
+    "allowAnonLogging": false,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=Z_DbPAAACAAJ&dq=isbn:9782290332870&hl=&cd=1&source=gbs_api"
   }
 ]
