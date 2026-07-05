@@ -14,5 +14,4 @@ isbn: '9782266332576'
 canonical: https://books.google.com/books/about/Labyrinthes.html?hl=&id=yxuDzwEACAAJ
 thumbnail: https://covers.openlibrary.org/b/isbn/9782266332576-M.jpg
 slug: labyrinthes
-cover_local: /books/labyrinthes/cover.jpg
 ---
