@@ -24,11 +24,15 @@ def get_isbn(book):
 
 
 def get_cover_url(book):
-    """Extract cover thumbnail URL from Google Books imageLinks."""
     image_links = book.get("imageLinks", {})
     url = image_links.get("thumbnail") or image_links.get("smallThumbnail")
     if url:
         return url.replace("http://", "https://")
+    # Fallback: Open Library cover by ISBN
+    identifiers = book.get("industryIdentifiers", [])
+    isbn = next((e["identifier"] for e in identifiers if e.get("type") == "ISBN_13"), None)
+    if isbn:
+        return f"https://covers.openlibrary.org/b/isbn/{isbn}-M.jpg"
     return None
 
 
