@@ -599,5 +599,38 @@
     "previewLink": "http://books.google.fr/books?id=D9jPAAAACAAJ&dq=isbn:9782207304976&hl=&cd=1&source=gbs_api",
     "slug": "au-service-du-maître",
     "cover_local": "/books/au-service-du-maître/cover.jpg"
+  },
+  {
+    "infoLink": "http://books.google.fr/books?id=uX7VHAAACAAJ&dq=isbn:9782253057307&hl=&source=gbs_api",
+    "averageRating": 4,
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "contentVersion": "preview-1.0.0",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Les_marteaux_de_Vulcain.html?hl=&id=uX7VHAAACAAJ",
+    "authors": [
+      "Philip Kindred Dick"
+    ],
+    "publishedDate": "1991-01-01",
+    "title": "Les marteaux de Vulcain",
+    "publisher": "LGF/Le Livre de Poche",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2253057304"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782253057307"
+      }
+    ],
+    "printType": "BOOK",
+    "ratingsCount": 1,
+    "pageCount": 190,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=uX7VHAAACAAJ&dq=isbn:9782253057307&hl=&cd=1&source=gbs_api"
   }
 ]
