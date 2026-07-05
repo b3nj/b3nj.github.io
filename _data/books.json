@@ -1085,5 +1085,40 @@
     "description": "Two highly decorated Navy SEALs, now successful businessmen, demonstrate how to lead and win in business and in life with principles learned on the battlefield, in a revised edition that includes a new foreword, photo insert and Q-and-A section.",
     "slug": "extreme-ownership",
     "cover_local": "/books/extreme-ownership/cover.jpg"
+  },
+  {
+    "description": "\"Ô malheureuse enfant d un père malheureux !\" Bravant l interdit du roi de Thèbes, Antigone, fille d OEdipe, choisit d enterrer son frère rebelle, s exposant ainsi à la peine de mort. Il n y a pour elle aucune alternative : elle ne fait qu accomplir son devoir et prouve ainsi sa loyauté envers son parent et les dieux. Mais le roi Créon, son propre oncle, n a lui pas l intention de bafouer la loi des hommes, et condamne de fait sa nièce... La collection \"La Sagesse des mythes\" accueille ce texte fondateur de la philosophie qui illustre, selon le mot de Hegel, le conflit inéluctable et tragique de deux personnages \"unilatéraux\", c est-à-dire légitimes dans leurs vues mais incapables de comprendre, ou en tout cas d accepter, le point de vue de l autre.",
+    "contentVersion": "preview-1.0.0",
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "infoLink": "http://books.google.fr/books?id=kw-eswEACAAJ&dq=isbn:9782344012598&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Antigone.html?hl=&id=kw-eswEACAAJ",
+    "authors": [
+      "Luc Ferry"
+    ],
+    "publishedDate": "2017-11-08",
+    "title": "Antigone",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2344012591"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782344012598"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "pageCount": 56,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=kw-eswEACAAJ&dq=isbn:9782344012598&hl=&cd=1&source=gbs_api",
+    "panelizationSummary": {
+      "containsImageBubbles": false,
+      "containsEpubBubbles": false
+    }
   }
 ]
