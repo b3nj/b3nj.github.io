@@ -135,6 +135,23 @@ jobs:
           import urllib.request
           token = os.environ["TELEGRAM_API_TOKEN"]
 
-          if
+          if cover_url:
+              photo_payload = {**payload, "photo": cover_url, "caption": message}
+              photo_payload.pop("text", None)
+              req = urllib.request.Request(
+                  f"https://api.telegram.org/bot{token}/sendPhoto",
+                  data=json.dumps(photo_payload).encode(),
+                  headers={"Content-Type": "application/json"}
+              )
+          else:
+              req = urllib.request.Request(
+                  f"https://api.telegram.org/bot{token}/sendMessage",
+                  data=json.dumps(payload).encode(),
+                  headers={"Content-Type": "application/json"}
+              )
+
+          with urllib.request.urlopen(req) as resp:
+              result = json.loads(resp.read())
+              print("Telegram response:", result.get("ok"))
 
           EOF
