@@ -493,5 +493,40 @@
     "previewLink": "http://books.google.fr/books?id=BKU-PgAACAAJ&dq=isbn:9782266121026&hl=&cd=1&source=gbs_api",
     "slug": "le-silmarillion",
     "cover_local": "/books/le-silmarillion/cover.jpg"
+  },
+  {
+    "infoLink": "http://books.google.fr/books?id=yxuDzwEACAAJ&dq=isbn:9782266332576&hl=&source=gbs_api",
+    "contentVersion": "preview-1.0.0",
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "subtitle": "Roman",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Labyrinthes.html?hl=&id=yxuDzwEACAAJ",
+    "authors": [
+      "Franck Thilliez"
+    ],
+    "publishedDate": "2023-05",
+    "title": "Labyrinthes",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2266332570"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782266332576"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "pageCount": 0,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=yxuDzwEACAAJ&dq=isbn:9782266332576&hl=&cd=1&source=gbs_api",
+    "panelizationSummary": {
+      "containsImageBubbles": false,
+      "containsEpubBubbles": false
+    }
   }
 ]
