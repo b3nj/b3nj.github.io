@@ -311,6 +311,8 @@
     "pageCount": 250,
     "allowAnonLogging": false,
     "language": "fr",
-    "previewLink": "http://books.google.fr/books?id=xxZoSgAACAAJ&dq=isbn:9782277217688&hl=&cd=1&source=gbs_api"
+    "previewLink": "http://books.google.fr/books?id=xxZoSgAACAAJ&dq=isbn:9782277217688&hl=&cd=1&source=gbs_api",
+    "slug": "blade-runner",
+    "cover_local": "/books/blade-runner/cover.jpg"
   }
 ]
