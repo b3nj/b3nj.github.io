@@ -207,5 +207,39 @@
     "previewLink": "http://books.google.fr/books?id=qMBlAAAACAAJ&dq=isbn:9782277115632&hl=&cd=1&source=gbs_api",
     "slug": "d-bloodmoney",
     "cover_local": "/books/d-bloodmoney/cover.jpg"
+  },
+  {
+    "infoLink": "http://books.google.fr/books?id=JB9ftAEACAAJ&dq=isbn:9782266173933&hl=&source=gbs_api",
+    "categories": [
+      "Horror tales, American"
+    ],
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "subtitle": "Légendes du mythe de Cthulhu",
+    "contentVersion": "preview-1.0.0",
+    "canonicalVolumeLink": "https://books.google.com/books/about/H_P_Lovecraft_et_A_Derleth_pr%C3%A9sentent.html?hl=&id=JB9ftAEACAAJ",
+    "publishedDate": "1975",
+    "title": "H.P. Lovecraft et A. Derleth présentent",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2266173936"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782266173933"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=JB9ftAEACAAJ&dq=isbn:9782266173933&hl=&cd=1&source=gbs_api",
+    "panelizationSummary": {
+      "containsImageBubbles": false,
+      "containsEpubBubbles": false
+    }
   }
 ]
