@@ -243,5 +243,37 @@
     },
     "slug": "hp-lovecraft-et-a-derleth-présentent",
     "cover_local": "/books/hp-lovecraft-et-a-derleth-présentent/cover.jpg"
+  },
+  {
+    "infoLink": "http://books.google.fr/books?id=3vUbPQAACAAJ&dq=isbn:9782266173940&hl=&source=gbs_api",
+    "averageRating": 5,
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "contentVersion": "preview-1.0.0",
+    "canonicalVolumeLink": "https://books.google.com/books/about/La_chose_des_t%C3%A9n%C3%A8bres.html?hl=&id=3vUbPQAACAAJ",
+    "authors": [
+      "Howard Phillips Lovecraft"
+    ],
+    "publishedDate": "2007-11-14",
+    "title": "La chose des ténèbres",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2266173944"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782266173940"
+      }
+    ],
+    "printType": "BOOK",
+    "ratingsCount": 1,
+    "maturityRating": "NOT_MATURE",
+    "pageCount": 315,
+    "allowAnonLogging": false,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=3vUbPQAACAAJ&dq=isbn:9782266173940&hl=&cd=1&source=gbs_api"
   }
 ]
