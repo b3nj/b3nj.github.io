@@ -1003,5 +1003,39 @@
     "previewLink": "http://books.google.fr/books?id=6-GJPQAACAAJ&dq=isbn:9782207502389&hl=&cd=1&source=gbs_api",
     "slug": "deus-irae",
     "cover_local": "/books/deus-irae/cover.jpg"
+  },
+  {
+    "infoLink": "http://books.google.fr/books?id=cOM60AEACAAJ&dq=isbn:9782266334280&hl=&source=gbs_api",
+    "contentVersion": "preview-1.0.0",
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "canonicalVolumeLink": "https://books.google.com/books/about/Time_corridor.html?hl=&id=cOM60AEACAAJ",
+    "authors": [
+      "Dahlia Perez"
+    ],
+    "publishedDate": "2023-04-20",
+    "title": "Time corridor",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "226633428X"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782266334280"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "pageCount": 0,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=cOM60AEACAAJ&dq=isbn:9782266334280&hl=&cd=1&source=gbs_api",
+    "panelizationSummary": {
+      "containsImageBubbles": false,
+      "containsEpubBubbles": false
+    }
   }
 ]
