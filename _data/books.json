@@ -965,5 +965,41 @@
     "previewLink": "http://books.google.fr/books?id=Z_DbPAAACAAJ&dq=isbn:9782290332870&hl=&cd=1&source=gbs_api",
     "slug": "loterie-solaire",
     "cover_local": "/books/loterie-solaire/cover.jpg"
+  },
+  {
+    "description": "Après l holocauste qui a mis fin à la Troisième Guerre mondiale, deux Eglises se disputent les rares survivants et leurs descendants, devenus méconnaissables à force de mutations : celle du Bien et celle du Mal, qui vénère le Deus Irae, le Dieu de colère, celui qui a lâché sur le monde l horreur atomique. Mais comment faire le portrait du Dieu pour ranimer la foi de ses fidèles ? Un Michel-Ange sans bras ni jambes, Tibor McMasters, part à sa recherche à travers une Terre dévastée et semée d embûches : insectes géants, robots mégalomanes, sphinx électronique cherchant à attirer les humains dans un bain d acide, sans compter la menace que représente l Eglise rivale... Un voyage halluciné dans les univers conjugués de deux géants de la Science-Fiction.",
+    "averageRating": 5,
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "subtitle": "roman",
+    "contentVersion": "preview-1.0.0",
+    "infoLink": "http://books.google.fr/books?id=6-GJPQAACAAJ&dq=isbn:9782207502389&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Deus_irae.html?hl=&id=6-GJPQAACAAJ",
+    "authors": [
+      "Philip K. Dick",
+      "Roger Zelazny"
+    ],
+    "publishedDate": "1997",
+    "title": "Deus irae",
+    "publisher": "Editions Denoël",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2207502384"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782207502389"
+      }
+    ],
+    "printType": "BOOK",
+    "ratingsCount": 1,
+    "pageCount": 255,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=6-GJPQAACAAJ&dq=isbn:9782207502389&hl=&cd=1&source=gbs_api"
   }
 ]
