@@ -857,5 +857,40 @@
     "previewLink": "http://books.google.fr/books?id=6gvPPAAACAAJ&dq=isbn:9782070415809&hl=&cd=1&source=gbs_api",
     "slug": "la-couleur-tombée-du-ciel",
     "cover_local": "/books/la-couleur-tombée-du-ciel/cover.jpg"
+  },
+  {
+    "description": "Washington, 2054. John Anderton est membre de Précrime, une unité gouvernementale utilisant les dons de prescience de trois mutants, les précogs, pour arrêter les criminels avant leur passage à l acte. Avant même qu ils aient imaginé de passer à l acte. Anderton a une confiance aveugle dans les prédictions des précogs. Mais quand, chasseur devenu gibier, il se retrouvera lui-même accusé du meurtre d un homme qu il n a jamais rencontré, il lui faudra découvrir les véritables rouages de Précrime pour prouver son innocence. Après Blade Runner, le chefs-d œuvre de Ridley Scott, l œuvre de Philip K. Dick a inspiré quatre des films de science-fiction les plus remarquables de ces dernières années : Total Recall, Planète hurlante, Impostor, et Minority Report. Réunies dans ce recueil à l occasion de l adaptation par Steven Spielberg de \" Rapport minoritaire \", les nouvelles à l origine de ces longs-métrages illustrent l imaginaire exceptionnel de l auteur de Substance Mort.",
+    "averageRating": 5,
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "subtitle": "et autres récits",
+    "contentVersion": "preview-1.0.0",
+    "infoLink": "http://books.google.fr/books?id=MIpgAAAACAAJ&dq=isbn:9782070426065&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Minority_Report.html?hl=&id=MIpgAAAACAAJ",
+    "authors": [
+      "Philip K. Dick"
+    ],
+    "publishedDate": "2002",
+    "title": "Minority Report",
+    "publisher": "Editions Gallimard",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2070426068"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782070426065"
+      }
+    ],
+    "printType": "BOOK",
+    "ratingsCount": 1,
+    "pageCount": 436,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=MIpgAAAACAAJ&dq=isbn:9782070426065&hl=&cd=1&source=gbs_api"
   }
 ]
