@@ -129,5 +129,38 @@
       "containsImageBubbles": false,
       "containsEpubBubbles": false
     }
+  },
+  {
+    "description": "A l endroit où je me trouvais, je voyais les flammes dévorer la maison. Je distinguais aussi, par intervalles, les Etres des profondeurs qui hurlaient désespérément avant de disparaître dans cet horrible braiser. Enfin, il y eut cette gigantesque créature qui se dressa au milieu du feu en agitant ses tentacules avant de retomber finalement dans le gouffre infernal en une longue et sinueuse colonne de chair, pour s évanouir sans laisser la moindre trace. Alors j entendis, comme tous ceux qui entouraient la villa, une voix qui chantait dans la nuit : - Ph nglui mglw nafh Cthulhu R lyeh wgagh nagl fhtagn ! On aurait dit un langage primitif, informe, à peine articulé, qui se rapprochait de plus en plus des cris d un animal et s élevait par moments jusqu à un ululement. La voix annonçait au monde entier que le Grand Cthulhu continuerait à attendre en rêvant dans le refuge subaquatique de R lyeh, cherchant des hommes et des femmes pour satisfaire ses volontés jusqu à l heure de sa résurrection.",
+    "contentVersion": "preview-1.0.0",
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "infoLink": "http://books.google.fr/books?id=WbxsGwAACAAJ&dq=isbn:9782266025300&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Le_Masque_de_Cthulhu.html?hl=&id=WbxsGwAACAAJ",
+    "authors": [
+      "Howard Phillips Lovecraft",
+      "August William Derleth"
+    ],
+    "publishedDate": "1985",
+    "title": "Le Masque de Cthulhu",
+    "publisher": "Pocket (FR)",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2266025309"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782266025300"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "pageCount": 239,
+    "allowAnonLogging": false,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=WbxsGwAACAAJ&dq=isbn:9782266025300&hl=&cd=1&source=gbs_api"
   }
 ]
