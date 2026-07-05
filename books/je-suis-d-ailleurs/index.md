@@ -20,6 +20,7 @@ categories:
 - Fiction
 isbn: '9782070421206'
 canonical: https://books.google.com/books/about/Je_suis_d_ailleurs.html?hl=&id=3UOXGAAACAAJ
-thumbnail: null
+thumbnail: https://covers.openlibrary.org/b/isbn/9782070421206-M.jpg
 slug: je-suis-d-ailleurs
+cover_local: /books/je-suis-d-ailleurs/cover.jpg
 ---

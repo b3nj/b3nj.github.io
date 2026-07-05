@@ -12,6 +12,7 @@ language: fr
 categories: []
 isbn: '9782207304976'
 canonical: https://books.google.com/books/about/Au_service_du_ma%C3%AEtre.html?hl=&id=D9jPAAAACAAJ
-thumbnail: null
+thumbnail: https://covers.openlibrary.org/b/isbn/9782207304976-M.jpg
 slug: au-service-du-maître
+cover_local: /books/au-service-du-maître/cover.jpg
 ---

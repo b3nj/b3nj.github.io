@@ -19,6 +19,7 @@ language: fr
 categories: []
 isbn: '9782266121026'
 canonical: https://books.google.com/books/about/Le_Silmarillion.html?hl=&id=BKU-PgAACAAJ
-thumbnail: null
+thumbnail: https://covers.openlibrary.org/b/isbn/9782266121026-M.jpg
 slug: le-silmarillion
+cover_local: /books/le-silmarillion/cover.jpg
 ---

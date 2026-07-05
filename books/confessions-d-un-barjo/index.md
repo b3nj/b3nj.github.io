@@ -17,6 +17,7 @@ language: fr
 categories: []
 isbn: '9782264041937'
 canonical: https://books.google.com/books/about/Confessions_d_un_barjo.html?hl=&id=bUOrGAAACAAJ
-thumbnail: null
+thumbnail: https://covers.openlibrary.org/b/isbn/9782264041937-M.jpg
 slug: confessions-d-un-barjo
+cover_local: /books/confessions-d-un-barjo/cover.jpg
 ---

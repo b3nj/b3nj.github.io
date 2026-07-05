@@ -12,6 +12,7 @@ language: fr
 categories: []
 isbn: '9782277241331'
 canonical: https://books.google.com/books/about/Le_temps_d%C3%A9sarticul%C3%A9.html?hl=&id=6uGGAAAACAAJ
-thumbnail: null
+thumbnail: https://covers.openlibrary.org/b/isbn/9782277241331-M.jpg
 slug: le-temps-désarticulé
+cover_local: /books/le-temps-désarticulé/cover.jpg
 ---

@@ -668,6 +668,8 @@
     "pageCount": 488,
     "allowAnonLogging": false,
     "language": "fr",
-    "previewLink": "http://books.google.fr/books?id=b27TAwAACAAJ&dq=isbn:9782070313716&hl=&cd=1&source=gbs_api"
+    "previewLink": "http://books.google.fr/books?id=b27TAwAACAAJ&dq=isbn:9782070313716&hl=&cd=1&source=gbs_api",
+    "slug": "paycheck-et-autres-recits",
+    "cover_local": "/books/paycheck-et-autres-recits/cover.jpg"
   }
 ]

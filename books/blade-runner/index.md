@@ -19,6 +19,7 @@ categories:
 - Robots
 isbn: '9782277217688'
 canonical: https://books.google.com/books/about/Blade_runner.html?hl=&id=xxZoSgAACAAJ
-thumbnail: null
+thumbnail: https://covers.openlibrary.org/b/isbn/9782277217688-M.jpg
 slug: blade-runner
+cover_local: /books/blade-runner/cover.jpg
 ---

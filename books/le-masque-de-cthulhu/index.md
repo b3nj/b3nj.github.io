@@ -25,6 +25,7 @@ language: fr
 categories: []
 isbn: '9782266025300'
 canonical: https://books.google.com/books/about/Le_Masque_de_Cthulhu.html?hl=&id=WbxsGwAACAAJ
-thumbnail: null
+thumbnail: https://covers.openlibrary.org/b/isbn/9782266025300-M.jpg
 slug: le-masque-de-cthulhu
+cover_local: /books/le-masque-de-cthulhu/cover.jpg
 ---

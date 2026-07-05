@@ -22,6 +22,7 @@ language: fr
 categories: []
 isbn: '9782344010761'
 canonical: https://books.google.com/books/about/Les_m%C3%A9saventures_du_roi_Midas.html?hl=&id=grJ8vgEACAAJ
-thumbnail: null
+thumbnail: https://covers.openlibrary.org/b/isbn/9782344010761-M.jpg
 slug: les-mésaventures-du-roi-midas
+cover_local: /books/les-mésaventures-du-roi-midas/cover.jpg
 ---

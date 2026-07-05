@@ -19,6 +19,7 @@ language: fr
 categories: []
 isbn: '9782917689349'
 canonical: https://books.google.com/books/about/Skin_Trade.html?hl=&id=Fap4tgAACAAJ
-thumbnail: null
+thumbnail: https://covers.openlibrary.org/b/isbn/9782917689349-M.jpg
 slug: skin-trade
+cover_local: /books/skin-trade/cover.jpg
 ---

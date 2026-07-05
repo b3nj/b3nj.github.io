@@ -19,6 +19,7 @@ categories:
 - Fiction
 isbn: '9782070424597'
 canonical: https://books.google.com/books/about/Par_del%C3%A0_le_mur_du_sommeil.html?hl=&id=hQcRAAAACAAJ
-thumbnail: null
+thumbnail: https://covers.openlibrary.org/b/isbn/9782070424597-M.jpg
 slug: par-delà-le-mur-du-sommeil
+cover_local: /books/par-delà-le-mur-du-sommeil/cover.jpg
 ---

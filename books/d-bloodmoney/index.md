@@ -21,6 +21,7 @@ language: fr
 categories: []
 isbn: '9782277115632'
 canonical: https://books.google.com/books/about/D_Bloodmoney.html?hl=&id=qMBlAAAACAAJ
-thumbnail: null
+thumbnail: https://covers.openlibrary.org/b/isbn/9782277115632-M.jpg
 slug: d-bloodmoney
+cover_local: /books/d-bloodmoney/cover.jpg
 ---
