@@ -962,6 +962,8 @@
     "pageCount": 182,
     "allowAnonLogging": false,
     "language": "fr",
-    "previewLink": "http://books.google.fr/books?id=Z_DbPAAACAAJ&dq=isbn:9782290332870&hl=&cd=1&source=gbs_api"
+    "previewLink": "http://books.google.fr/books?id=Z_DbPAAACAAJ&dq=isbn:9782290332870&hl=&cd=1&source=gbs_api",
+    "slug": "loterie-solaire",
+    "cover_local": "/books/loterie-solaire/cover.jpg"
   }
 ]
