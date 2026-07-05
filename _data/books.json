@@ -634,5 +634,40 @@
     "previewLink": "http://books.google.fr/books?id=uX7VHAAACAAJ&dq=isbn:9782253057307&hl=&cd=1&source=gbs_api",
     "slug": "les-marteaux-de-vulcain",
     "cover_local": "/books/les-marteaux-de-vulcain/cover.jpg"
+  },
+  {
+    "description": "Ingénieur de réputation mondiale, Michael Jennings travaille sur des projets top-secrets commandités par des sociétés de haute technologie. A l issue de chaque mission, sa mémoire à court terme est effacée pour l empêcher de divulguer la moindre information confidentielle. Puis un chèque substantiel lui est remis. Mais cette fois, l enveloppe ne contient pas d argent, juste quelques objets hétéroclites et sans valeur; et à en croire Rethrick, son dernier employeur, Jennings aurait lui-même renoncé par avance à ses honoraires habituels. Harcelé par un ennemi sans visage, Jennings n a que quelques heures pour recomposer le puzzle de sa vie et découvrir ce qui se cache derrière les murs de Rethrick Corporation...",
+    "categories": [
+      "Fiction"
+    ],
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "contentVersion": "preview-1.0.0",
+    "infoLink": "http://books.google.fr/books?id=b27TAwAACAAJ&dq=isbn:9782070313716&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Paycheck_Et_Autres_Recits.html?hl=&id=b27TAwAACAAJ",
+    "authors": [
+      "Philip K. Dick"
+    ],
+    "publishedDate": "2004",
+    "title": "Paycheck Et Autres Recits",
+    "publisher": "Gallimard Education",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2070313719"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782070313716"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "pageCount": 488,
+    "allowAnonLogging": false,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=b27TAwAACAAJ&dq=isbn:9782070313716&hl=&cd=1&source=gbs_api"
   }
 ]
