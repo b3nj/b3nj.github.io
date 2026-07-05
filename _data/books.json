@@ -162,5 +162,38 @@
     "allowAnonLogging": false,
     "language": "fr",
     "previewLink": "http://books.google.fr/books?id=WbxsGwAACAAJ&dq=isbn:9782266025300&hl=&cd=1&source=gbs_api"
+  },
+  {
+    "description": "Les bombes étaient finalement tombées. Malgré l équilibre de la terreur, un jour un homme avait été assez fou pour appuyer sur le bouton. Cependant, dans ce coin perdu de Californie, la vie continuait : pour Bonny Keller que six ans d analyse n avait pas réussi à rééquilibrer ; pour Bruno Bluthgeld, l un des responsables de la grande Catastrophe ; pour Hoppy, le phocomèle, l ancien bébé thalidomide... doté de pouvoirs supranormaux. Elle continuait pour Walt Dangerfield, l astronaute expédié vers Mars, mais dont la cabine s était satellisée autour de la Terre. Là, à l abri des radiations, il s était transformé en une sorte de superdisc-jockey dont l écoute était devenue une drogue pour tous les survivants. Mais peut-on réellement survivre dans un monde radioactif ?",
+    "averageRating": 5,
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "contentVersion": "preview-1.0.0",
+    "infoLink": "http://books.google.fr/books?id=qMBlAAAACAAJ&dq=isbn:9782277115632&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/D_Bloodmoney.html?hl=&id=qMBlAAAACAAJ",
+    "authors": [
+      "Philip K. Dick"
+    ],
+    "publishedDate": "1974-10-01",
+    "title": "D Bloodmoney",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2277115630"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782277115632"
+      }
+    ],
+    "printType": "BOOK",
+    "ratingsCount": 1,
+    "maturityRating": "NOT_MATURE",
+    "pageCount": 254,
+    "allowAnonLogging": false,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=qMBlAAAACAAJ&dq=isbn:9782277115632&hl=&cd=1&source=gbs_api"
   }
 ]
