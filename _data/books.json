@@ -741,6 +741,8 @@
     "pageCount": 381,
     "allowAnonLogging": false,
     "language": "fr",
-    "previewLink": "http://books.google.fr/books?id=Nt6dPQAACAAJ&dq=isbn:9782070416172&hl=&cd=1&source=gbs_api"
+    "previewLink": "http://books.google.fr/books?id=Nt6dPQAACAAJ&dq=isbn:9782070416172&hl=&cd=1&source=gbs_api",
+    "slug": "dans-l-abîme-du-temps",
+    "cover_local": "/books/dans-l-abîme-du-temps/cover.jpg"
   }
 ]
