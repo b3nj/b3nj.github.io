@@ -596,6 +596,8 @@
     "pageCount": 314,
     "allowAnonLogging": false,
     "language": "fr",
-    "previewLink": "http://books.google.fr/books?id=D9jPAAAACAAJ&dq=isbn:9782207304976&hl=&cd=1&source=gbs_api"
+    "previewLink": "http://books.google.fr/books?id=D9jPAAAACAAJ&dq=isbn:9782207304976&hl=&cd=1&source=gbs_api",
+    "slug": "au-service-du-maître",
+    "cover_local": "/books/au-service-du-maître/cover.jpg"
   }
 ]
