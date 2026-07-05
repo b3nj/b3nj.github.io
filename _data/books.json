@@ -527,6 +527,8 @@
     "panelizationSummary": {
       "containsImageBubbles": false,
       "containsEpubBubbles": false
-    }
+    },
+    "slug": "labyrinthes",
+    "cover_local": "/books/labyrinthes/cover.jpg"
   }
 ]
