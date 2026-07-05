@@ -782,5 +782,41 @@
     "previewLink": "http://books.google.fr/books?id=1nRPKAAACAAJ&dq=isbn:9782070337590&hl=&cd=1&source=gbs_api",
     "slug": "ce-que-disent-les-morts",
     "cover_local": "/books/ce-que-disent-les-morts/cover.jpg"
+  },
+  {
+    "description": "Que la terre, en ce lointain futur, soit chaque jour un peu plus torride - bientôt il faudra fuir la planète ! -, c est là une réalité indubitable. Le doute, en revanche, règne sur l identité des êtres. Qui est qui ? Tous drogués, devenus \" cognitifs \" et télépathes, les Terriens ne vivent plus que dans le fantasme et l illusion. Et Leo Bulero qui détient le secret de la \" poudre \" fait la loi. Jusqu au jour où il lui faut affronter Palmer Eldritch, un aventurier interplanétaire revenu du Centaure avec une nouvelle drogue cent fois plus puissante et dangereuse. Mais qui est ce terrifiant Palmer Eldritch aux yeux artificiels, aux bras mécaniques ? Un magicien fou ? Un dieu ? A moins qu il ne soit l Illusion même.",
+    "contentVersion": "preview-1.0.0",
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "infoLink": "http://books.google.fr/books?id=nSfpAQAACAAJ&dq=isbn:9782277213796&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Le_Dieu_venu_du_Centaure.html?hl=&id=nSfpAQAACAAJ",
+    "authors": [
+      "Philip K. Dick"
+    ],
+    "publishedDate": "1982",
+    "title": "Le Dieu venu du Centaure",
+    "publisher": "J ai Lu",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2277213799"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782277213796"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "pageCount": 283,
+    "allowAnonLogging": false,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=nSfpAQAACAAJ&dq=isbn:9782277213796&hl=&cd=1&source=gbs_api",
+    "panelizationSummary": {
+      "containsImageBubbles": false,
+      "containsEpubBubbles": false
+    }
   }
 ]
