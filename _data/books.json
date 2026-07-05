@@ -704,6 +704,8 @@
     "maturityRating": "NOT_MATURE",
     "allowAnonLogging": false,
     "language": "fr",
-    "previewLink": "http://books.google.fr/books?id=r9UePwAACAAJ&dq=isbn:9782290302484&hl=&cd=1&source=gbs_api"
+    "previewLink": "http://books.google.fr/books?id=r9UePwAACAAJ&dq=isbn:9782290302484&hl=&cd=1&source=gbs_api",
+    "slug": "le-maître-du-haut-château",
+    "cover_local": "/books/le-maître-du-haut-château/cover.jpg"
   }
 ]
