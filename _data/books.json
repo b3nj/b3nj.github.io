@@ -274,6 +274,8 @@
     "pageCount": 315,
     "allowAnonLogging": false,
     "language": "fr",
-    "previewLink": "http://books.google.fr/books?id=3vUbPQAACAAJ&dq=isbn:9782266173940&hl=&cd=1&source=gbs_api"
+    "previewLink": "http://books.google.fr/books?id=3vUbPQAACAAJ&dq=isbn:9782266173940&hl=&cd=1&source=gbs_api",
+    "slug": "la-chose-des-ténèbres",
+    "cover_local": "/books/la-chose-des-ténèbres/cover.jpg"
   }
 ]
