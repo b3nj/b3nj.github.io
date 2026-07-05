@@ -350,6 +350,8 @@
     "maturityRating": "NOT_MATURE",
     "allowAnonLogging": false,
     "language": "fr",
-    "previewLink": "http://books.google.fr/books?id=3UOXGAAACAAJ&dq=isbn:9782070421206&hl=&cd=1&source=gbs_api"
+    "previewLink": "http://books.google.fr/books?id=3UOXGAAACAAJ&dq=isbn:9782070421206&hl=&cd=1&source=gbs_api",
+    "slug": "je-suis-d-ailleurs",
+    "cover_local": "/books/je-suis-d-ailleurs/cover.jpg"
   }
 ]
