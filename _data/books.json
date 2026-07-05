@@ -530,5 +530,38 @@
     },
     "slug": "labyrinthes",
     "cover_local": "/books/labyrinthes/cover.jpg"
+  },
+  {
+    "infoLink": "http://books.google.fr/books?id=OUwpzwEACAAJ&dq=isbn:9782266323734&hl=&source=gbs_api",
+    "contentVersion": "preview-1.0.0",
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "canonicalVolumeLink": "https://books.google.com/books/about/Le_Passager_sans_visage.html?hl=&id=OUwpzwEACAAJ",
+    "authors": [
+      "Nicolas Beuglet"
+    ],
+    "publishedDate": "2022-09-22",
+    "title": "Le Passager sans visage",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2266323733"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782266323734"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=OUwpzwEACAAJ&dq=isbn:9782266323734&hl=&cd=1&source=gbs_api",
+    "panelizationSummary": {
+      "containsImageBubbles": false,
+      "containsEpubBubbles": false
+    }
   }
 ]
