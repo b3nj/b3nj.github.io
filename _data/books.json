@@ -565,5 +565,37 @@
     },
     "slug": "le-passager-sans-visage",
     "cover_local": "/books/le-passager-sans-visage/cover.jpg"
+  },
+  {
+    "infoLink": "http://books.google.fr/books?id=D9jPAAAACAAJ&dq=isbn:9782207304976&hl=&source=gbs_api",
+    "contentVersion": "preview-1.0.0",
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "subtitle": "nouvelles",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Au_service_du_ma%C3%AEtre.html?hl=&id=D9jPAAAACAAJ",
+    "authors": [
+      "Philip K. Dick"
+    ],
+    "publishedDate": "1989-01-01",
+    "title": "Au service du maître",
+    "publisher": "Editions Denoël",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2207304973"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782207304976"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "pageCount": 314,
+    "allowAnonLogging": false,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=D9jPAAAACAAJ&dq=isbn:9782207304976&hl=&cd=1&source=gbs_api"
   }
 ]
