@@ -854,6 +854,8 @@
     "pageCount": 332,
     "allowAnonLogging": false,
     "language": "fr",
-    "previewLink": "http://books.google.fr/books?id=6gvPPAAACAAJ&dq=isbn:9782070415809&hl=&cd=1&source=gbs_api"
+    "previewLink": "http://books.google.fr/books?id=6gvPPAAACAAJ&dq=isbn:9782070415809&hl=&cd=1&source=gbs_api",
+    "slug": "la-couleur-tombée-du-ciel",
+    "cover_local": "/books/la-couleur-tombée-du-ciel/cover.jpg"
   }
 ]
