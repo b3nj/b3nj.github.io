@@ -389,6 +389,8 @@
     "maturityRating": "NOT_MATURE",
     "allowAnonLogging": false,
     "language": "fr",
-    "previewLink": "http://books.google.fr/books?id=hQcRAAAACAAJ&dq=isbn:9782070424597&hl=&cd=1&source=gbs_api"
+    "previewLink": "http://books.google.fr/books?id=hQcRAAAACAAJ&dq=isbn:9782070424597&hl=&cd=1&source=gbs_api",
+    "slug": "par-delà-le-mur-du-sommeil",
+    "cover_local": "/books/par-delà-le-mur-du-sommeil/cover.jpg"
   }
 ]
