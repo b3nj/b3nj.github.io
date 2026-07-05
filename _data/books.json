@@ -1039,5 +1039,39 @@
     },
     "slug": "time-corridor",
     "cover_local": "/books/time-corridor/cover.jpg"
+  },
+  {
+    "infoLink": "http://books.google.fr/books?id=Q5sx0QEACAAJ&dq=isbn:9782253015543&hl=&source=gbs_api",
+    "contentVersion": "preview-1.0.0",
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "canonicalVolumeLink": "https://books.google.com/books/about/En_attendant_l_ann%C3%A9e_derni%C3%A8re.html?hl=&id=Q5sx0QEACAAJ",
+    "authors": [
+      "Philip K. Dick"
+    ],
+    "publishedDate": "1996",
+    "title": "En attendant l année dernière",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2253015547"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782253015543"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "pageCount": 0,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=Q5sx0QEACAAJ&dq=isbn:9782253015543&hl=&cd=1&source=gbs_api",
+    "panelizationSummary": {
+      "containsImageBubbles": false,
+      "containsEpubBubbles": false
+    }
   }
 ]
