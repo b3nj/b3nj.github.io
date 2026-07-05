@@ -115,6 +115,19 @@ def main():
 
     print("Done")
 
+    # Enrich books.json with slug and cover_local for Liquid templates
+    for book in books:
+        t = book.get("title", "Untitled")
+        s = slugify(t) or "unknown"
+        isbn, _ = get_isbn(book)
+        book["slug"] = s
+        book["cover_local"] = f"/books/{s}/cover.jpg"
+
+    with open(DATA_FILE, "w", encoding="utf-8") as f:
+        json.dump(books, f, ensure_ascii=False, indent=2)
+
+    print("books.json enriched with slug and cover_local")
+
 
 if __name__ == "__main__":
     main()
