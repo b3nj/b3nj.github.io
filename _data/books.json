@@ -1122,5 +1122,39 @@
     },
     "slug": "antigone",
     "cover_local": "/books/antigone/cover.jpg"
+  },
+  {
+    "infoLink": "http://books.google.fr/books?id=bNjhtwEACAAJ&dq=isbn:9782344012222&hl=&source=gbs_api",
+    "contentVersion": "preview-1.0.0",
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "canonicalVolumeLink": "https://books.google.com/books/about/Oedipe.html?hl=&id=bNjhtwEACAAJ",
+    "authors": [
+      "Luc Ferry"
+    ],
+    "publishedDate": "2018-05-30",
+    "title": "Oedipe",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2344012222"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782344012222"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "pageCount": 56,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=bNjhtwEACAAJ&dq=isbn:9782344012222&hl=&cd=1&source=gbs_api",
+    "panelizationSummary": {
+      "containsImageBubbles": false,
+      "containsEpubBubbles": false
+    }
   }
 ]
