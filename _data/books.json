@@ -928,6 +928,8 @@
     "maturityRating": "NOT_MATURE",
     "allowAnonLogging": false,
     "language": "fr",
-    "previewLink": "http://books.google.fr/books?id=MIpgAAAACAAJ&dq=isbn:9782070426065&hl=&cd=1&source=gbs_api"
+    "previewLink": "http://books.google.fr/books?id=MIpgAAAACAAJ&dq=isbn:9782070426065&hl=&cd=1&source=gbs_api",
+    "slug": "minority-report",
+    "cover_local": "/books/minority-report/cover.jpg"
   }
 ]
