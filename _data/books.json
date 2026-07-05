@@ -353,5 +353,42 @@
     "previewLink": "http://books.google.fr/books?id=3UOXGAAACAAJ&dq=isbn:9782070421206&hl=&cd=1&source=gbs_api",
     "slug": "je-suis-d-ailleurs",
     "cover_local": "/books/je-suis-d-ailleurs/cover.jpg"
+  },
+  {
+    "description": "\" Je t en dirai davantage plus tard - à présent j ai besoin d un long repos. Je te parlerai des horreurs interdites qu elle m a fait pénétrer - des horreurs séculaires qui suppurent encore aujourd hui dans des coins perdus, entretenues par quelques prêtres monstrueux. Il y a des gens qui savent sur l univers des secrets que nul ne devrait connaître, et qui sont capables de choses que nul ne devrait pouvoir faire. J y étais plongé jusqu au cou, mais c est fini. A présent, je brûlerais ce maudit Necronomicon et tout le reste... \"",
+    "categories": [
+      "Fiction"
+    ],
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "averageRating": 5,
+    "contentVersion": "preview-1.0.0",
+    "infoLink": "http://books.google.fr/books?id=hQcRAAAACAAJ&dq=isbn:9782070424597&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Par_del%C3%A0_le_mur_du_sommeil.html?hl=&id=hQcRAAAACAAJ",
+    "authors": [
+      "Howard Phillips Lovecraft"
+    ],
+    "publishedDate": "2002",
+    "title": "Par-delà le mur du sommeil",
+    "publisher": "Gallimard Education",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2070424596"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782070424597"
+      }
+    ],
+    "printType": "BOOK",
+    "ratingsCount": 1,
+    "pageCount": 333,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=hQcRAAAACAAJ&dq=isbn:9782070424597&hl=&cd=1&source=gbs_api"
   }
 ]
