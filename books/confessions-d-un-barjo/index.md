@@ -1,0 +1,33 @@
+---
+layout: book
+description: Jack Isidore, le barjo, est un naïf perdu dans l imaginaire. Fay Hume,
+  sa soeur, est une femme intelligente, séduisante et foncièrement égoïste, mariée
+  à Charley Hume, buveur de bière. Fay oriente son attention vers Nathan Anteil, intellectuel
+  marié et étudiant en droit. L existence de ces quatre personnages s enchevêtre alors
+  en une véritable critique de la raison pratique, version USA 1972.
+averageRating: 4
+readingModes:
+  image: false
+  text: false
+contentVersion: preview-1.0.0
+infoLink: http://books.google.fr/books?id=bUOrGAAACAAJ&dq=isbn:9782264041937&hl=&source=gbs_api
+canonicalVolumeLink: https://books.google.com/books/about/Confessions_d_un_barjo.html?hl=&id=bUOrGAAACAAJ
+authors:
+- Philip K. Dick
+- Janine Hérisson
+publishedDate: '2005'
+title: Confessions d un barjo
+publisher: 10/18
+industryIdentifiers:
+- type: ISBN_10
+  identifier: '2264041935'
+- type: ISBN_13
+  identifier: '9782264041937'
+printType: BOOK
+ratingsCount: 1
+pageCount: 313
+maturityRating: NOT_MATURE
+allowAnonLogging: false
+language: fr
+previewLink: http://books.google.fr/books?id=bUOrGAAACAAJ&dq=isbn:9782264041937&hl=&cd=1&source=gbs_api
+---
