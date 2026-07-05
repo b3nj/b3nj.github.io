@@ -1038,5 +1038,50 @@
     },
     "slug": "en-attendant-l-année-dernière",
     "cover_local": "/books/en-attendant-l-année-dernière/cover.jpg"
+  },
+  {
+    "publisher": "St. Martin s Press",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_13",
+        "identifier": "9781250183866"
+      },
+      {
+        "type": "ISBN_10",
+        "identifier": "1250183863"
+      }
+    ],
+    "title": "Extreme Ownership",
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "language": "en",
+    "infoLink": "http://books.google.fr/books?id=RNA3DwAAQBAJ&dq=isbn:9781250183866&hl=&source=gbs_api",
+    "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=RNA3DwAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=RNA3DwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "panelizationSummary": {
+      "containsImageBubbles": false,
+      "containsEpubBubbles": false
+    },
+    "allowAnonLogging": false,
+    "printType": "BOOK",
+    "authors": [
+      "Jocko Willink",
+      "Leif Babin"
+    ],
+    "pageCount": 351,
+    "subtitle": "How U.S. Navy SEALs Lead and Win (New Edition)",
+    "maturityRating": "NOT_MATURE",
+    "contentVersion": "0.1.3.0.preview.0",
+    "publishedDate": "2017-11-21",
+    "previewLink": "http://books.google.fr/books?id=RNA3DwAAQBAJ&dq=isbn:9781250183866&hl=&cd=1&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Extreme_Ownership.html?hl=&id=RNA3DwAAQBAJ",
+    "categories": [
+      "Biography & Autobiography"
+    ],
+    "description": "Two highly decorated Navy SEALs, now successful businessmen, demonstrate how to lead and win in business and in life with principles learned on the battlefield, in a revised edition that includes a new foreword, photo insert and Q-and-A section."
   }
 ]
