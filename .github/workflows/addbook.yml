@@ -63,6 +63,11 @@ jobs:
           def slugify(text):
               text = re.sub(r"[^\w\s-]", "", text.lower())
               return re.sub(r"[-\s]+", "-", text).strip("-")
+          
+          def get_isbn(book):
+              identifiers = book.get("industryIdentifiers", [])
+              return next((e["identifier"] for e in identifiers if e.get("type") == "ISBN_13"), None) or \
+                    next((e["identifier"] for e in identifiers if e.get("type") == "ISBN_10"), None)
 
           # Find the book that was added by diffing books.json
           old = subprocess.run(
@@ -78,8 +83,8 @@ jobs:
           new_books = json.loads(new.stdout)
 
           # Dedup by Google Books volume id
-          old_ids = {b.get("id") for b in old_books}
-          added = [b for b in new_books if b.get("id") not in old_ids]
+          old_isbns = {get_isbn(b) for b in old_books}
+          added = [b for b in new_books if get_isbn(b) not in old_isbns]
 
           if not added:
               print("No new book detected, skipping notification")
