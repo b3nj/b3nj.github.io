@@ -1119,6 +1119,8 @@
     "panelizationSummary": {
       "containsImageBubbles": false,
       "containsEpubBubbles": false
-    }
+    },
+    "slug": "antigone",
+    "cover_local": "/books/antigone/cover.jpg"
   }
 ]
