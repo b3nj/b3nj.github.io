@@ -86,6 +86,12 @@ jobs:
           old_isbns = {get_isbn(b) for b in old_books}
           added = [b for b in new_books if get_isbn(b) not in old_isbns]
 
+          print(f"HEAD~2 returncode: {old.returncode}")
+          print(f"HEAD~1 returncode: {new.returncode}")
+          print(f"old_isbns: {old_isbns}")
+          print(f"new isbns: {[get_isbn(b) for b in new_books]}")
+          print(f"added count: {len(added)}")
+
           if not added:
               print("No new book detected, skipping notification")
               exit(0)
