@@ -459,5 +459,37 @@
     "previewLink": "http://books.google.fr/books?id=6uGGAAAACAAJ&dq=isbn:9782277241331&hl=&cd=1&source=gbs_api",
     "slug": "le-temps-désarticulé",
     "cover_local": "/books/le-temps-désarticulé/cover.jpg"
+  },
+  {
+    "description": "Les Premiers jours du Monde étaient à peine passés quand Fëanor, le plus doué des elfes, créa les trois Silmarils. Ces bijoux renfermaient la Lumière des Deux Arbres de Valinor. Morgoth, le premier Prince de la Nuit, était encore sur la Terre du Milieu, et il fut fâché d apprendre que la Lumière allait se perpétuer. Alors il enleva les Silmarils, les fit sertir dans son diadème et garder dans la forteresse d Angband. Les elfes prirent les armes pour reprendre les joyaux et ce fut la première de toutes les guerres. Longtemps, longtemps après, lors de la Guerre de l Anneau, Elrond et Galadriel en parlaient encore.",
+    "contentVersion": "preview-1.0.0",
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "infoLink": "http://books.google.fr/books?id=BKU-PgAACAAJ&dq=isbn:9782266121026&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Le_Silmarillion.html?hl=&id=BKU-PgAACAAJ",
+    "authors": [
+      "J. R. R. Tolkien"
+    ],
+    "publishedDate": "2002-03-01",
+    "title": "Le Silmarillion",
+    "publisher": "Distribooks",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2266121022"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782266121026"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "pageCount": 478,
+    "allowAnonLogging": false,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=BKU-PgAACAAJ&dq=isbn:9782266121026&hl=&cd=1&source=gbs_api"
   }
 ]
