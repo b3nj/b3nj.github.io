@@ -32,7 +32,9 @@
     "maturityRating": "NOT_MATURE",
     "allowAnonLogging": false,
     "language": "fr",
-    "previewLink": "http://books.google.fr/books?id=bUOrGAAACAAJ&dq=isbn:9782264041937&hl=&cd=1&source=gbs_api"
+    "previewLink": "http://books.google.fr/books?id=bUOrGAAACAAJ&dq=isbn:9782264041937&hl=&cd=1&source=gbs_api",
+    "slug": "confessions-d-un-barjo",
+    "cover_local": "/books/confessions-d-un-barjo/cover.jpg"
   },
   {
     "description": "Il fût un temps où cette ville était au centre du monde. Un temps où sa puissance se nourrissait du sang et du fer. Mais aujourd hui elle n est plus que rouille et elle attend la ruine. C est un territoire parfait pour Willie Flambeaux et Randi Wade. Lui est agent de recouvrement, elle, détective. Mais lorsqu une série de meurtres particulièrement atroces ensanglante cette ville qu ils croyaient si bien connaître, ce n est plus dans dans le labyrinthe des rues qu ils auront à mener l enquête, mais dans les recoins les plus sombres de leurs propres passés. Là où se cachent leurs plus grandes peurs.",
@@ -63,7 +65,9 @@
     "allowAnonLogging": false,
     "pageCount": 196,
     "language": "fr",
-    "previewLink": "http://books.google.fr/books?id=Fap4tgAACAAJ&dq=isbn:9782917689349&hl=&cd=1&source=gbs_api"
+    "previewLink": "http://books.google.fr/books?id=Fap4tgAACAAJ&dq=isbn:9782917689349&hl=&cd=1&source=gbs_api",
+    "slug": "skin-trade",
+    "cover_local": "/books/skin-trade/cover.jpg"
   },
   {
     "infoLink": "http://books.google.fr/books?id=L9q9HAAACAAJ&dq=isbn:9782253043119&hl=&source=gbs_api",
@@ -93,7 +97,9 @@
     "allowAnonLogging": false,
     "pageCount": 219,
     "language": "fr",
-    "previewLink": "http://books.google.fr/books?id=L9q9HAAACAAJ&dq=isbn:9782253043119&hl=&cd=1&source=gbs_api"
+    "previewLink": "http://books.google.fr/books?id=L9q9HAAACAAJ&dq=isbn:9782253043119&hl=&cd=1&source=gbs_api",
+    "slug": "au-bout-du-labyrinthe",
+    "cover_local": "/books/au-bout-du-labyrinthe/cover.jpg"
   },
   {
     "description": "L argent ne fait pas le bonheur. L or non plus... Royaume de Phrygie. Perdu dans la forêt, un satyre est mis aux fers à cause de son apparence hideuse. Il est cependant très vite libéré par le roi Midas qui reconnait en lui Silène, le père adoptif de Dionysos. En remerciement pour son geste, le dieu de la vigne et des excès octroie alors au sauveur de son compagnon le voeu de son choix. Naïf et avide de richesses, Midas choisit d obtenir le toucher d or, sans imaginer les effets pervers d un tel pouvoir... En effet, comment boire ou se nourrir si tout ce que l on touche se transforme instantanément en or ? Personnage emblématique de la mythologie grecque, Midas illustre par ses mésaventures les conséquences néfastes de l hybris et forme une critique contre l accumulation de richesse, contradictoire avec la notion de bonheur dans la philosophie grecque.",
@@ -128,7 +134,9 @@
     "panelizationSummary": {
       "containsImageBubbles": false,
       "containsEpubBubbles": false
-    }
+    },
+    "slug": "les-mésaventures-du-roi-midas",
+    "cover_local": "/books/les-mésaventures-du-roi-midas/cover.jpg"
   },
   {
     "description": "A l endroit où je me trouvais, je voyais les flammes dévorer la maison. Je distinguais aussi, par intervalles, les Etres des profondeurs qui hurlaient désespérément avant de disparaître dans cet horrible braiser. Enfin, il y eut cette gigantesque créature qui se dressa au milieu du feu en agitant ses tentacules avant de retomber finalement dans le gouffre infernal en une longue et sinueuse colonne de chair, pour s évanouir sans laisser la moindre trace. Alors j entendis, comme tous ceux qui entouraient la villa, une voix qui chantait dans la nuit : - Ph nglui mglw nafh Cthulhu R lyeh wgagh nagl fhtagn ! On aurait dit un langage primitif, informe, à peine articulé, qui se rapprochait de plus en plus des cris d un animal et s élevait par moments jusqu à un ululement. La voix annonçait au monde entier que le Grand Cthulhu continuerait à attendre en rêvant dans le refuge subaquatique de R lyeh, cherchant des hommes et des femmes pour satisfaire ses volontés jusqu à l heure de sa résurrection.",
@@ -161,7 +169,9 @@
     "pageCount": 239,
     "allowAnonLogging": false,
     "language": "fr",
-    "previewLink": "http://books.google.fr/books?id=WbxsGwAACAAJ&dq=isbn:9782266025300&hl=&cd=1&source=gbs_api"
+    "previewLink": "http://books.google.fr/books?id=WbxsGwAACAAJ&dq=isbn:9782266025300&hl=&cd=1&source=gbs_api",
+    "slug": "le-masque-de-cthulhu",
+    "cover_local": "/books/le-masque-de-cthulhu/cover.jpg"
   },
   {
     "description": "Les bombes étaient finalement tombées. Malgré l équilibre de la terreur, un jour un homme avait été assez fou pour appuyer sur le bouton. Cependant, dans ce coin perdu de Californie, la vie continuait : pour Bonny Keller que six ans d analyse n avait pas réussi à rééquilibrer ; pour Bruno Bluthgeld, l un des responsables de la grande Catastrophe ; pour Hoppy, le phocomèle, l ancien bébé thalidomide... doté de pouvoirs supranormaux. Elle continuait pour Walt Dangerfield, l astronaute expédié vers Mars, mais dont la cabine s était satellisée autour de la Terre. Là, à l abri des radiations, il s était transformé en une sorte de superdisc-jockey dont l écoute était devenue une drogue pour tous les survivants. Mais peut-on réellement survivre dans un monde radioactif ?",
@@ -194,6 +204,8 @@
     "pageCount": 254,
     "allowAnonLogging": false,
     "language": "fr",
-    "previewLink": "http://books.google.fr/books?id=qMBlAAAACAAJ&dq=isbn:9782277115632&hl=&cd=1&source=gbs_api"
+    "previewLink": "http://books.google.fr/books?id=qMBlAAAACAAJ&dq=isbn:9782277115632&hl=&cd=1&source=gbs_api",
+    "slug": "d-bloodmoney",
+    "cover_local": "/books/d-bloodmoney/cover.jpg"
   }
 ]
