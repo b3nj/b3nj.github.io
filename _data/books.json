@@ -631,6 +631,8 @@
     "maturityRating": "NOT_MATURE",
     "allowAnonLogging": false,
     "language": "fr",
-    "previewLink": "http://books.google.fr/books?id=uX7VHAAACAAJ&dq=isbn:9782253057307&hl=&cd=1&source=gbs_api"
+    "previewLink": "http://books.google.fr/books?id=uX7VHAAACAAJ&dq=isbn:9782253057307&hl=&cd=1&source=gbs_api",
+    "slug": "les-marteaux-de-vulcain",
+    "cover_local": "/books/les-marteaux-de-vulcain/cover.jpg"
   }
 ]
