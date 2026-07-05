@@ -427,5 +427,35 @@
     "previewLink": "http://books.google.fr/books?id=VLPNPAAACAAJ&dq=isbn:9782207248980&hl=&cd=1&source=gbs_api",
     "slug": "le-crâne",
     "cover_local": "/books/le-crâne/cover.jpg"
+  },
+  {
+    "infoLink": "http://books.google.fr/books?id=6uGGAAAACAAJ&dq=isbn:9782277241331&hl=&source=gbs_api",
+    "contentVersion": "preview-1.0.0",
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "canonicalVolumeLink": "https://books.google.com/books/about/Le_temps_d%C3%A9sarticul%C3%A9.html?hl=&id=6uGGAAAACAAJ",
+    "authors": [
+      "Philip Kindred Dick"
+    ],
+    "publishedDate": "1996-12-01",
+    "title": "Le temps désarticulé",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2277241334"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782277241331"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "pageCount": 250,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=6uGGAAAACAAJ&dq=isbn:9782277241331&hl=&cd=1&source=gbs_api"
   }
 ]
