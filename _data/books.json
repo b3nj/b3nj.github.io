@@ -424,6 +424,8 @@
     "pageCount": 238,
     "allowAnonLogging": false,
     "language": "fr",
-    "previewLink": "http://books.google.fr/books?id=VLPNPAAACAAJ&dq=isbn:9782207248980&hl=&cd=1&source=gbs_api"
+    "previewLink": "http://books.google.fr/books?id=VLPNPAAACAAJ&dq=isbn:9782207248980&hl=&cd=1&source=gbs_api",
+    "slug": "le-crâne",
+    "cover_local": "/books/le-crâne/cover.jpg"
   }
 ]
