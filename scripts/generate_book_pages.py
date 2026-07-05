@@ -28,19 +28,18 @@ def get_cover_url(book):
     image_links = book.get("imageLinks", {})
     url = image_links.get("thumbnail") or image_links.get("smallThumbnail")
     if url:
-        # Google Books returns http:// — upgrade to https
         return url.replace("http://", "https://")
     return None
 
 
 def download_cover(url, dest_path):
-    print(f"    → Downloading cover from {url}")
+    print(f"    -> Downloading cover from {url}")
     try:
         urllib.request.urlretrieve(url, dest_path)
-        print(f"    ✓ Cover saved to {dest_path}")
+        print(f"    v Cover saved to {dest_path}")
         return True
     except Exception as e:
-        print(f"    ✗ Cover download failed: {e}")
+        print(f"    x Cover download failed: {e}")
         return False
 
 
@@ -48,7 +47,7 @@ def main():
     with open(DATA_FILE, encoding="utf-8") as f:
         books = json.load(f)
 
-    print(f"📚 Found {len(books)} books to process\n")
+    print(f"Found {len(books)} books to process\n")
 
     for i, book in enumerate(books):
         try:
@@ -62,44 +61,59 @@ def main():
             for old_id in isbn_list:
                 old_dir = os.path.join(OUTPUT_DIR, old_id)
                 if old_dir != page_dir and os.path.exists(old_dir):
-                    print(f"    ↩ Renaming {old_dir} → {page_dir}")
+                    print(f"    Renaming {old_dir} -> {page_dir}")
                     os.rename(old_dir, page_dir)
                     break
 
             print(f"[{i+1}/{len(books)}] {title}")
             print(f"    ISBN: {isbn or 'none'} | folder: {page_dir}")
 
-            front_matter = {"layout": "book"}
-            front_matter.update(book)
+            cover_url = get_cover_url(book)
+
+            front_matter = {
+                "layout":      "book",
+                "title":       title,
+                "subtitle":    book.get("subtitle", ""),
+                "authors":     book.get("authors", []),
+                "publisher":   book.get("publisher", ""),
+                "published":   book.get("publishedDate", "")[:4],
+                "pages":       book.get("pageCount"),
+                "description": book.get("description", ""),
+                "language":    book.get("language", ""),
+                "categories":  book.get("categories", []),
+                "isbn":        isbn,
+                "canonical":   book.get("canonicalVolumeLink", ""),
+                "thumbnail":   cover_url,
+                "slug":        slug,
+            }
 
             os.makedirs(page_dir, exist_ok=True)
-            print(f"    ✓ Folder ready")
+            print(f"    v Folder ready")
 
-            cover_url = get_cover_url(book)
             if cover_url:
                 cover_path = os.path.join(page_dir, "cover.jpg")
                 if not os.path.exists(cover_path):
                     if download_cover(cover_url, cover_path):
                         front_matter["cover_local"] = f"/books/{slug if slug else isbn}/cover.jpg"
                 else:
-                    print(f"    ↩ Cover already exists, skipping download")
+                    print(f"    Cover already exists, skipping download")
                     front_matter["cover_local"] = f"/books/{slug if slug else isbn}/cover.jpg"
             else:
-                print(f"    ⚠ No cover URL, skipping cover")
+                print(f"    No cover URL, skipping cover")
 
             with open(os.path.join(page_dir, "index.md"), "w", encoding="utf-8") as f:
                 f.write("---\n")
                 yaml.dump(front_matter, f, allow_unicode=True, default_flow_style=False, sort_keys=False)
                 f.write("---\n")
 
-            print(f"    ✓ index.md written\n")
+            print(f"    v index.md written\n")
 
         except Exception:
-            print(f"[{i+1}] ✗ ERROR on: {book.get('title', '?')}")
+            print(f"[{i+1}] ERROR on: {book.get('title', '?')}")
             traceback.print_exc()
             print()
 
-    print("✅ Done")
+    print("Done")
 
 
 if __name__ == "__main__":
