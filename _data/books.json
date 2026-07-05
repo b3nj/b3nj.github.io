@@ -392,5 +392,38 @@
     "previewLink": "http://books.google.fr/books?id=hQcRAAAACAAJ&dq=isbn:9782070424597&hl=&cd=1&source=gbs_api",
     "slug": "par-delà-le-mur-du-sommeil",
     "cover_local": "/books/par-delà-le-mur-du-sommeil/cover.jpg"
+  },
+  {
+    "infoLink": "http://books.google.fr/books?id=VLPNPAAACAAJ&dq=isbn:9782207248980&hl=&source=gbs_api",
+    "averageRating": 5,
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "subtitle": "nouvelles",
+    "contentVersion": "preview-1.0.0",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Le_cr%C3%A2ne.html?hl=&id=VLPNPAAACAAJ",
+    "authors": [
+      "Philip Kindred Dick"
+    ],
+    "publishedDate": "1999",
+    "title": "Le crâne",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2207248984"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782207248980"
+      }
+    ],
+    "printType": "BOOK",
+    "ratingsCount": 1,
+    "maturityRating": "NOT_MATURE",
+    "pageCount": 238,
+    "allowAnonLogging": false,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=VLPNPAAACAAJ&dq=isbn:9782207248980&hl=&cd=1&source=gbs_api"
   }
 ]
