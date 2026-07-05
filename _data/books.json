@@ -1158,5 +1158,40 @@
     },
     "slug": "oedipe",
     "cover_local": "/books/oedipe/cover.jpg"
+  },
+  {
+    "description": "Olympe. La guerre contre les Titans vient de s achever. Mais l euphorie de la victoire laisse vite place à l ennui, et les dieux ont besoin de se trouver une nouvelle occupation. Aussi Zeus a l idée d une source de divertissement infinie, en constante évolution : la vie ! Il charge le Titan Prométhée de sa conception en créant l harmonie sur ce nouveau monde à sa disposition. Mais très vite, Prométhée imagine une espèce qui dépasserait toutes les autres. Une espèce à qui il donnerait un pouvoir rivalisant avec celui des dieux. Quitte à s attirer les foudres de Zeus...Symbole de l apport de la connaissance aux hommes, Prométhée est l un des mythes fondateurs de la civilisation européenne, et probablement celui dont on retrouve le plus de versions équivalentes chez les autres peuples. Il semblait inévitable qu il inaugure cette collection des grands mythes grecs en bande dessinée.",
+    "contentVersion": "preview-1.0.0",
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "infoLink": "http://books.google.fr/books?id=r3pQvgAACAAJ&dq=isbn:9782344001646&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Prom%C3%A9th%C3%A9e_et_la_bo%C3%AEte_de_Pandore.html?hl=&id=r3pQvgAACAAJ",
+    "authors": [
+      "Luc Ferry"
+    ],
+    "publishedDate": "2016-09-14",
+    "title": "Prométhée et la boîte de Pandore",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2344001646"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782344001646"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "pageCount": 56,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=r3pQvgAACAAJ&dq=isbn:9782344001646&hl=&cd=1&source=gbs_api",
+    "panelizationSummary": {
+      "containsImageBubbles": false,
+      "containsEpubBubbles": false
+    }
   }
 ]
