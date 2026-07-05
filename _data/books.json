@@ -779,6 +779,8 @@
     "pageCount": 124,
     "allowAnonLogging": false,
     "language": "fr",
-    "previewLink": "http://books.google.fr/books?id=1nRPKAAACAAJ&dq=isbn:9782070337590&hl=&cd=1&source=gbs_api"
+    "previewLink": "http://books.google.fr/books?id=1nRPKAAACAAJ&dq=isbn:9782070337590&hl=&cd=1&source=gbs_api",
+    "slug": "ce-que-disent-les-morts",
+    "cover_local": "/books/ce-que-disent-les-morts/cover.jpg"
   }
 ]
