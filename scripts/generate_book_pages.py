@@ -40,6 +40,11 @@ def download_cover(url, dest_path):
     print(f"    -> Downloading cover from {url}")
     try:
         urllib.request.urlretrieve(url, dest_path)
+        # Reject Open Library placeholder (tiny image, ~807 bytes)
+        if os.path.getsize(dest_path) < 2000:
+            os.remove(dest_path)
+            print(f"    x Cover too small, likely a placeholder - discarded")
+            return False
         print(f"    v Cover saved to {dest_path}")
         return True
     except Exception as e:
