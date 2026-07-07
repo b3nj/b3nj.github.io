@@ -1240,5 +1240,37 @@
     },
     "slug": "substance-mort",
     "cover_local": "/books/substance-mort/cover.jpg"
+  },
+  {
+    "description": "\" Il fallait oser les écrire, ces livres hantés, errer dans ces marécages mentaux troués d'éclairs fuligineux, de vertiges temporels, de bascules du réel. Il faut oser les lire c'est plonger en apnée. On peut aimer ou détester Philip K. Dick, on peut le déclarer écrivain mineur, star d'un genre dépassé, symbole des sixties, gourou obsolète de l'antipsychiatrie et du trip hallucinogène. [...] Pourtant, ignorer Philip K. Dick, c'est se priver d'un grand frisson méditatif. Et faire l'impasse sur quelques-uns de nos fantômes. D'une certaine manière, son œuvre est datée, comme l'est son personnage chevillé à la Californie, la plus belle, celle du Nord [...] ; la plus mythique, celle d'Esalen et de Bolinas, du LSD et des hippies. [...] Dans ce décor dont il fut, avec les Kerouac, Ginsberg et autres Burroughs, l'un des pères fondateurs, Philip Kindred Dick était à l'aise comme un poisson dans l'eau avec sa barbe grise, ses chemises à fleurs, ses bouffées de délire mystique, ses provocations, ses expériences. \" (Catherine David, Le Nouvel Observateur)",
+    "contentVersion": "preview-1.0.0",
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "infoLink": "http://books.google.fr/books?id=eCZ2PQAACAAJ&dq=intitle:l%27oeil+dans+le+ciel+inauthor:dick&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/L_oeil_dans_le_ciel.html?hl=&id=eCZ2PQAACAAJ",
+    "authors": [
+      "Philip Kindred Dick"
+    ],
+    "publishedDate": "2000",
+    "title": "L'oeil dans le ciel",
+    "publisher": "10/18",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "226403002X"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782264030023"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "pageCount": 254,
+    "allowAnonLogging": false,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=eCZ2PQAACAAJ&dq=intitle:l%27oeil+dans+le+ciel+inauthor:dick&hl=&cd=1&source=gbs_api"
   }
 ]
