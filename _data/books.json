@@ -1339,5 +1339,39 @@
     "previewLink": "http://books.google.fr/books?id=EwuSoAEACAAJ&dq=intitle:Les+cha%C3%AEnes+de+l%27avenir+inauthor:dick&hl=&cd=1&source=gbs_api",
     "slug": "les-chaînes-de-lavenir",
     "cover_local": "/books/les-chaînes-de-lavenir/cover.jpg"
+  },
+  {
+    "infoLink": "http://books.google.fr/books?id=vo_vtwEACAAJ&dq=isbn:9782723499538&hl=&source=gbs_api",
+    "contentVersion": "preview-1.0.0",
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "canonicalVolumeLink": "https://books.google.com/books/about/Le_voyage_de_l_Argo.html?hl=&id=vo_vtwEACAAJ",
+    "authors": [
+      "Luc Ferry"
+    ],
+    "publishedDate": "2018-05-30",
+    "title": "Le voyage de l'Argo",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2723499537"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782723499538"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "pageCount": 56,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=vo_vtwEACAAJ&dq=isbn:9782723499538&hl=&cd=1&source=gbs_api",
+    "panelizationSummary": {
+      "containsImageBubbles": false,
+      "containsEpubBubbles": false
+    }
   }
 ]
