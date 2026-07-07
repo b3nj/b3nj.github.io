@@ -1787,5 +1787,40 @@
     },
     "slug": "dédale-et-icare",
     "cover_local": "/books/dédale-et-icare/cover.jpg"
+  },
+  {
+    "description": "Tantale, roi de Phrygie, est un être humain exceptionnel. A tel point qu'il est régulièrement invité à festoyer sur l'Olympe, un honneur dont peu de mortels peuvent se vanter. Tantale finit par se persuader qu'il est l'égal des dieux, jusqu'à se comporter comme l'un d'entre eux, cédant ainsi à cet orgueil démesuré qui lui attirera la colère de Zeus... Le même péché emportera Ixion, parricide, parjure et même séducteur d'Héra, mais aussi Niobé, la fille de Tantale, qui défia la mère d'Artémis et Apollon, ou encore Phaéton, qui voulut prendre la place de son père, Hélios, aux commandes du char du dieu-Soleil...",
+    "contentVersion": "preview-1.0.0",
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "infoLink": "http://books.google.fr/books?id=yJprxQEACAAJ&dq=isbn:9782344014233&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Tantale_et_autres_mythes_de_l_orgueil.html?hl=&id=yJprxQEACAAJ",
+    "authors": [
+      "Luc Ferry"
+    ],
+    "publishedDate": "2019-04-03",
+    "title": "Tantale et autres mythes de l'orgueil",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2344014233"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782344014233"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "pageCount": 56,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=yJprxQEACAAJ&dq=isbn:9782344014233&hl=&cd=1&source=gbs_api",
+    "panelizationSummary": {
+      "containsImageBubbles": false,
+      "containsEpubBubbles": false
+    }
   }
 ]
