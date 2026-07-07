@@ -1303,6 +1303,8 @@
     "allowAnonLogging": false,
     "pageCount": 253,
     "language": "fr",
-    "previewLink": "http://books.google.fr/books?id=CqdpHAAACAAJ&dq=intitle:Dedalusman+inauthor:dick&hl=&cd=1&source=gbs_api"
+    "previewLink": "http://books.google.fr/books?id=CqdpHAAACAAJ&dq=intitle:Dedalusman+inauthor:dick&hl=&cd=1&source=gbs_api",
+    "slug": "dedalusman",
+    "cover_local": "/books/dedalusman/cover.jpg"
   }
 ]
