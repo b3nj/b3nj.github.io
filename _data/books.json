@@ -1590,5 +1590,40 @@
     },
     "slug": "la-colère-de-poséidon",
     "cover_local": "/books/la-colère-de-poséidon/cover.jpg"
+  },
+  {
+    "description": "Au royaume de Trézène, le jeune, beau et brillant Thésée apprend qu'il n'est pas que le fils de Poséidon, mais aussi celui d'Égée, souverain d'Athènes. Alors qu'il se rend à pied à la cité mythique, il terrasse en chemin une multitude de monstres, devenant une légende avant même d'atteindre son but. Mais lorsqu'il rencontre enfin son père, il découvre que celui-ci est la proie d'un odieux chantage. Tous les neuf ans, Minos, roi de Crète, exige d'Égée un sacrifice pour lui épargner la colère de Zeus : sept jeunes hommes et sept jeunes filles doivent être jetés en pâture au Minotaure au cœur du Labyrinthe. Pour y mettre un terme, Thésée est prêt à affronter la redoutable créature. Son plus grand défi l'attend...",
+    "contentVersion": "preview-1.0.0",
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "infoLink": "http://books.google.fr/books?id=IkZrvgAACAAJ&dq=isbn:9782344001707&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Th%C3%A9s%C3%A9e_et_le_minotaure.html?hl=&id=IkZrvgAACAAJ",
+    "authors": [
+      "Luc Ferry"
+    ],
+    "publishedDate": "2016-11-02",
+    "title": "Thésée et le minotaure",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2344001700"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782344001707"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "pageCount": 56,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=IkZrvgAACAAJ&dq=isbn:9782344001707&hl=&cd=1&source=gbs_api",
+    "panelizationSummary": {
+      "containsImageBubbles": false,
+      "containsEpubBubbles": false
+    }
   }
 ]
