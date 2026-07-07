@@ -1970,5 +1970,40 @@
     },
     "slug": "les-guerres-de-zeus",
     "cover_local": "/books/les-guerres-de-zeus/cover.jpg"
+  },
+  {
+    "description": "Recueil de mythes relatant les nombreuses infidélités de Zeus, que ce soit avec des nymphes ou des mortelles. Prêt à tout pour profiter des plaisirs charnels, il n'hésite pas à manipuler, ruser voire même se métamorphoser pour obtenir ce qu'il veut. De ses aventures sont nés plusieurs héros comme Héraclès ou Persée.",
+    "contentVersion": "preview-1.0.0",
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "infoLink": "http://books.google.fr/books?id=x2c_zwEACAAJ&dq=isbn:9782344040850&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Les_amours_de_Zeus.html?hl=&id=x2c_zwEACAAJ",
+    "authors": [
+      "Clotilde Bruneau",
+      "Luc Ferry"
+    ],
+    "publishedDate": "2022",
+    "title": "Les amours de Zeus",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2344040854"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782344040850"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=x2c_zwEACAAJ&dq=isbn:9782344040850&hl=&cd=1&source=gbs_api",
+    "panelizationSummary": {
+      "containsImageBubbles": false,
+      "containsEpubBubbles": false
+    }
   }
 ]
