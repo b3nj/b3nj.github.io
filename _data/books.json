@@ -1336,6 +1336,8 @@
     "allowAnonLogging": false,
     "pageCount": 221,
     "language": "fr",
-    "previewLink": "http://books.google.fr/books?id=EwuSoAEACAAJ&dq=intitle:Les+cha%C3%AEnes+de+l%27avenir+inauthor:dick&hl=&cd=1&source=gbs_api"
+    "previewLink": "http://books.google.fr/books?id=EwuSoAEACAAJ&dq=intitle:Les+cha%C3%AEnes+de+l%27avenir+inauthor:dick&hl=&cd=1&source=gbs_api",
+    "slug": "les-chaînes-de-lavenir",
+    "cover_local": "/books/les-chaînes-de-lavenir/cover.jpg"
   }
 ]
