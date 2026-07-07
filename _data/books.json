@@ -1824,5 +1824,41 @@
     },
     "slug": "tantale-et-autres-mythes-de-lorgueil",
     "cover_local": "/books/tantale-et-autres-mythes-de-lorgueil/cover.jpg"
+  },
+  {
+    "description": "Troie est désormais aux mains des Grecs. La guerre aura duré plus de dix ans... Pour Ulysse, roi d'Ithaque, farouche guerrier et subtil stratège, il est à présent temps de retrouver son île natale, pour rejoindre son foyer, sa femme Pénélope et son fils Télémaque. C'est le début d'un long et périlleux voyage. Une errance pleine de dangers où, à chacune de ses escales, sa force, son ingéniosité et son courage seront sans cesse mis à l'épreuve. Car ainsi en ont décidé les dieux... (4e de couverture)",
+    "contentVersion": "preview-1.0.0",
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "infoLink": "http://books.google.fr/books?id=oSpUyQEACAAJ&dq=isbn:9782344011942&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Circ%C3%A9_la_magicienne.html?hl=&id=oSpUyQEACAAJ",
+    "authors": [
+      "Clotilde Bruneau",
+      "Luc Ferry"
+    ],
+    "publishedDate": "2019-09-04",
+    "title": "Circé la magicienne",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2344011943"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782344011942"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "pageCount": 56,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=oSpUyQEACAAJ&dq=isbn:9782344011942&hl=&cd=1&source=gbs_api",
+    "panelizationSummary": {
+      "containsImageBubbles": false,
+      "containsEpubBubbles": false
+    }
   }
 ]
