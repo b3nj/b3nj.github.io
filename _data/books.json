@@ -1274,5 +1274,35 @@
     "previewLink": "http://books.google.fr/books?id=eCZ2PQAACAAJ&dq=intitle:l%27oeil+dans+le+ciel+inauthor:dick&hl=&cd=1&source=gbs_api",
     "slug": "loeil-dans-le-ciel",
     "cover_local": "/books/loeil-dans-le-ciel/cover.jpg"
+  },
+  {
+    "infoLink": "http://books.google.fr/books?id=CqdpHAAACAAJ&dq=intitle:Dedalusman+inauthor:dick&hl=&source=gbs_api",
+    "contentVersion": "preview-1.0.0",
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "canonicalVolumeLink": "https://books.google.com/books/about/Dedalusman.html?hl=&id=CqdpHAAACAAJ",
+    "authors": [
+      "Philip Kindred Dick"
+    ],
+    "publishedDate": "1974",
+    "title": "Dedalusman",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2702403077"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782702403075"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "pageCount": 253,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=CqdpHAAACAAJ&dq=intitle:Dedalusman+inauthor:dick&hl=&cd=1&source=gbs_api"
   }
 ]
