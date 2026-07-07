@@ -1271,6 +1271,8 @@
     "pageCount": 254,
     "allowAnonLogging": false,
     "language": "fr",
-    "previewLink": "http://books.google.fr/books?id=eCZ2PQAACAAJ&dq=intitle:l%27oeil+dans+le+ciel+inauthor:dick&hl=&cd=1&source=gbs_api"
+    "previewLink": "http://books.google.fr/books?id=eCZ2PQAACAAJ&dq=intitle:l%27oeil+dans+le+ciel+inauthor:dick&hl=&cd=1&source=gbs_api",
+    "slug": "loeil-dans-le-ciel",
+    "cover_local": "/books/loeil-dans-le-ciel/cover.jpg"
   }
 ]
