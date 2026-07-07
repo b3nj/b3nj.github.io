@@ -31,10 +31,12 @@ jobs:
 
       - name: Append JSON to file
         id: append
+        env:
+          JSON_CONTENT: ${{ inputs.json_content }}
         run: |
           mkdir -p "$(dirname "${{ inputs.target_file }}")"
 
-          NEW_ISBN=$(echo '${{ inputs.json_content }}' | jq -r '
+          NEW_ISBN=$(echo "$JSON_CONTENT" | jq -r '
             .industryIdentifiers // [] |
             map(select(.type == "ISBN_13")) |
             first | .identifier // ""
@@ -51,20 +53,22 @@ jobs:
           if [ "$EXISTS" -gt "0" ]; then
             echo "duplicate=true" >> $GITHUB_OUTPUT
             echo "isbn=$NEW_ISBN" >> $GITHUB_OUTPUT
-            TITLE=$(echo '${{ inputs.json_content }}' | jq -r '.title // "Unknown title"')
+            TITLE=$(echo "$JSON_CONTENT" | jq -r '.title // "Unknown title"')
             echo "title=$TITLE" >> $GITHUB_OUTPUT
             echo "Book with ISBN $NEW_ISBN already exists, skipping."
             exit 0
           fi
 
           echo "duplicate=false" >> $GITHUB_OUTPUT
-          jq '. += [${{ inputs.json_content }}]' "${{ inputs.target_file }}" > _data/tmp.json && mv _data/tmp.json "${{ inputs.target_file }}"
+          echo "$JSON_CONTENT" | jq -r '.' | jq -s '.[0] + [.[1]]' "${{ inputs.target_file }}" - > _data/tmp.json && mv _data/tmp.json "${{ inputs.target_file }}"          
 
       - name: Commit and push
         if: steps.append.outputs.duplicate == 'false'
+        env:
+          JSON_CONTENT: ${{ inputs.json_content }}
         run: |
-          TITLE=$(echo '${{ inputs.json_content }}' | jq -r '.title // "Unknown title"')
-          AUTHOR=$(echo '${{ inputs.json_content }}' | jq -r '.authors[0] // "Unknown author"')
+          TITLE=$(echo "$JSON_CONTENT" | jq -r '.title // "Unknown title"')
+          AUTHOR=$(echo "$JSON_CONTENT" | jq -r '.authors[0] // "Unknown author"')
           git config --global user.email "benj@bkraft.fr"
           git config --global user.name "b3nj (via actions)"
           git add "${{ inputs.target_file }}"
