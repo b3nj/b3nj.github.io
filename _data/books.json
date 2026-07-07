@@ -1661,6 +1661,8 @@
     "panelizationSummary": {
       "containsImageBubbles": false,
       "containsEpubBubbles": false
-    }
+    },
+    "slug": "premières-armes",
+    "cover_local": "/books/premières-armes/cover.jpg"
   }
 ]
