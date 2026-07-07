@@ -1862,5 +1862,39 @@
     },
     "slug": "circé-la-magicienne",
     "cover_local": "/books/circé-la-magicienne/cover.jpg"
+  },
+  {
+    "infoLink": "http://books.google.fr/books?id=YHNqzQEACAAJ&dq=isbn:9782344022542&hl=&source=gbs_api",
+    "contentVersion": "preview-1.0.0",
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "canonicalVolumeLink": "https://books.google.com/books/about/La_ruse_de_P%C3%A9n%C3%A9lope.html?hl=&id=YHNqzQEACAAJ",
+    "authors": [
+      "Luc Ferry"
+    ],
+    "publishedDate": "2020-03-11",
+    "title": "La ruse de Pénélope",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2344022546"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782344022542"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "pageCount": 56,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=YHNqzQEACAAJ&dq=isbn:9782344022542&hl=&cd=1&source=gbs_api",
+    "panelizationSummary": {
+      "containsImageBubbles": false,
+      "containsEpubBubbles": false
+    }
   }
 ]
