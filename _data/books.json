@@ -1375,5 +1375,41 @@
     },
     "slug": "le-voyage-de-largo",
     "cover_local": "/books/le-voyage-de-largo/cover.jpg"
+  },
+  {
+    "description": "L'amour donne des ailes Fils du roi Oagre et de la muse Calliope, Orphée est génie de la musique et de la poésie. Par les accents de sa lyre, cadeau du dieu Apollon, il est capable de charmer n'importe quoi, et même d'attendrir les bêtes les plus sauvages. En revenant d'une expédition aux côtés des argonautes, il fait la rencontré d'Eurydice, une Dryade, dont il tombe éperdument amoureux. Mais peu de temps après leur mariage, la belle se fait mordre par un serpent, meurt instantanément et tombe aux enfers. Fou de chagrin, Orphée devient prêt à tout pour sauver sa bien-aimée. Jusqu'à aller chercher au coeur du royaume d'Hadès s'il le faut... Précédé du mythe de Déméter et Perséphone (à l'origine du phénomène des saisons chez les Grecs), ce nouvel album de la Sagesse des mythes vous conte ni plus ni moins que l'une des plus célèbres histoires d'amour du monde.",
+    "contentVersion": "preview-1.0.0",
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "subtitle": "Précédé de Déméter & Perséphone",
+    "infoLink": "http://books.google.fr/books?id=pLtqxgEACAAJ&dq=isbn:9782344014226&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Orph%C3%A9e_et_Eurydice.html?hl=&id=pLtqxgEACAAJ",
+    "authors": [
+      "Luc Ferry"
+    ],
+    "publishedDate": "2019-06-05",
+    "title": "Orphée et Eurydice",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2344014225"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782344014226"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "pageCount": 56,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=pLtqxgEACAAJ&dq=isbn:9782344014226&hl=&cd=1&source=gbs_api",
+    "panelizationSummary": {
+      "containsImageBubbles": false,
+      "containsEpubBubbles": false
+    }
   }
 ]
