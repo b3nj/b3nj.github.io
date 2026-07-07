@@ -1627,5 +1627,40 @@
     },
     "slug": "thésée-et-le-minotaure",
     "cover_local": "/books/thésée-et-le-minotaure/cover.jpg"
+  },
+  {
+    "description": "Héritier du trône d'Iolcos, Jason est le seul survivant d'un massacre perpétré par son oncle, le félon Pélias. Mis en sécurité par sa mère, il parfait son apprentissage auprès du meilleur éducateur de la Grèce : le centaure Chiron. Devenu adulte, Jason part alors accomplir son destin et réclamer son trône. Mais, piégé par son oncle, il se retrouve à devoir entreprendre la plus périlleuse des missions : rapporter la toison d'or, un trésor aussi inestimable qu'inaccessible. Pour s'en emparer, il va devoir s'entourer des meilleurs. Et bâtir un navire capable de traverser le terrible Détroit des Dardanelles. Alors, seulement, le voyage pourra commencer...Dans ce premier tome d'une trilogie, découvrez la genèse de la quête de Jason, l'un des plus célèbres mythes de la Grèce antique !",
+    "contentVersion": "preview-1.0.0",
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "infoLink": "http://books.google.fr/books?id=i69tvgAACAAJ&dq=isbn:9782344001684&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Premi%C3%A8res_armes.html?hl=&id=i69tvgAACAAJ",
+    "authors": [
+      "Luc Ferry"
+    ],
+    "publishedDate": "2016-11-02",
+    "title": "Premières armes",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2344001689"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782344001684"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "pageCount": 56,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=i69tvgAACAAJ&dq=isbn:9782344001684&hl=&cd=1&source=gbs_api",
+    "panelizationSummary": {
+      "containsImageBubbles": false,
+      "containsEpubBubbles": false
+    }
   }
 ]
