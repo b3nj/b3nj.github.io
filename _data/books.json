@@ -1237,6 +1237,8 @@
     "panelizationSummary": {
       "containsImageBubbles": false,
       "containsEpubBubbles": false
-    }
+    },
+    "slug": "substance-mort",
+    "cover_local": "/books/substance-mort/cover.jpg"
   }
 ]
