@@ -1413,5 +1413,41 @@
     },
     "slug": "orphée-et-eurydice",
     "cover_local": "/books/orphée-et-eurydice/cover.jpg"
+  },
+  {
+    "description": "Epopées spectaculaires, dieux tout-puissants, bestiaire formidable, héros extraordinaires... La mythologie grecque est une source inépuisable d'aventures merveilleuses et passionnantes, qui délivre aussi des leçons de sagesse d'une incomparable profondeur. C'est d'ailleurs à ce titre qu'elle est enseignée dans le monde entier, et figure encore au cour de nos programmes scolaires. Pour la première fois, découvrez les grands récits grecs dans un ensemble de bandes dessinées strictement respectueuses des textes fondateurs originels, et enrichies de cahiers complémentaires qui analysent la signification philosophique et l'héritage culturel de chaque mythe. L'Iliade deuxième partie : La guerre des dieux. Pour mettre un terme aux combats qui s'éternisent, Grecs et Troyens décident d'envoyer chacun leur champion respectif : Ajax et Hector. Mais les deux héros, de force égale, n'arrivent pas à se départager. L'issue de la guerre de Troie semble bien incertaine, d'autant qu'Achille refuse toujours d'aller se battre... et que les dieux n'ont pas fini de venir y régler leurs querelles personnelles.",
+    "contentVersion": "preview-1.0.0",
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "infoLink": "http://books.google.fr/books?id=RvfFswEACAAJ&dq=isbn:9782344011935&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/La_guerre_des_dieux.html?hl=&id=RvfFswEACAAJ",
+    "authors": [
+      "Clotilde Bruneau",
+      "Luc Ferry"
+    ],
+    "publishedDate": "2017-09-13",
+    "title": "La guerre des dieux",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2344011935"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782344011935"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "pageCount": 56,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=RvfFswEACAAJ&dq=isbn:9782344011935&hl=&cd=1&source=gbs_api",
+    "panelizationSummary": {
+      "containsImageBubbles": false,
+      "containsEpubBubbles": false
+    }
   }
 ]
