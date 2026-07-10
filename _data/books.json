@@ -2007,5 +2007,40 @@
     },
     "slug": "les-amours-de-zeus",
     "cover_local": "/books/les-amours-de-zeus/cover.jpg"
+  },
+  {
+    "infoLink": "http://books.google.fr/books?id=opq20AEACAAJ&dq=isbn:9782266338028&hl=&source=gbs_api",
+    "contentVersion": "preview-1.0.0",
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "subtitle": "Intégrale",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Galat%C3%A9e_suivi_du_Chant_d_Achille_et_de.html?hl=&id=opq20AEACAAJ",
+    "authors": [
+      "Madeline Miller"
+    ],
+    "publishedDate": "2024-05-30",
+    "title": "Galatée, suivi du Chant d'Achille et de Circé",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2266338021"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782266338028"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "pageCount": 0,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=opq20AEACAAJ&dq=isbn:9782266338028&hl=&cd=1&source=gbs_api",
+    "panelizationSummary": {
+      "containsImageBubbles": false,
+      "containsEpubBubbles": false
+    }
   }
 ]
