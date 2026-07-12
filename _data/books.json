@@ -2228,5 +2228,39 @@
     },
     "slug": "les-promises",
     "cover_local": "/books/les-promises/cover.jpg"
+  },
+  {
+    "infoLink": "http://books.google.fr/books?id=Ob3J0AEACAAJ&dq=isbn:9782266337342&hl=&source=gbs_api",
+    "contentVersion": "preview-1.0.0",
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "canonicalVolumeLink": "https://books.google.com/books/about/Angle_mort.html?hl=&id=Ob3J0AEACAAJ",
+    "authors": [
+      "Paula Hawkins"
+    ],
+    "publishedDate": "2024-06-06",
+    "title": "Angle mort",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2266337343"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782266337342"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "pageCount": 0,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=Ob3J0AEACAAJ&dq=isbn:9782266337342&hl=&cd=1&source=gbs_api",
+    "panelizationSummary": {
+      "containsImageBubbles": false,
+      "containsEpubBubbles": false
+    }
   }
 ]
