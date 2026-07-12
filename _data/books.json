@@ -2447,6 +2447,8 @@
     "allowAnonLogging": false,
     "pageCount": 251,
     "language": "fr",
-    "previewLink": "http://books.google.fr/books?id=MEJ2nAEACAAJ&dq=isbn:9782290347133&hl=&cd=1&source=gbs_api"
+    "previewLink": "http://books.google.fr/books?id=MEJ2nAEACAAJ&dq=isbn:9782290347133&hl=&cd=1&source=gbs_api",
+    "slug": "les-clans-de-la-lune-alphane",
+    "cover_local": "/books/les-clans-de-la-lune-alphane/cover.jpg"
   }
 ]
