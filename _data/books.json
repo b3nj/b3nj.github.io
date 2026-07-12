@@ -2225,6 +2225,8 @@
     "panelizationSummary": {
       "containsImageBubbles": false,
       "containsEpubBubbles": false
-    }
+    },
+    "slug": "les-promises",
+    "cover_local": "/books/les-promises/cover.jpg"
   }
 ]
