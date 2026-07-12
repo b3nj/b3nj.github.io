@@ -2264,5 +2264,42 @@
     },
     "slug": "angle-mort",
     "cover_local": "/books/angle-mort/cover.jpg"
+  },
+  {
+    "description": "Lorsqu'il convient d'effectuer un petit rajustement de la réalité, il est sans doute préférable de ne pas se fier à un chien capable de vous tenir un discours tout fait pertinent sur ladite réalité ; car vous pourriez bien devenir le grain de sable qui se glisse dans cette minutieuse procédure... Voyager dans le temps réserve également quelques surprises : découvrir un futur dans lequel l'humanité totalement disparu, ou bien créer par inadvertance le monde de vos rêves. Et que dire, justement, de ce monde de rêve où l'éducation de vos enfants serait confiée à des robots Après tout, vous êtes bien imparfaits pour remplir cette tâche... Sept brillantes nouvelles, deux textes théoriques - dont l'un évoque le fameux Maître du Haut Château récompensé par le prix Hugo 1963 - issus de l'imaginaire sans limite de l'auteur de Minority Report.",
+    "categories": [
+      "Fiction"
+    ],
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "averageRating": 5,
+    "contentVersion": "preview-1.0.0",
+    "infoLink": "http://books.google.fr/books?id=DoPhPAAACAAJ&dq=isbn:9782070429776&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Souvenir.html?hl=&id=DoPhPAAACAAJ",
+    "authors": [
+      "Philip Dick"
+    ],
+    "publishedDate": "2003",
+    "title": "Souvenir",
+    "publisher": "Gallimard Education",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2070429776"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782070429776"
+      }
+    ],
+    "printType": "BOOK",
+    "ratingsCount": 1,
+    "pageCount": 300,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=DoPhPAAACAAJ&dq=isbn:9782070429776&hl=&cd=1&source=gbs_api"
   }
 ]
