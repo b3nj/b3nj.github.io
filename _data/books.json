@@ -2121,5 +2121,41 @@
     },
     "slug": "les-joueurs-de-titan",
     "cover_local": "/books/les-joueurs-de-titan/cover.jpg"
+  },
+  {
+    "description": "Partez sur Mars et joignez-vous à la guerre du rexénoïde, emparez-vous du vaisseau fabuleux des Ganymédiens, rencontrez le vétéran de la guerre Terre-Vénus à venir, pilotez un astronef doué de vie, échappez à l'épidémie qui frappe l'astéroïde Y-3 fraîchement colonisé, trouvez un refuge pour l'espèce humaine en mal d'espace vital, résolvez l'énigme du canon planétaire... Douze récits, autant de preuves éloquentes que le chantre des futurs incertains est aussi un grand maître du space opera.",
+    "categories": [
+      "Fiction"
+    ],
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "subtitle": "et autres voyages galactiques",
+    "contentVersion": "preview-1.0.0",
+    "infoLink": "http://books.google.fr/books?id=lNRsMAEACAAJ&dq=isbn:9782070300754&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Un_vaisseau_fabuleux.html?hl=&id=lNRsMAEACAAJ",
+    "authors": [
+      "Philip K. Dick"
+    ],
+    "publishedDate": "2005",
+    "title": "Un vaisseau fabuleux",
+    "publisher": "Gallimard Education",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2070300757"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782070300754"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "pageCount": 373,
+    "allowAnonLogging": false,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=lNRsMAEACAAJ&dq=isbn:9782070300754&hl=&cd=1&source=gbs_api"
   }
 ]
