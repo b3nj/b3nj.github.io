@@ -2073,6 +2073,8 @@
     "allowAnonLogging": false,
     "pageCount": 253,
     "language": "fr",
-    "previewLink": "http://books.google.fr/books?id=yl2HGwAACAAJ&dq=intitle:le+voyageur+de+l%27inconnu+inauthor:dick&hl=&cd=1&source=gbs_api"
+    "previewLink": "http://books.google.fr/books?id=yl2HGwAACAAJ&dq=intitle:le+voyageur+de+l%27inconnu+inauthor:dick&hl=&cd=1&source=gbs_api",
+    "slug": "le-voyageur-de-linconnu",
+    "cover_local": "/books/le-voyageur-de-linconnu/cover.jpg"
   }
 ]
