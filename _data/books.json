@@ -2156,6 +2156,8 @@
     "pageCount": 373,
     "allowAnonLogging": false,
     "language": "fr",
-    "previewLink": "http://books.google.fr/books?id=lNRsMAEACAAJ&dq=isbn:9782070300754&hl=&cd=1&source=gbs_api"
+    "previewLink": "http://books.google.fr/books?id=lNRsMAEACAAJ&dq=isbn:9782070300754&hl=&cd=1&source=gbs_api",
+    "slug": "un-vaisseau-fabuleux",
+    "cover_local": "/books/un-vaisseau-fabuleux/cover.jpg"
   }
 ]
