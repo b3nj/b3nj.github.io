@@ -2303,5 +2303,35 @@
     "previewLink": "http://books.google.fr/books?id=DoPhPAAACAAJ&dq=isbn:9782070429776&hl=&cd=1&source=gbs_api",
     "slug": "souvenir",
     "cover_local": "/books/souvenir/cover.jpg"
+  },
+  {
+    "infoLink": "http://books.google.fr/books?id=tRA4HQAACAAJ&dq=intitle:le+prisme+du+n%C3%A9ant+inauthor:dick&hl=&source=gbs_api",
+    "contentVersion": "preview-1.0.0",
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "canonicalVolumeLink": "https://books.google.com/books/about/Le_Prisme_du_n%C3%A9ant.html?hl=&id=tRA4HQAACAAJ",
+    "authors": [
+      "Philip Kindred Dick"
+    ],
+    "publishedDate": "1975",
+    "title": "Le Prisme du néant...",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2702403441"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782702403440"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "pageCount": 282,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=tRA4HQAACAAJ&dq=intitle:le+prisme+du+n%C3%A9ant+inauthor:dick&hl=&cd=1&source=gbs_api"
   }
 ]
