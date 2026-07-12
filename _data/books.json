@@ -2159,5 +2159,36 @@
     "previewLink": "http://books.google.fr/books?id=lNRsMAEACAAJ&dq=isbn:9782070300754&hl=&cd=1&source=gbs_api",
     "slug": "un-vaisseau-fabuleux",
     "cover_local": "/books/un-vaisseau-fabuleux/cover.jpg"
+  },
+  {
+    "description": "\"Le cours du temps s'est inversé sur Terre. Les morts se réveillent dans leurs tombes, rajeunissent, et finissent par réintégrer une matrice maternelle. Les cigarettes se reconstituent lentement dans les cendriers, et les vêtements sales du matin sont devenus propres le soir venu. Sebastian Hermes dirige un vitarium, une société spécialisée dans le repérage et l'extraction des morts revenus à la vie. Lors d'une mission de routine, il tombe par hasard sur la tombe de l'Anarque Thomas Peak, le célèbre leader religieux. Malheureusement pour Sebastian, cette découverte attise bien des convoitises. Le conseil des Oblits, les Udites, le Vatican : tous veulent mettre la main sur le prophète. Mais dans quel but ?\" [Source : 4e de couv., tirage 2010]",
+    "contentVersion": "preview-1.0.0",
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "infoLink": "http://books.google.fr/books?id=LGosGQAACAAJ&dq=isbn:9782290338926&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/A_rebrousse_temps.html?hl=&id=LGosGQAACAAJ",
+    "authors": [
+      "Philip K. Dick"
+    ],
+    "publishedDate": "2004",
+    "title": "A rebrousse-temps",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2290338923"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782290338926"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "pageCount": 252,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=LGosGQAACAAJ&dq=isbn:9782290338926&hl=&cd=1&source=gbs_api"
   }
 ]
