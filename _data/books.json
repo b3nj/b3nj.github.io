@@ -2417,5 +2417,36 @@
     "previewLink": "http://books.google.fr/books?id=n0KdoAEACAAJ&dq=isbn:9782246800286&hl=&cd=1&source=gbs_api",
     "slug": "un-bon-fils",
     "cover_local": "/books/un-bon-fils/cover.jpg"
+  },
+  {
+    "description": "Chuck Rittersdorf est programmeur de simulacre pour le compte de la CIA, un travail médiocre et répétitif dont il s'accommode parfaitement. Ce n'est cependant pas le cas de sa femme, Mary, une brillante psychologue qui a décidé que son mari devait employer ses talents créatifs à de meilleures fins. Hélas, sa demande de divorce ne produit pas sur Chuck l'électrochoc espéré, initiant au contraire une longue et pénible déchéance qui le mène au bord du suicide. Sur le point de commettre l'irréparable, le programmeur commence alors à entrevoir la vérité : et si tout cela n'était que la partie émergée d'un terrible complot ? Quels liens existent entre la CIA, Mary, un fongus ganymédien, et les terribles clans de la lune alphane ?",
+    "contentVersion": "preview-1.0.0",
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "infoLink": "http://books.google.fr/books?id=MEJ2nAEACAAJ&dq=isbn:9782290347133&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Les_clans_de_la_lune_alphane.html?hl=&id=MEJ2nAEACAAJ",
+    "authors": [
+      "Philip Kindred Dick"
+    ],
+    "publishedDate": "2008",
+    "title": "Les clans de la lune alphane",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2290347132"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782290347133"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "pageCount": 251,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=MEJ2nAEACAAJ&dq=isbn:9782290347133&hl=&cd=1&source=gbs_api"
   }
 ]
