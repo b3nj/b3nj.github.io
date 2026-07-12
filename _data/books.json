@@ -2414,6 +2414,8 @@
     "pageCount": 250,
     "allowAnonLogging": false,
     "language": "fr",
-    "previewLink": "http://books.google.fr/books?id=n0KdoAEACAAJ&dq=isbn:9782246800286&hl=&cd=1&source=gbs_api"
+    "previewLink": "http://books.google.fr/books?id=n0KdoAEACAAJ&dq=isbn:9782246800286&hl=&cd=1&source=gbs_api",
+    "slug": "un-bon-fils",
+    "cover_local": "/books/un-bon-fils/cover.jpg"
   }
 ]
