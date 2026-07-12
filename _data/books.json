@@ -2192,5 +2192,39 @@
     "previewLink": "http://books.google.fr/books?id=LGosGQAACAAJ&dq=isbn:9782290338926&hl=&cd=1&source=gbs_api",
     "slug": "a-rebrousse-temps",
     "cover_local": "/books/a-rebrousse-temps/cover.jpg"
+  },
+  {
+    "infoLink": "http://books.google.fr/books?id=aTSEzwEACAAJ&dq=isbn:9782253195542&hl=&source=gbs_api",
+    "contentVersion": "preview-1.0.0",
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "canonicalVolumeLink": "https://books.google.com/books/about/Les_Promises.html?hl=&id=aTSEzwEACAAJ",
+    "authors": [
+      "Jean-Christophe Grangé"
+    ],
+    "publishedDate": "2023-02",
+    "title": "Les Promises",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2253195545"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782253195542"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "pageCount": 0,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=aTSEzwEACAAJ&dq=isbn:9782253195542&hl=&cd=1&source=gbs_api",
+    "panelizationSummary": {
+      "containsImageBubbles": false,
+      "containsEpubBubbles": false
+    }
   }
 ]
