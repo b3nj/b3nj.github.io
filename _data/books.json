@@ -2450,5 +2450,46 @@
     "previewLink": "http://books.google.fr/books?id=MEJ2nAEACAAJ&dq=isbn:9782290347133&hl=&cd=1&source=gbs_api",
     "slug": "les-clans-de-la-lune-alphane",
     "cover_local": "/books/les-clans-de-la-lune-alphane/cover.jpg"
+  },
+  {
+    "ratingsCount": 2,
+    "averageRating": 5,
+    "publisher": "J'ai lu",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2290352624"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782290352625"
+      }
+    ],
+    "title": "L'apprenti assassin",
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "language": "fr",
+    "infoLink": "http://books.google.fr/books?id=RNMgGQAACAAJ&dq=isbn:9782290352625&hl=&source=gbs_api",
+    "imageLinks": {
+      "thumbnail": "http://books.google.com/books/content?id=RNMgGQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "smallThumbnail": "http://books.google.com/books/content?id=RNMgGQAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
+    },
+    "allowAnonLogging": false,
+    "printType": "BOOK",
+    "authors": [
+      "Robin Hobb"
+    ],
+    "pageCount": 512,
+    "maturityRating": "NOT_MATURE",
+    "contentVersion": "preview-1.0.0",
+    "publishedDate": "2005-12-01",
+    "previewLink": "http://books.google.fr/books?id=RNMgGQAACAAJ&dq=isbn:9782290352625&hl=&cd=1&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/L_apprenti_assassin.html?hl=&id=RNMgGQAACAAJ",
+    "categories": [
+      "Fiction"
+    ],
+    "description": "Au royaume des six Duchés, le prince Chevalerie, de la famille régnante des Loinvoyant - par tradition, le nom des seigneurs doit modeler leur caractère- décide de renoncer à son ambition de devenir roi-servant en apprenant l'existence de Fitz, son fils illégitime. Le jeune bâtard grandit à Castelcerf, sous l'égide du maître d'écurie Burrich. Mais le roi Subtil impose bientôt que FITZ reçoive, malgré sa condition, une éducation princière. L' enfant découvrira vite que le véritable dessein du monarque est autre : faire de lui un assassin royal. Et tandis que les attaques des pirates rouges mettent en péril la contrée, Fitz va constater à chaque instant que sa vie ne tient qu'à un fil : celui de sa lame..."
   }
 ]
