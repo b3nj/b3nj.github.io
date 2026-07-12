@@ -2332,6 +2332,8 @@
     "allowAnonLogging": false,
     "pageCount": 282,
     "language": "fr",
-    "previewLink": "http://books.google.fr/books?id=tRA4HQAACAAJ&dq=intitle:le+prisme+du+n%C3%A9ant+inauthor:dick&hl=&cd=1&source=gbs_api"
+    "previewLink": "http://books.google.fr/books?id=tRA4HQAACAAJ&dq=intitle:le+prisme+du+n%C3%A9ant+inauthor:dick&hl=&cd=1&source=gbs_api",
+    "slug": "le-prisme-du-néant",
+    "cover_local": "/books/le-prisme-du-néant/cover.jpg"
   }
 ]
