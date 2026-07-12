@@ -2076,5 +2076,48 @@
     "previewLink": "http://books.google.fr/books?id=yl2HGwAACAAJ&dq=intitle:le+voyageur+de+l%27inconnu+inauthor:dick&hl=&cd=1&source=gbs_api",
     "slug": "le-voyageur-de-linconnu",
     "cover_local": "/books/le-voyageur-de-linconnu/cover.jpg"
+  },
+  {
+    "description": "Non contente d’avoir rayé de la surface de la planète la quasi-totalité de la population mondiale, la radiation de Hinkel a aussi rendu les hommes stériles. En contre-partie, les deux millions d’humains restants sont devenuspresque immortels.Ils doivent cependant partager la pla¬nète avec les Vugs, une race extraterrestre que la logiquerebute et qui ont instauré le Jeu, un mode d’administra¬tion ludique et aléatoire vous permettant, en un coup de dés ou de bluff, de devenir propriétaire de la moitié des États-Unis, ou de perdre votre femme...",
+    "categories": [
+      "Fiction"
+    ],
+    "readingModes": {
+      "image": true,
+      "text": true
+    },
+    "contentVersion": "1.4.5.0.preview.3",
+    "infoLink": "https://play.google.com/store/books/details?id=BHg7DwAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://play.google.com/store/books/details?id=BHg7DwAAQBAJ",
+    "authors": [
+      "Philip K. Dick"
+    ],
+    "publishedDate": "2017-10-26T00:00:00+02:00",
+    "title": "Les Joueurs de Titan",
+    "publisher": "J'ai Lu",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_13",
+        "identifier": "9782290161623"
+      },
+      {
+        "type": "ISBN_10",
+        "identifier": "2290161624"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "pageCount": 186,
+    "allowAnonLogging": true,
+    "imageLinks": {
+      "thumbnail": "http://books.google.com/books/content?id=BHg7DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "smallThumbnail": "http://books.google.com/books/content?id=BHg7DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=BHg7DwAAQBAJ&printsec=frontcover&dq=intitle:les+joueurs+de+titan+inauthor:dick&hl=&cd=1&source=gbs_api",
+    "panelizationSummary": {
+      "containsImageBubbles": false,
+      "containsEpubBubbles": false
+    }
   }
 ]
