@@ -2757,6 +2757,8 @@
       "thumbnail": "http://books.google.com/books/content?id=6evASQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
       "smallThumbnail": "http://books.google.com/books/content?id=6evASQAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
     },
-    "previewLink": "http://books.google.fr/books?id=6evASQAACAAJ&dq=isbn:9782266205993&hl=&cd=1&source=gbs_api"
+    "previewLink": "http://books.google.fr/books?id=6evASQAACAAJ&dq=isbn:9782266205993&hl=&cd=1&source=gbs_api",
+    "slug": "mémoires-de-guerre",
+    "cover_local": "/books/mémoires-de-guerre/cover.jpg"
   }
 ]
