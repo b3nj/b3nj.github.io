@@ -2685,5 +2685,40 @@
     "previewLink": "http://books.google.fr/books?id=pNktnwEACAAJ&dq=isbn:9782070373642&hl=&cd=1&source=gbs_api",
     "slug": "teils-franz",
     "cover_local": "/books/teils-franz/cover.jpg"
+  },
+  {
+    "description": "Dans ce livre nous aurons rencontrer dix tragédies complètes de Euripide - 'Les troyennes'; 'Iphigénie en tauride'; 'Électre'; 'Hélène'; 'Les phéniciennes'; 'Oreste'; 'Les bacchantes'; 'Iphigénie à aulis'; et 'Rhésos'.",
+    "categories": [
+      "Fiction"
+    ],
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "contentVersion": "preview-1.0.0",
+    "infoLink": "http://books.google.fr/books?id=PpuGHAAACAAJ&dq=isbn:9782070381920&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Oreste.html?hl=&id=PpuGHAAACAAJ",
+    "authors": [
+      "Euripide"
+    ],
+    "publishedDate": "1989-01-01",
+    "title": "Oreste",
+    "publisher": "Gallimard Education",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2070381927"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782070381920"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "pageCount": 1421,
+    "allowAnonLogging": false,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=PpuGHAAACAAJ&dq=isbn:9782070381920&hl=&cd=1&source=gbs_api"
   }
 ]
