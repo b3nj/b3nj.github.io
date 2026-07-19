@@ -2493,5 +2493,42 @@
     "description": "Au royaume des six Duchés, le prince Chevalerie, de la famille régnante des Loinvoyant - par tradition, le nom des seigneurs doit modeler leur caractère- décide de renoncer à son ambition de devenir roi-servant en apprenant l'existence de Fitz, son fils illégitime. Le jeune bâtard grandit à Castelcerf, sous l'égide du maître d'écurie Burrich. Mais le roi Subtil impose bientôt que FITZ reçoive, malgré sa condition, une éducation princière. L' enfant découvrira vite que le véritable dessein du monarque est autre : faire de lui un assassin royal. Et tandis que les attaques des pirates rouges mettent en péril la contrée, Fitz va constater à chaque instant que sa vie ne tient qu'à un fil : celui de sa lame...",
     "slug": "lapprenti-assassin",
     "cover_local": "/books/lapprenti-assassin/cover.jpg"
+  },
+  {
+    "description": "Les pirates rouges sèment la mort et la désolation dans les Six-Duchés. Le royaume est affaibli et ne dispose que de peu de ressources pour les combattre. Le roi est seul, entouré d'une cour qui intrigue, d'une armée qui doute et... d'un assassin royal. Fitz, le bâtard princier, est devenu une arme redoutable et redoutée. Il maîtrise le Vif - la faculté de communiquer avec les animaux - et devient expert dans l'Art. Guerrier accompli, rompu à toutes les façons de tuer, il personnifie autant la justice du roi qu'il est le chevalier servant du prince Vérité. Mais il est aussi un obstacle pour le prince Royal qui veut accéder au trône, et nombreux sont ceux qui souhaitent sa mort...",
+    "categories": [
+      "Fiction"
+    ],
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "averageRating": 5,
+    "contentVersion": "preview-1.0.0",
+    "infoLink": "http://books.google.fr/books?id=9WmDPQAACAAJ&dq=isbn:9782290313237&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/L_assassin_du_roi.html?hl=&id=9WmDPQAACAAJ",
+    "authors": [
+      "Robin Hobb"
+    ],
+    "publishedDate": "2001-10-01",
+    "title": "L'assassin du roi",
+    "publisher": "J'Ai Lu",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2290313238"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782290313237"
+      }
+    ],
+    "printType": "BOOK",
+    "ratingsCount": 2,
+    "pageCount": 416,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=9WmDPQAACAAJ&dq=isbn:9782290313237&hl=&cd=1&source=gbs_api"
   }
 ]
