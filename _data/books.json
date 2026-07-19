@@ -2603,6 +2603,8 @@
     "pageCount": 268,
     "allowAnonLogging": false,
     "language": "fr",
-    "previewLink": "http://books.google.fr/books?id=ke7ePQAACAAJ&dq=isbn:9782070300778&hl=&cd=1&source=gbs_api"
+    "previewLink": "http://books.google.fr/books?id=ke7ePQAACAAJ&dq=isbn:9782070300778&hl=&cd=1&source=gbs_api",
+    "slug": "dans-le-jardin",
+    "cover_local": "/books/dans-le-jardin/cover.jpg"
   }
 ]
