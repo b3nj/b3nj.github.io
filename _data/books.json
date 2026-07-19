@@ -2918,5 +2918,40 @@
     "previewLink": "http://books.google.fr/books?id=UQnRngEACAAJ&dq=isbn:9782253149101&hl=&cd=1&source=gbs_api",
     "slug": "la-grammaire-est-une-chanson-douce",
     "cover_local": "/books/la-grammaire-est-une-chanson-douce/cover.jpg"
+  },
+  {
+    "infoLink": "http://books.google.fr/books?id=Nr4L0AEACAAJ&dq=isbn:9782755664539&hl=&source=gbs_api",
+    "contentVersion": "preview-1.0.0",
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "canonicalVolumeLink": "https://books.google.com/books/about/A_Touch_of_Darkness.html?hl=&id=Nr4L0AEACAAJ",
+    "authors": [
+      "Scarlett St. Clair"
+    ],
+    "publishedDate": "2023-05-03",
+    "title": "A Touch of Darkness",
+    "publisher": "Hugo poche",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2755664533"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782755664539"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "pageCount": 0,
+    "allowAnonLogging": false,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=Nr4L0AEACAAJ&dq=isbn:9782755664539&hl=&cd=1&source=gbs_api",
+    "panelizationSummary": {
+      "containsImageBubbles": false,
+      "containsEpubBubbles": false
+    }
   }
 ]
