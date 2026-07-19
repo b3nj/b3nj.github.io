@@ -2915,6 +2915,8 @@
       "smallThumbnail": "http://books.google.com/books/content?id=UQnRngEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
     },
     "language": "fr",
-    "previewLink": "http://books.google.fr/books?id=UQnRngEACAAJ&dq=isbn:9782253149101&hl=&cd=1&source=gbs_api"
+    "previewLink": "http://books.google.fr/books?id=UQnRngEACAAJ&dq=isbn:9782253149101&hl=&cd=1&source=gbs_api",
+    "slug": "la-grammaire-est-une-chanson-douce",
+    "cover_local": "/books/la-grammaire-est-une-chanson-douce/cover.jpg"
   }
 ]
