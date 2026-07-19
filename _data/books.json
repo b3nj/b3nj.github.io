@@ -2955,5 +2955,40 @@
     },
     "slug": "a-touch-of-darkness",
     "cover_local": "/books/a-touch-of-darkness/cover.jpg"
+  },
+  {
+    "infoLink": "http://books.google.fr/books?id=wakJ0AEACAAJ&dq=isbn:9782755664546&hl=&source=gbs_api",
+    "contentVersion": "preview-1.0.0",
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "canonicalVolumeLink": "https://books.google.com/books/about/Had%C3%A8s_Pers%C3%A9phone.html?hl=&id=wakJ0AEACAAJ",
+    "authors": [
+      "Scarlett St. Clair"
+    ],
+    "publishedDate": "2023-05-03",
+    "title": "Hadès & Perséphone",
+    "publisher": "Hugo poche",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2755664541"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782755664546"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "pageCount": 0,
+    "allowAnonLogging": false,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=wakJ0AEACAAJ&dq=isbn:9782755664546&hl=&cd=1&source=gbs_api",
+    "panelizationSummary": {
+      "containsImageBubbles": false,
+      "containsEpubBubbles": false
+    }
   }
 ]
