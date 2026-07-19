@@ -2833,6 +2833,8 @@
       "smallThumbnail": "http://books.google.com/books/content?id=QZKYSQAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
     },
     "language": "fr",
-    "previewLink": "http://books.google.fr/books?id=QZKYSQAACAAJ&dq=isbn:9782266206013&hl=&cd=1&source=gbs_api"
+    "previewLink": "http://books.google.fr/books?id=QZKYSQAACAAJ&dq=isbn:9782266206013&hl=&cd=1&source=gbs_api",
+    "slug": "mémoires-de-guerre",
+    "cover_local": "/books/mémoires-de-guerre/cover.jpg"
   }
 ]
