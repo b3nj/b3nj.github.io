@@ -2836,5 +2836,44 @@
     "previewLink": "http://books.google.fr/books?id=QZKYSQAACAAJ&dq=isbn:9782266206013&hl=&cd=1&source=gbs_api",
     "slug": "mémoires-de-guerre",
     "cover_local": "/books/mémoires-de-guerre/cover.jpg"
+  },
+  {
+    "infoLink": "http://books.google.fr/books?id=_syb0QEACAAJ&dq=isbn:9782253160410&hl=&source=gbs_api",
+    "categories": [
+      "Fiction"
+    ],
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "contentVersion": "preview-1.0.0",
+    "canonicalVolumeLink": "https://books.google.com/books/about/La_Th%C3%A9ogonie_Les_travaux_et_les_jours.html?hl=&id=_syb0QEACAAJ",
+    "authors": [
+      "Hesiodus",
+      "Hesiode"
+    ],
+    "publishedDate": "1999",
+    "title": "La Théogonie. Les travaux et les jours",
+    "publisher": "LGF/Le Livre de Poche",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2253160415"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782253160410"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "pageCount": 0,
+    "allowAnonLogging": false,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=_syb0QEACAAJ&dq=isbn:9782253160410&hl=&cd=1&source=gbs_api",
+    "panelizationSummary": {
+      "containsImageBubbles": false,
+      "containsEpubBubbles": false
+    }
   }
 ]
