@@ -2794,5 +2794,45 @@
     "previewLink": "http://books.google.fr/books?id=Ph-QSQAACAAJ&dq=isbn:9782266206006&hl=&cd=1&source=gbs_api",
     "slug": "mémoires-de-guerre",
     "cover_local": "/books/mémoires-de-guerre/cover.jpg"
+  },
+  {
+    "description": "Paris libéré, la guerre n'est pas finie pour autant. Alors que les combats continuent sur le territoire national, de Gaulle oeuvre à rétablir la République. Il lui faut réconcilier un peuple divisé, maîtriser les revendications communistes, s'imposer à part entière dans le concert des nations victorieuses. Dans l'empire, depuis l'Afrique jusqu'en Indochine, le prestige de la France a bien souffert: sur tous les fronts, le général s'emploie activement à ramener l'ordre, l'unité, l'honneur. Toute sa subtilité politique et son sens de la diplomatie n'y suffiront pas toujours mais, sur son champ de ruines, la France se redresse. C'est un homme âgé, fatigué qui, au lendemain d'une grande victoire, se voit écarté du pouvoir par plus intrigants que lui. Depuis Colombey-les-deux-Eglises, il observe, espère, attend. Il reviendra.",
+    "categories": [
+      "Presidents"
+    ],
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "subtitle": "Tome 3, Le salut 1944-1946",
+    "contentVersion": "preview-1.0.0",
+    "infoLink": "http://books.google.fr/books?id=QZKYSQAACAAJ&dq=isbn:9782266206013&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/M%C3%A9moires_de_guerre.html?hl=&id=QZKYSQAACAAJ",
+    "authors": [
+      "Charles De Gaulle"
+    ],
+    "publishedDate": "2010-06-03",
+    "title": "Mémoires de guerre",
+    "publisher": "Distribooks",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "226620601X"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782266206013"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "pageCount": 531,
+    "allowAnonLogging": false,
+    "imageLinks": {
+      "thumbnail": "http://books.google.com/books/content?id=QZKYSQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "smallThumbnail": "http://books.google.com/books/content?id=QZKYSQAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=QZKYSQAACAAJ&dq=isbn:9782266206013&hl=&cd=1&source=gbs_api"
   }
 ]
