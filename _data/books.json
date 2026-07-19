@@ -2529,6 +2529,8 @@
     "maturityRating": "NOT_MATURE",
     "allowAnonLogging": false,
     "language": "fr",
-    "previewLink": "http://books.google.fr/books?id=9WmDPQAACAAJ&dq=isbn:9782290313237&hl=&cd=1&source=gbs_api"
+    "previewLink": "http://books.google.fr/books?id=9WmDPQAACAAJ&dq=isbn:9782290313237&hl=&cd=1&source=gbs_api",
+    "slug": "lassassin-du-roi",
+    "cover_local": "/books/lassassin-du-roi/cover.jpg"
   }
 ]
