@@ -2682,6 +2682,8 @@
     "pageCount": 469,
     "allowAnonLogging": false,
     "language": "fr",
-    "previewLink": "http://books.google.fr/books?id=pNktnwEACAAJ&dq=isbn:9782070373642&hl=&cd=1&source=gbs_api"
+    "previewLink": "http://books.google.fr/books?id=pNktnwEACAAJ&dq=isbn:9782070373642&hl=&cd=1&source=gbs_api",
+    "slug": "teils-franz",
+    "cover_local": "/books/teils-franz/cover.jpg"
   }
 ]
