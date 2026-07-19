@@ -2722,5 +2722,41 @@
     "previewLink": "http://books.google.fr/books?id=PpuGHAAACAAJ&dq=isbn:9782070381920&hl=&cd=1&source=gbs_api",
     "slug": "oreste",
     "cover_local": "/books/oreste/cover.jpg"
+  },
+  {
+    "description": "En 1939, lorsque la guerre éclate, voilà déjà cinq ans qu'un colonel clame dans le désert qu'elle est préalablement perdue. L'armée française est trop lourde, trop peu offensive, ses blindés sont inadaptés à la puissance de feu de l'Allemagne nazie: aveuglée par le traumatisme de 14-18, la France court à la défaite. Appelé d'urgence à de hautes responsabilités ministérielles, de Gaulle assiste à la débâcle, malgré quelques faits d'armes personnels, à l'Est. Bientôt le gouvernement fuit à Bordeaux, et c'est l'armistice. Une lâcheté insupportable, inacceptable pour un homme qui a, depuis toujours, \" une certaine idée de la France \": il s'envole pour Londres. Tandis que d'autres s'accommodent de Vichy, le général fait retentir, depuis l'Angleterre, la voix d'une France irréductible, libre, debout : la voix de la France éternelle.",
+    "contentVersion": "preview-1.0.0",
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "subtitle": "Tome 1, L'appel 1940-1942",
+    "infoLink": "http://books.google.fr/books?id=6evASQAACAAJ&dq=isbn:9782266205993&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/M%C3%A9moires_de_guerre.html?hl=&id=6evASQAACAAJ",
+    "authors": [
+      "Charles de Gaulle"
+    ],
+    "publishedDate": "2010-06-03",
+    "title": "Mémoires de guerre",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2266205994"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782266205993"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "pageCount": 434,
+    "language": "fr",
+    "imageLinks": {
+      "thumbnail": "http://books.google.com/books/content?id=6evASQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "smallThumbnail": "http://books.google.com/books/content?id=6evASQAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
+    },
+    "previewLink": "http://books.google.fr/books?id=6evASQAACAAJ&dq=isbn:9782266205993&hl=&cd=1&source=gbs_api"
   }
 ]
