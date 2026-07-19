@@ -2566,6 +2566,8 @@
     "pageCount": 231,
     "allowAnonLogging": false,
     "language": "fr",
-    "previewLink": "http://books.google.fr/books?id=sHRcBAAACAAJ&dq=intitle:L%27oeil+de+la+sibylle+inauthor:Dick&hl=&cd=1&source=gbs_api"
+    "previewLink": "http://books.google.fr/books?id=sHRcBAAACAAJ&dq=intitle:L%27oeil+de+la+sibylle+inauthor:Dick&hl=&cd=1&source=gbs_api",
+    "slug": "loeil-de-la-sibylle",
+    "cover_local": "/books/loeil-de-la-sibylle/cover.jpg"
   }
 ]
