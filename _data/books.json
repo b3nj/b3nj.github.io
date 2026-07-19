@@ -2719,6 +2719,8 @@
     "pageCount": 1421,
     "allowAnonLogging": false,
     "language": "fr",
-    "previewLink": "http://books.google.fr/books?id=PpuGHAAACAAJ&dq=isbn:9782070381920&hl=&cd=1&source=gbs_api"
+    "previewLink": "http://books.google.fr/books?id=PpuGHAAACAAJ&dq=isbn:9782070381920&hl=&cd=1&source=gbs_api",
+    "slug": "oreste",
+    "cover_local": "/books/oreste/cover.jpg"
   }
 ]
