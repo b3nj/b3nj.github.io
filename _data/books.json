@@ -2647,5 +2647,41 @@
     "previewLink": "http://books.google.fr/books?id=7V8InwEACAAJ&dq=isbn:9782070415731&hl=&cd=1&source=gbs_api",
     "slug": "fahrenheit-quatre-cent-cinquante-et-un",
     "cover_local": "/books/fahrenheit-quatre-cent-cinquante-et-un/cover.jpg"
+  },
+  {
+    "description": "Une sorte d'épouvante emplit Eschyle d'un bout à l'autre; une méduse profonde s'y dessine vaguement derrière les figures qui se meuvent dans la lumière. Eschyle est magnifique et formidable, comme si l'on voyait un froncement de sourcil au-dessus du soleil.",
+    "categories": [
+      "Fiction"
+    ],
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "contentVersion": "preview-1.0.0",
+    "infoLink": "http://books.google.fr/books?id=pNktnwEACAAJ&dq=isbn:9782070373642&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Teils_franz.html?hl=&id=pNktnwEACAAJ",
+    "authors": [
+      "Aeschylus",
+      "Paul Mazon"
+    ],
+    "publishedDate": "1982-01-01",
+    "title": "Teils., franz",
+    "publisher": "Editions Gallimard",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2070373649"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782070373642"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "pageCount": 469,
+    "allowAnonLogging": false,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=pNktnwEACAAJ&dq=isbn:9782070373642&hl=&cd=1&source=gbs_api"
   }
 ]
