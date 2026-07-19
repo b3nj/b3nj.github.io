@@ -2877,5 +2877,44 @@
     },
     "slug": "la-théogonie-les-travaux-et-les-jours",
     "cover_local": "/books/la-théogonie-les-travaux-et-les-jours/cover.jpg"
+  },
+  {
+    "description": "\" Elle était là, immobile sur son lit, la petite phrase bien connue, trop connue : Je t'aime. Trois mots maigres et pâles, si pâles. Les sept lettres ressortaient à peine sur la blancheur des draps. Il me sembla qu'elle nous souriait, la petite phrase. Il me sembla qu'elle nous parlait : - Je suis un peu fatiguée. Il paraît que j'ai trop travaillé. Il faut que je me repose. - Allons, allons, je t'aime, lui répondit Monsieur Henri, je te connais. Depuis le temps que tu existes. Tu es solide. Quelques jours de repos et tu seras sur pied. Monsieur Henri était aussi bouleversé que moi. Tout le monde dit et répète \" Je t'aime \". Il faut faire attention aux mots. Ne pas les répéter à tout bout de champ. Ni les employer à tort et à travers, les uns pour les autres, en racontant des mensonges. Autrement, les mots s'usent. Et parfois, il est trop tard pour les sauver. \"",
+    "categories": [
+      "Fiction"
+    ],
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "contentVersion": "preview-1.0.0",
+    "infoLink": "http://books.google.fr/books?id=UQnRngEACAAJ&dq=isbn:9782253149101&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/La_grammaire_est_une_chanson_douce.html?hl=&id=UQnRngEACAAJ",
+    "authors": [
+      "Erik Orsenna"
+    ],
+    "publishedDate": "2003-01-01",
+    "title": "La grammaire est une chanson douce",
+    "publisher": "LGF/Le Livre de Poche",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2253149101"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782253149101"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "pageCount": 150,
+    "allowAnonLogging": false,
+    "imageLinks": {
+      "thumbnail": "http://books.google.com/books/content?id=UQnRngEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "smallThumbnail": "http://books.google.com/books/content?id=UQnRngEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=UQnRngEACAAJ&dq=isbn:9782253149101&hl=&cd=1&source=gbs_api"
   }
 ]
