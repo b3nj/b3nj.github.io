@@ -2791,6 +2791,8 @@
     "allowAnonLogging": false,
     "pageCount": 497,
     "language": "fr",
-    "previewLink": "http://books.google.fr/books?id=Ph-QSQAACAAJ&dq=isbn:9782266206006&hl=&cd=1&source=gbs_api"
+    "previewLink": "http://books.google.fr/books?id=Ph-QSQAACAAJ&dq=isbn:9782266206006&hl=&cd=1&source=gbs_api",
+    "slug": "mémoires-de-guerre",
+    "cover_local": "/books/mémoires-de-guerre/cover.jpg"
   }
 ]
