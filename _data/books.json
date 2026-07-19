@@ -2644,6 +2644,8 @@
       "smallThumbnail": "http://books.google.com/books/content?id=7V8InwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
     },
     "language": "fr",
-    "previewLink": "http://books.google.fr/books?id=7V8InwEACAAJ&dq=isbn:9782070415731&hl=&cd=1&source=gbs_api"
+    "previewLink": "http://books.google.fr/books?id=7V8InwEACAAJ&dq=isbn:9782070415731&hl=&cd=1&source=gbs_api",
+    "slug": "fahrenheit-quatre-cent-cinquante-et-un",
+    "cover_local": "/books/fahrenheit-quatre-cent-cinquante-et-un/cover.jpg"
   }
 ]
