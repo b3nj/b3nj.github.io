@@ -2992,5 +2992,40 @@
     },
     "slug": "hadès-perséphone",
     "cover_local": "/books/hadès-perséphone/cover.jpg"
+  },
+  {
+    "infoLink": "http://books.google.fr/books?id=jQk60AEACAAJ&dq=isbn:9782755664591&hl=&source=gbs_api",
+    "contentVersion": "preview-1.0.0",
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "canonicalVolumeLink": "https://books.google.com/books/about/A_touch_of_malice.html?hl=&id=jQk60AEACAAJ",
+    "authors": [
+      "Scarlett St. Clair"
+    ],
+    "publishedDate": "2023-05-03",
+    "title": "A touch of malice",
+    "publisher": "Hugo poche",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2755664592"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782755664591"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "pageCount": 0,
+    "allowAnonLogging": false,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=jQk60AEACAAJ&dq=isbn:9782755664591&hl=&cd=1&source=gbs_api",
+    "panelizationSummary": {
+      "containsImageBubbles": false,
+      "containsEpubBubbles": false
+    }
   }
 ]
