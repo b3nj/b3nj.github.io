@@ -3029,5 +3029,40 @@
     },
     "slug": "a-touch-of-malice",
     "cover_local": "/books/a-touch-of-malice/cover.jpg"
+  },
+  {
+    "infoLink": "http://books.google.fr/books?id=khGN0AEACAAJ&dq=isbn:9782080438966&hl=&source=gbs_api",
+    "contentVersion": "preview-1.0.0",
+    "readingModes": {
+      "image": false,
+      "text": false
+    },
+    "subtitle": "Traité de philosophie à l'usage des jeunes générations",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Apprendre_%C3%A0_vivre.html?hl=&id=khGN0AEACAAJ",
+    "authors": [
+      "Luc Ferry"
+    ],
+    "publishedDate": "2024-01-24",
+    "title": "Apprendre à vivre",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2080438964"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782080438966"
+      }
+    ],
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "pageCount": 0,
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=khGN0AEACAAJ&dq=isbn:9782080438966&hl=&cd=1&source=gbs_api",
+    "panelizationSummary": {
+      "containsImageBubbles": false,
+      "containsEpubBubbles": false
+    }
   }
 ]
