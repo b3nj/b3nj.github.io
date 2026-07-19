@@ -3066,5 +3066,50 @@
     },
     "slug": "apprendre-à-vivre",
     "cover_local": "/books/apprendre-à-vivre/cover.jpg"
+  },
+  {
+    "ratingsCount": 2,
+    "averageRating": 4.5,
+    "publisher": "JC Lattès",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_13",
+        "identifier": "9782709637411"
+      },
+      {
+        "type": "ISBN_10",
+        "identifier": "2709637413"
+      }
+    ],
+    "title": "Anges et démons",
+    "readingModes": {
+      "image": true,
+      "text": true
+    },
+    "language": "fr",
+    "infoLink": "https://play.google.com/store/books/details?id=YnBRB84BHscC&source=gbs_api",
+    "imageLinks": {
+      "thumbnail": "http://books.google.com/books/content?id=YnBRB84BHscC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "smallThumbnail": "http://books.google.com/books/content?id=YnBRB84BHscC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
+    },
+    "panelizationSummary": {
+      "containsImageBubbles": false,
+      "containsEpubBubbles": false
+    },
+    "allowAnonLogging": true,
+    "printType": "BOOK",
+    "authors": [
+      "Dan Brown"
+    ],
+    "pageCount": 709,
+    "maturityRating": "NOT_MATURE",
+    "contentVersion": "2.10.10.0.preview.3",
+    "publishedDate": "2005-03-02",
+    "previewLink": "http://books.google.fr/books?id=YnBRB84BHscC&printsec=frontcover&dq=intitle:Anges+%26+d%C3%A9mons+inauthor:Brown&hl=&cd=1&source=gbs_api",
+    "canonicalVolumeLink": "https://play.google.com/store/books/details?id=YnBRB84BHscC",
+    "categories": [
+      "Fiction"
+    ],
+    "description": "Robert Langdon, le célèbre professeur d’histoire de l’art, spécialiste de symbologie religieuse, à Harvard, est convoqué au CERN, en Suisse, pour déchiffrer un symbole gravé au fer rouge sur la poitrine d’un éminent homme de science qui a été assassiné. Il fait alors une découverte incroyable : il s’agirait d’un crime commis par une très ancienne société secrète, les Illuminati, laquelle s’est également emparée d’un conteneur renfermant une substance très dangereuse. La secte, qui vient de resurgir après une éclipse de quatre siècles, a juré d’anéantir l’Eglise catholique. Langdon ne dispose que de quelques heures pour sauver le Vatican qu’une terrifiante bombe à retardement menace ! Dans cette folle course contre la montre, Langdon aura comme alliée, Vittoria, une ravissante jeune scientifique qui l’aidera à décrypter d’archaïques symboles qui d’églises en places romaines le mèneront jusqu’à l’antre des Illuminati..."
   }
 ]
