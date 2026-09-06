@@ -1,0 +1,339 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assistant Motus</title>
+<style>
+  :root{
+    --ink:#1c1a17;
+    --paper:#f6f1e4;
+    --panel:#211f1b;
+    --gold:#e0a526;
+    --gold-dim:#8a6a1f;
+    --green:#3f7d4c;
+    --grey:#4a463f;
+    --line:#3a3630;
+    --danger:#b3492f;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--ink);
+    color:var(--paper);
+    font-family: "Iowan Old Style","Georgia","Times New Roman",serif;
+    min-height:100vh;
+    padding:2.5rem 1.25rem 4rem;
+  }
+  .wrap{max-width:760px;margin:0 auto;}
+  h1{
+    font-size:2.1rem;
+    letter-spacing:0.01em;
+    margin:0 0 0.15em;
+    color:var(--gold);
+    font-weight:600;
+  }
+  .tagline{
+    color:#c9c2b0;
+    font-size:1rem;
+    margin:0 0 2.2em;
+    max-width:46ch;
+    line-height:1.5;
+  }
+  section{margin-bottom:2.1em;}
+  label.field-title{
+    display:block;
+    font-size:0.95rem;
+    color:var(--gold);
+    margin-bottom:0.6em;
+    font-weight:600;
+  }
+  .hint{
+    font-family:-apple-system,Helvetica,Arial,sans-serif;
+    font-size:0.82rem;
+    color:#948d7c;
+    margin:0.45em 0 0;
+    line-height:1.4;
+  }
+  select{
+    background:var(--panel);
+    color:var(--paper);
+    border:1px solid var(--line);
+    border-radius:4px;
+    padding:0.5em 0.7em;
+    font-family:-apple-system,Helvetica,Arial,sans-serif;
+    font-size:0.95rem;
+  }
+  .grid{
+    display:flex;
+    gap:0.4em;
+    flex-wrap:wrap;
+  }
+  .tile{
+    width:2.6em;
+    height:2.6em;
+    text-align:center;
+    font-size:1.35rem;
+    text-transform:uppercase;
+    background:var(--panel);
+    border:2px solid var(--line);
+    border-radius:6px;
+    color:var(--paper);
+    font-family:"Iowan Old Style",Georgia,serif;
+    outline:none;
+    transition:border-color .15s;
+  }
+  .tile:focus{border-color:var(--gold);}
+  .tile.filled{border-color:var(--green); background:#26311f;}
+  input[type=text]{
+    width:100%;
+    max-width:420px;
+    background:var(--panel);
+    color:var(--paper);
+    border:1px solid var(--line);
+    border-radius:4px;
+    padding:0.6em 0.8em;
+    font-family:-apple-system,Helvetica,Arial,sans-serif;
+    font-size:1rem;
+    text-transform:uppercase;
+    letter-spacing:0.08em;
+  }
+  input[type=text]::placeholder{
+    text-transform:none;
+    letter-spacing:normal;
+    color:#75705f;
+  }
+  .row{display:flex; gap:1.5em; flex-wrap:wrap;}
+  .row > div{flex:1; min-width:220px;}
+  button{
+    background:var(--gold);
+    color:#241d0d;
+    border:none;
+    border-radius:5px;
+    padding:0.75em 1.6em;
+    font-size:1rem;
+    font-weight:700;
+    font-family:-apple-system,Helvetica,Arial,sans-serif;
+    cursor:pointer;
+    letter-spacing:0.02em;
+  }
+  button:hover{background:#eebb4a;}
+  button.ghost{
+    background:transparent;
+    color:#c9c2b0;
+    border:1px solid var(--line);
+    font-weight:500;
+    margin-left:0.6em;
+  }
+  button.ghost:hover{border-color:var(--gold); color:var(--gold);}
+  #results{
+    margin-top:0.4em;
+    font-family:-apple-system,Helvetica,Arial,sans-serif;
+  }
+  #count{
+    color:#c9c2b0;
+    font-size:0.9rem;
+    margin-bottom:0.8em;
+  }
+  #count strong{color:var(--gold);}
+  .word-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:0.5em;
+  }
+  .word-chip{
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:4px;
+    padding:0.35em 0.7em;
+    font-size:1rem;
+    text-transform:uppercase;
+    letter-spacing:0.04em;
+    font-family:"Iowan Old Style",Georgia,serif;
+  }
+  .empty, .toolong{
+    color:#948d7c;
+    font-family:-apple-system,Helvetica,Arial,sans-serif;
+    font-size:0.92rem;
+  }
+  footer{
+    margin-top:3em;
+    font-family:-apple-system,Helvetica,Arial,sans-serif;
+    font-size:0.78rem;
+    color:#6b665a;
+    border-top:1px solid var(--line);
+    padding-top:1em;
+  }
+  #status{
+    font-family:-apple-system,Helvetica,Arial,sans-serif;
+    font-size:0.85rem;
+    color:#948d7c;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Assistant Motus</h1>
+  <p class="tagline">Retrouvez le mot cherché à partir des indices révélés à l'écran : lettres trouvées, lettres absentes, longueur du mot.</p>
+
+  <section>
+    <label class="field-title" for="length">Longueur du mot</label>
+    <select id="length"></select>
+  </section>
+
+  <section>
+    <label class="field-title">Lettres trouvées, à leur position</label>
+    <div class="grid" id="grid"></div>
+    <p class="hint">Une case par lettre du mot. Ne remplissez que les cases dont vous connaissez la lettre — au début, à la fin, ou n'importe où au milieu.</p>
+  </section>
+
+  <section class="row">
+    <div>
+      <label class="field-title" for="contains">Lettres présentes, position inconnue</label>
+      <input type="text" id="contains" placeholder="ex. TT si le mot contient deux T">
+      <p class="hint">Répétez une lettre autant de fois qu'elle apparaît dans le mot si vous le savez (ex. le mot contient deux T mais vous ignorez où).</p>
+    </div>
+    <div>
+      <label class="field-title" for="excludes">Lettres absentes du mot</label>
+      <input type="text" id="excludes" placeholder="ex. RSN">
+      <p class="hint">Toutes les lettres testées qui ne font pas partie du mot.</p>
+    </div>
+  </section>
+
+  <section>
+    <button id="search">Chercher</button>
+    <button id="reset" class="ghost" type="button">Réinitialiser</button>
+  </section>
+
+  <section id="results">
+    <p id="status">Chargement de la liste de mots…</p>
+  </section>
+
+  <footer>
+    Liste de ~197 000 mots français (dictionnaire Français-GUTenberg, via openlexicon.fr). Outil personnel, sans lien officiel avec le jeu Motus.
+  </footer>
+</div>
+
+<script>
+const MAX_DISPLAY = 300;
+let WORDS_BY_LEN = null;
+
+const lengthSelect = document.getElementById('length');
+const gridEl = document.getElementById('grid');
+const statusEl = document.getElementById('status');
+const resultsEl = document.getElementById('results');
+
+function buildGrid(len){
+  gridEl.innerHTML = '';
+  for(let i=0;i<len;i++){
+    const inp = document.createElement('input');
+    inp.className = 'tile';
+    inp.maxLength = 1;
+    inp.dataset.index = i;
+    inp.addEventListener('input', (e)=>{
+      e.target.value = e.target.value.replace(/[^a-zA-ZàâäéèêëïîôöùûüÿçœæÀÂÄÉÈÊËÏÎÔÖÙÛÜŸÇŒÆ]/g,'').slice(0,1);
+      e.target.classList.toggle('filled', e.target.value.length>0);
+      if(e.target.value && inp.nextElementSibling){
+        inp.nextElementSibling.focus();
+      }
+    });
+    inp.addEventListener('keydown', (e)=>{
+      if(e.key === 'Backspace' && !e.target.value && inp.previousElementSibling){
+        inp.previousElementSibling.focus();
+      }
+    });
+    gridEl.appendChild(inp);
+  }
+}
+
+function normalize(s){
+  return s.normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+}
+
+function populateLengthSelect(){
+  const lengths = Object.keys(WORDS_BY_LEN).map(Number).sort((a,b)=>a-b);
+  lengthSelect.innerHTML = '';
+  lengths.filter(l => l>=3 && l<=15).forEach(l=>{
+    const opt = document.createElement('option');
+    opt.value = l;
+    opt.textContent = `${l} lettres (${WORDS_BY_LEN[l].length.toLocaleString('fr-FR')} mots)`;
+    lengthSelect.appendChild(opt);
+  });
+  lengthSelect.value = 6;
+}
+
+function runSearch(){
+  const len = Number(lengthSelect.value);
+  const pool = WORDS_BY_LEN[len] || [];
+
+  const tiles = Array.from(gridEl.querySelectorAll('.tile'));
+  const known = tiles.map(t => t.value.toLowerCase());
+
+  const containsRaw = document.getElementById('contains').value.toLowerCase().replace(/[^a-zàâäéèêëïîôöùûüÿçœæ]/g,'');
+  const excludesRaw = document.getElementById('excludes').value.toLowerCase().replace(/[^a-zàâäéèêëïîôöùûüÿçœæ]/g,'');
+
+  const requiredCounts = {};
+  for(const ch of containsRaw){ requiredCounts[ch] = (requiredCounts[ch]||0) + 1; }
+  const excluded = new Set(excludesRaw.split(''));
+
+  const matches = pool.filter(word=>{
+    for(let i=0;i<len;i++){
+      if(known[i] && word[i] !== known[i]) return false;
+    }
+    for(const ch of excluded){
+      if(word.includes(ch)) return false;
+    }
+    for(const ch in requiredCounts){
+      const count = word.split('').filter(c=>c===ch).length;
+      if(count < requiredCounts[ch]) return false;
+    }
+    return true;
+  });
+
+  renderResults(matches);
+}
+
+function renderResults(matches){
+  if(matches.length === 0){
+    resultsEl.innerHTML = '<p class="empty">Aucun mot ne correspond à ces indices.</p>';
+    return;
+  }
+  const shown = matches.slice(0, MAX_DISPLAY);
+  let html = `<p id="count"><strong>${matches.length.toLocaleString('fr-FR')}</strong> mot(s) trouvé(s)`;
+  if(matches.length > MAX_DISPLAY) html += ` — ${MAX_DISPLAY} premiers affichés`;
+  html += '</p><div class="word-list">';
+  html += shown.map(w=>`<span class="word-chip">${w}</span>`).join('');
+  html += '</div>';
+  resultsEl.innerHTML = html;
+}
+
+document.getElementById('search').addEventListener('click', runSearch);
+document.getElementById('reset').addEventListener('click', ()=>{
+  buildGrid(Number(lengthSelect.value));
+  document.getElementById('contains').value = '';
+  document.getElementById('excludes').value = '';
+  resultsEl.innerHTML = '';
+});
+lengthSelect.addEventListener('change', ()=> buildGrid(Number(lengthSelect.value)));
+
+fetch('mots.json')
+  .then(r=>{
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    return r.json();
+  })
+  .then(data=>{
+    WORDS_BY_LEN = data;
+    populateLengthSelect();
+    buildGrid(Number(lengthSelect.value));
+    statusEl.textContent = '';
+  })
+  .catch(err=>{
+    statusEl.textContent = "Impossible de charger mots.json (vérifiez qu'il est bien dans le même dossier que cette page). Détail : " + err.message;
+  });
+</script>
+</body>
+</html>
