@@ -26,4 +26,4 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           HN_STORY_COUNT: '10'
           HN_MIN_SCORE: '100'
-        run: python scripts/hn_digest.py
+        run: python scripts/hn-digest.py
