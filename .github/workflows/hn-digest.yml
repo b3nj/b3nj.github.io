@@ -22,7 +22,7 @@ jobs:
 
       - name: Send digest
         env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_API_TOKEN: ${{ secrets.TELEGRAM_API_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           HN_STORY_COUNT: '10'
           HN_MIN_SCORE: '100'
