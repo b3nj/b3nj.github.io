@@ -81,10 +81,10 @@ def send_telegram_message(text, token, chat_id):
 
 
 def main():
-    token = os.environ.get("TELEGRAM_BOT_TOKEN")
+    token = os.environ.get("TELEGRAM_API_TOKEN")
     chat_id = os.environ.get("TELEGRAM_CHAT_ID")
     if not token or not chat_id:
-        print("Missing TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID", file=sys.stderr)
+        print("Missing TELEGRAM_API_TOKEN or TELEGRAM_CHAT_ID", file=sys.stderr)
         sys.exit(1)
 
     story_count = int(os.environ.get("HN_STORY_COUNT", "10"))
