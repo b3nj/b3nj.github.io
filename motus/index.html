@@ -136,6 +136,21 @@
     margin-bottom:0.8em;
   }
   #count strong{color:var(--gold);}
+  .pager{
+    display:flex;
+    align-items:center;
+    gap:1em;
+    flex-wrap:wrap;
+    margin:0 0 1em;
+    padding-bottom:0.9em;
+    border-bottom:1px solid var(--line);
+  }
+  .pager-status{
+    font-size:0.85rem;
+    color:#c9c2b0;
+  }
+  .pager button{padding:0.45em 0.9em; font-size:0.85rem; margin-left:0;}
+  .pager button:disabled{opacity:0.35; cursor:default; border-color:var(--line); color:#6b665a;}
   .word-list{
     display:flex;
     flex-wrap:wrap;
@@ -216,7 +231,6 @@
 </div>
 
 <script>
-const MAX_DISPLAY = 300;
 let WORDS_BY_LEN = null;
 
 const lengthSelect = document.getElementById('length');
@@ -297,18 +311,46 @@ function runSearch(){
   renderResults(matches);
 }
 
+const PAGE_SIZE = 100;
+let currentMatches = [];
+let currentPage = 0;
+
 function renderResults(matches){
-  if(matches.length === 0){
+  currentMatches = matches;
+  currentPage = 0;
+  renderPage();
+}
+
+function renderPage(){
+  if(currentMatches.length === 0){
     resultsEl.innerHTML = '<p class="empty">Aucun mot ne correspond à ces indices.</p>';
     return;
   }
-  const shown = matches.slice(0, MAX_DISPLAY);
-  let html = `<p id="count"><strong>${matches.length.toLocaleString('fr-FR')}</strong> mot(s) trouvé(s)`;
-  if(matches.length > MAX_DISPLAY) html += ` — ${MAX_DISPLAY} premiers affichés`;
-  html += '</p><div class="word-list">';
+
+  const pageCount = Math.ceil(currentMatches.length / PAGE_SIZE);
+  currentPage = Math.min(Math.max(currentPage, 0), pageCount - 1);
+  const start = currentPage * PAGE_SIZE;
+  const shown = currentMatches.slice(start, start + PAGE_SIZE);
+
+  let html = `<p id="count"><strong>${currentMatches.length.toLocaleString('fr-FR')}</strong> mot(s) trouvé(s)</p>`;
+
+  if(pageCount > 1){
+    html += `<div class="pager">
+      <button class="ghost" id="pager-prev" type="button" ${currentPage===0 ? 'disabled':''}>&laquo; Précédent</button>
+      <span class="pager-status">Page ${currentPage+1} / ${pageCount} (mots ${start+1}–${start+shown.length})</span>
+      <button class="ghost" id="pager-next" type="button" ${currentPage===pageCount-1 ? 'disabled':''}>Suivant &raquo;</button>
+    </div>`;
+  }
+
+  html += '<div class="word-list">';
   html += shown.map(w=>`<span class="word-chip">${w}</span>`).join('');
   html += '</div>';
   resultsEl.innerHTML = html;
+
+  if(pageCount > 1){
+    document.getElementById('pager-prev').addEventListener('click', ()=>{ currentPage--; renderPage(); resultsEl.scrollIntoView({behavior:'smooth', block:'start'}); });
+    document.getElementById('pager-next').addEventListener('click', ()=>{ currentPage++; renderPage(); resultsEl.scrollIntoView({behavior:'smooth', block:'start'}); });
+  }
 }
 
 document.getElementById('search').addEventListener('click', runSearch);
@@ -316,6 +358,8 @@ document.getElementById('reset').addEventListener('click', ()=>{
   buildGrid(Number(lengthSelect.value));
   document.getElementById('contains').value = '';
   document.getElementById('excludes').value = '';
+  currentMatches = [];
+  currentPage = 0;
   resultsEl.innerHTML = '';
 });
 lengthSelect.addEventListener('change', ()=> buildGrid(Number(lengthSelect.value)));
