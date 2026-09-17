@@ -1,4 +1,10 @@
 ---
+- name: "Small IT tricks"
+  url: https://will-keleher.com/posts/small-programming-tricks-matter/
+  date: 2026/09/17
+  comment: "Small useful things"
+  tags: 'stuff'
+  done: true
 - name: "Karaoke"
   url: https://nightingale.cafe/
   date: 2026/03/18
