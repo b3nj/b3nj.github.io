@@ -1,13 +1,24 @@
 # this action is related to gh-pages branch ... but as GH doesn't register workflows that are workflow_dispatch only on the main branch, had to put it here
 
-name: "Add book json to json file from Apple shortcut"
+name: "Add book to books.json from Apple shortcut"
 
 on:
   workflow_dispatch:
     inputs:
-      json_content:
-        description: 'JSON content to append'
-        required: true
+      isbn:
+        description: 'ISBN-10 or ISBN-13 (leave empty to search by title)'
+        required: false
+        default: ''
+        type: string
+      title:
+        description: 'Book title (used when no ISBN)'
+        required: false
+        default: ''
+        type: string
+      author:
+        description: 'Author (optional, narrows a title search)'
+        required: false
+        default: ''
         type: string
       target_file:
         description: 'target file'
@@ -15,7 +26,6 @@ on:
         default: '_data/books.json'
         type: string
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   append:
     runs-on: ubuntu-latest
@@ -29,95 +39,35 @@ jobs:
           ref: 'gh-pages'
           token: ${{ secrets.GH_PAT }}
 
-      - name: Append JSON to file
-        id: append
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      # Inputs go through env vars, never inlined in the shell script:
+      # apostrophes/quotes in titles can't break bash.
+      - name: Look up book and append to JSON
+        id: lookup
         env:
-          JSON_CONTENT: ${{ inputs.json_content }}
-        run: |
-          mkdir -p "$(dirname "${{ inputs.target_file }}")"
-
-          NEW_ISBN=$(echo "$JSON_CONTENT" | jq -r '
-            .industryIdentifiers // [] |
-            map(select(.type == "ISBN_13")) |
-            first | .identifier // ""
-          ')
-
-          EXISTS=$(jq --arg isbn "$NEW_ISBN" '
-            map(select(
-              .industryIdentifiers // [] |
-              map(select(.type == "ISBN_13" and .identifier == $isbn)) |
-              length > 0
-            )) | length
-          ' "${{ inputs.target_file }}")
-
-          if [ "$EXISTS" -gt "0" ]; then
-            echo "duplicate=true" >> $GITHUB_OUTPUT
-            echo "isbn=$NEW_ISBN" >> $GITHUB_OUTPUT
-            TITLE=$(echo "$JSON_CONTENT" | jq -r '.title // "Unknown title"')
-            echo "title=$TITLE" >> $GITHUB_OUTPUT
-            echo "Book with ISBN $NEW_ISBN already exists, skipping."
-            exit 0
-          fi
-
-          echo "duplicate=false" >> $GITHUB_OUTPUT
-          echo "$JSON_CONTENT" | jq -r '.' | jq -s '.[0] + [.[1]]' "${{ inputs.target_file }}" - > _data/tmp.json && mv _data/tmp.json "${{ inputs.target_file }}"          
-
-      - name: Commit and push
-        if: steps.append.outputs.duplicate == 'false'
-        env:
-          JSON_CONTENT: ${{ inputs.json_content }}
-        run: |
-          TITLE=$(echo "$JSON_CONTENT" | jq -r '.title // "Unknown title"')
-          AUTHOR=$(echo "$JSON_CONTENT" | jq -r '.authors[0] // "Unknown author"')
-          git config --global user.email "benj@bkraft.fr"
-          git config --global user.name "b3nj (via actions)"
-          git add "${{ inputs.target_file }}"
-          git commit -m "📚 Add: ${TITLE} - ${AUTHOR}"
-          git push
-
-      - name: Notify duplicate via Telegram
-        if: steps.append.outputs.duplicate == 'true'
-        env:
+          INPUT_ISBN: ${{ inputs.isbn }}
+          INPUT_TITLE: ${{ inputs.title }}
+          INPUT_AUTHOR: ${{ inputs.author }}
+          TARGET_FILE: ${{ inputs.target_file }}
+          GOOGLE_BOOKS_API_KEY: ${{ secrets.GOOGLE_BOOKS_API_KEY }}
           TELEGRAM_API_TOKEN: ${{ secrets.TELEGRAM_API_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           SITE_URL: https://bkraft.fr
+        run: python3 scripts/lookup_book.py
+
+      - name: Commit and push
+        if: steps.lookup.outputs.result == 'added'
+        env:
+          BOOK_TITLE: ${{ steps.lookup.outputs.title }}
+          BOOK_AUTHOR: ${{ steps.lookup.outputs.author }}
+          TARGET_FILE: ${{ inputs.target_file }}
         run: |
-          python3 << 'EOF'
-          import json, os, re, urllib.request
-
-          def slugify(text):
-              text = re.sub(r"[^\w\s-]", "", text.lower())
-              return re.sub(r"[-\s]+", "-", text).strip("-")
-
-          title = "${{ steps.append.outputs.title }}"
-          isbn  = "${{ steps.append.outputs.isbn }}"
-          slug  = slugify(title)
-          site_url = os.environ.get("SITE_URL", "")
-          book_url = f"{site_url}/books/{slug}/" if slug else ""
-
-          message = (
-              f"📚 <b>{title}</b> is already in your library.\n"
-              f"🔖 <code>{isbn}</code>"
-          )
-
-          buttons = []
-          if book_url:
-              buttons.append({"text": "📖 View in library", "url": book_url})
-
-          payload = {
-              "chat_id": os.environ["TELEGRAM_CHAT_ID"],
-              "parse_mode": "HTML",
-              "text": message,
-              "reply_markup": {"inline_keyboard": [buttons]}
-          }
-
-          req = urllib.request.Request(
-              f"https://api.telegram.org/bot{os.environ['TELEGRAM_API_TOKEN']}/sendMessage",
-              data=json.dumps(payload).encode(),
-              headers={"Content-Type": "application/json"}
-          )
-
-          with urllib.request.urlopen(req) as resp:
-              result = json.loads(resp.read())
-              print("Telegram response:", result.get("ok"))
-          EOF
+          git config --global user.email "benj@bkraft.fr"
+          git config --global user.name "b3nj (via actions)"
+          git add "$TARGET_FILE"
+          git commit -m "📚 Add: ${BOOK_TITLE} - ${BOOK_AUTHOR}"
+          git push
