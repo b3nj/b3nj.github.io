@@ -66,9 +66,10 @@ jobs:
               return re.sub(r"[-\s]+", "-", text).strip("-")
           
           def get_isbn(book):
-              identifiers = book.get("industryIdentifiers", [])
-              return next((e["identifier"] for e in identifiers if e.get("type") == "ISBN_13"), None) or \
-                    next((e["identifier"] for e in identifiers if e.get("type") == "ISBN_10"), None)
+              ids = book.get("industryIdentifiers", [])
+              return next((e["identifier"] for e in ids if e.get("type") == "ISBN_13"), None) or \
+                    next((e["identifier"] for e in ids if e.get("type") == "ISBN_10"), None) or \
+                    next((e["identifier"] for e in ids), None)
 
           # Find the book that was added by diffing books.json
           old = subprocess.run(
