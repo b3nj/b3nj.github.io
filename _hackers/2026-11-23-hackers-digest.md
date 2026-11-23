@@ -6,33 +6,33 @@ category: hackers
 tags: [hacker-news, digest]
 ---
 
-1. [GLM-5.4: Toward Generalized Coding with Our First Loop Transformer](https://z.ai/blog/glm-5.4)  
-   ⬆ 259 · [113 comments](https://news.ycombinator.com/item?id=50609685)
+1. [Nvidia Reinstates Jensen Huang as CEO](https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html)  
+   ⬆ 1139 · [2228 comments](https://news.ycombinator.com/item?id=50611576)
 
-2. [Free alternative TV network built from the Internet Archive's forgotten videos](https://spelunkr.tv)  
-   ⬆ 622 · [110 comments](https://news.ycombinator.com/item?id=50606192)
+2. [Ladybird is now in alpha](https://ladybird.org/posts/alpha/)  
+   ⬆ 683 · [187 comments](https://news.ycombinator.com/item?id=50614249)
 
-3. [XNU Linux: Full OS X GUI Userspace on Linux](https://github.com/AFK-surf/xnulinux)  
-   ⬆ 405 · [186 comments](https://news.ycombinator.com/item?id=50607261)
+3. [GLM-5.4: Toward generalized coding with our first loop transformer](https://z.ai/blog/glm-5.4)  
+   ⬆ 856 · [304 comments](https://news.ycombinator.com/item?id=50609685)
 
-4. [Yes, 17M lines of Lean is a lot](https://micjm.com/blog/yes-17m-lines-of-lean-is-a-lot/)  
-   ⬆ 142 · [162 comments](https://news.ycombinator.com/item?id=50607668)
+4. [Kagi Mail (public beta)](https://blog.kagi.com/kagi-mail-public-beta)  
+   ⬆ 117 · [82 comments](https://news.ycombinator.com/item?id=50615481)
 
-5. [A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth](https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth)  
-   ⬆ 575 · [239 comments](https://news.ycombinator.com/item?id=50603845)
+5. [Spacecraft reaches Mercury on second-ever mission to enter its orbit](https://www.theguardian.com/science/2026/nov/20/spacecraft-mercury-second-ever-mission-orbit-bepicolombo)  
+   ⬆ 170 · [58 comments](https://news.ycombinator.com/item?id=50587439)
 
-6. [The Birds of GTA 6: A Field Guide to Vice City and Leonida's Wildlife](https://www.audubon.org/magazine/birds-of-gta-6-field-guide-vice-city-wildlife)  
-   ⬆ 540 · [288 comments](https://news.ycombinator.com/item?id=50602843)
+6. [Win4wine – Run Windows Shell as the Linux Desktop on Wine](https://github.com/mikuta0407/win4wine)  
+   ⬆ 156 · [87 comments](https://news.ycombinator.com/item?id=50610743)
 
-7. [Perplexity and Intelligence](https://openai.com/index/perplexity-and-intelligence/)  
-   ⬆ 617 · [406 comments](https://news.ycombinator.com/item?id=50601525)
+7. [Nospeaker ─ Make your MacBook's trackpad talk using its haptic motor](https://github.com/os6/nospeaker)  
+   ⬆ 189 · [99 comments](https://news.ycombinator.com/item?id=50610318)
 
-8. [Masullo on the Riemann Hypothesis](https://johncarlosbaez.wordpress.com/2026/11/22/masullo-on-the-riemann-hypothesis/)  
-   ⬆ 253 · [232 comments](https://news.ycombinator.com/item?id=50598441)
+8. [Free alternative TV network built from the Internet Archive's forgotten videos](https://spelunkr.tv)  
+   ⬆ 834 · [150 comments](https://news.ycombinator.com/item?id=50606192)
 
-9. [Cathedral floor emerges in Sudan, revealing one of the biggest medieval churches](https://apnews.com/article/sudan-antiquities-nubia-cathedral-1b16f67da881ee5592de4481ee55c527)  
-   ⬆ 275 · [91 comments](https://news.ycombinator.com/item?id=50547698)
+9. [XNU Linux: Full OS X GUI Userspace on Linux](https://github.com/AFK-surf/xnulinux)  
+   ⬆ 547 · [227 comments](https://news.ycombinator.com/item?id=50607261)
 
-10. [Assume People Are Not Interested in Your Blog Post](https://danielsada.tech/blog/assume-people-are-not-interested-in-your-blog-post/)  
-   ⬆ 233 · [116 comments](https://news.ycombinator.com/item?id=50603143)
+10. [The next circle of security hell](https://blogs.gentoo.org/mgorny/2026/10/27/the-next-circle-of-security-hell/)  
+   ⬆ 179 · [89 comments](https://news.ycombinator.com/item?id=50610334)
 
