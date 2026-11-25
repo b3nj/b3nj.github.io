@@ -32,5 +32,27 @@
     "lookupSource": "google",
     "slug": "pensées-distinguées",
     "cover_local": "/books/pensées-distinguées/cover.jpg"
+  },
+  {
+    "title": "Révélation",
+    "authors": [
+      "Blake Crouch"
+    ],
+    "publisher": "Gallmeister",
+    "publishedDate": "2024",
+    "pageCount": 361,
+    "language": "fr",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_13",
+        "identifier": "9782404080208"
+      },
+      {
+        "type": "ISBN_10",
+        "identifier": "2404080202"
+      }
+    ],
+    "canonicalVolumeLink": "http://catalogue.bnf.fr/ark:/12148/cb47489823t",
+    "lookupSource": "bnf"
   }
 ]
