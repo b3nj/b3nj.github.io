@@ -56,5 +56,27 @@
     "lookupSource": "bnf",
     "slug": "révélation",
     "cover_local": "/books/révélation/cover.jpg"
+  },
+  {
+    "title": "Piranèse",
+    "authors": [
+      "Susanna Clarke"
+    ],
+    "publisher": "le Livre de poche",
+    "publishedDate": "2024",
+    "pageCount": 311,
+    "language": "fr",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_13",
+        "identifier": "9782253106951"
+      },
+      {
+        "type": "ISBN_10",
+        "identifier": "225310695X"
+      }
+    ],
+    "canonicalVolumeLink": "http://catalogue.bnf.fr/ark:/12148/cb474419898",
+    "lookupSource": "bnf"
   }
 ]
