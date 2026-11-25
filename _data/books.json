@@ -1,2 +1,34 @@
 [
+  {
+    "title": "Pensées distinguées",
+    "subtitle": "Pour s'exprimer avec précision, force et distinction",
+    "authors": [
+      "Julia de Funès"
+    ],
+    "publishedDate": "2026-05-05",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_13",
+        "identifier": "9791032939239"
+      }
+    ],
+    "readingModes": {
+      "text": false,
+      "image": false
+    },
+    "pageCount": 0,
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.com/books?id=zLIA0gEACAAJ&dq=isbn:9791032939239&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=zLIA0gEACAAJ&dq=isbn:9791032939239&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Pens%C3%A9es_distingu%C3%A9es.html?hl=&id=zLIA0gEACAAJ",
+    "lookupSource": "google"
+  }
 ]
