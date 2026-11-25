@@ -12,6 +12,8 @@ Output:       appends a Google-Books-style volumeInfo object to TARGET_FILE and
 import json
 import os
 import re
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -73,10 +75,17 @@ def keys(vol):
     return out
 
 
-def http_get(url):
+def http_get(url, retries=2):
     req = urllib.request.Request(url, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
-        return r.read()
+    for n in range(retries + 1):
+        try:
+            with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
+                return r.read()
+        except urllib.error.HTTPError as e:
+            if e.code == 429 and n < retries:
+                time.sleep(3 * (n + 1))
+                continue
+            raise
 
 
 def local(tag):
@@ -138,11 +147,20 @@ def clean_person(s):
     return s
 
 
+GENRES = {
+    "roman", "récit", "recit", "nouvelles", "poèmes", "poemes", "essai", "théâtre",
+    "theatre", "pièce", "piece", "contes", "biographie", "témoignage", "temoignage",
+    "roman policier", "policier", "science-fiction", "roman de science-fiction",
+    "bande dessinée", "roman graphique",
+}
+
+
 def clean_title(raw):
     t = re.sub(r"\s*\[[^\]]*\]", "", raw)                # [Texte imprimé]
     t = t.split(" / ")[0].strip(" .;")
-    title, _, sub = t.partition(" : ")
-    return title.strip(), sub.strip()
+    parts = [p.strip() for p in t.split(" : ")]
+    rest = [p for p in parts[1:] if p and p.lower() not in GENRES]  # drop ": roman"
+    return parts[0], " : ".join(rest)
 
 
 def bnf_records(query, max_records=1):
@@ -161,6 +179,8 @@ def bnf_records(query, max_records=1):
     if raw is None:
         raise err
     root = ET.fromstring(raw)
+    total = next((e.text for e in root.iter() if local(e.tag) == "numberOfRecords"), "?")
+    print(f"    BnF numberOfRecords={total} query={query}")
     records = []
     for rd in root.iter():
         if local(rd.tag) != "recordData":
@@ -173,6 +193,8 @@ def bnf_records(query, max_records=1):
             fields.setdefault(name, []).append(e.text.strip())
         if fields:
             records.append(fields)
+    if not records:
+        print("    BnF raw response (first 800 chars):\n" + raw[:800].decode("utf-8", "replace"))
     return records
 
 
@@ -215,8 +237,12 @@ def from_bnf(query, max_records=1):
     records = bnf_records(query, max_records)
     if not records:
         return None
-    rec = next((r for r in records
-                if any("ISBN" in i for i in r.get("identifier", []))), records[0])
+    # prefer printed text (dc:type "texte"), then records carrying an ISBN
+    def rank(r):
+        is_text = any("texte" in t.lower() for t in r.get("type", []))
+        has_isbn = any("ISBN" in i for i in r.get("identifier", []))
+        return (not is_text, not has_isbn)
+    rec = sorted(records, key=rank)[0]
     vol = bnf_to_volume(rec)
     if not vol.get("title"):
         return None
@@ -305,12 +331,12 @@ def merge(primary, extra):
 def find_book(isbn, title, author):
     vol = None
     if isbn:
-        vol = attempt("BnF/ISBN", lambda: from_bnf(f'bib.fuzzyISBN all "{isbn}"'))
+        vol = attempt("BnF/ISBN", lambda: from_bnf(f'(bib.fuzzyISBN all "{isbn}")'))
         vol = vol or attempt("Google/ISBN", lambda: google_search(f"isbn:{isbn}"))
         vol = vol or attempt("OpenLibrary/ISBN", lambda: openlibrary_by_isbn(isbn))
     if not vol and title:
         t, a = title.replace('"', " "), author.replace('"', " ")
-        bq = f'(bib.title all "{t}")' + (f' and (bib.author all "{a}")' if a else "")
+        bq = f'(bib.title all "{t}")' + (f' and (bib.author all "{a}")' if a else "") + ' and (bib.doctype any "a")'
         gq = f"intitle:{title}" + (f" inauthor:{author}" if author else "")
         vol = attempt("BnF/title", lambda: from_bnf(bq, 5))
         vol = vol or attempt("Google/title", lambda: google_search(gq))
