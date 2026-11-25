@@ -1,4 +1,10 @@
 ---
+- name: "Computer science from Carnegie Mellon"
+  url: https://www.cs.cmu.edu/learn/
+  date: 202/11/25
+  comment: "Computer courses"
+  tags: "stuff"
+  done: false
 - name: "Small IT tricks"
   url: https://will-keleher.com/posts/small-programming-tricks-matter/
   date: 2026/09/17
