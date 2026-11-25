@@ -29,6 +29,8 @@
     "previewLink": "http://books.google.com/books?id=zLIA0gEACAAJ&dq=isbn:9791032939239&hl=&cd=1&source=gbs_api",
     "infoLink": "http://books.google.com/books?id=zLIA0gEACAAJ&dq=isbn:9791032939239&hl=&source=gbs_api",
     "canonicalVolumeLink": "https://books.google.com/books/about/Pens%C3%A9es_distingu%C3%A9es.html?hl=&id=zLIA0gEACAAJ",
-    "lookupSource": "google"
+    "lookupSource": "google",
+    "slug": "pensées-distinguées",
+    "cover_local": "/books/pensées-distinguées/cover.jpg"
   }
 ]
