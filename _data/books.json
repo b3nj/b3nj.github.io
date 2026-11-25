@@ -248,6 +248,8 @@
     "imageLinks": {
       "smallThumbnail": "https://books.google.com/books/content?id=dEZOrgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
       "thumbnail": "https://books.google.com/books/content?id=dEZOrgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
-    }
+    },
+    "slug": "discours-et-messages-5-vers-le-terme",
+    "cover_local": "/books/discours-et-messages-5-vers-le-terme/cover.jpg"
   }
 ]
