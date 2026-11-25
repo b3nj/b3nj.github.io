@@ -218,5 +218,36 @@
     },
     "slug": "le-salut",
     "cover_local": "/books/le-salut/cover.jpg"
+  },
+  {
+    "title": "Discours et messages. 5, Vers le terme",
+    "subtitle": "janvier 1966-avril 1969",
+    "authors": [
+      "Charles de Gaulle"
+    ],
+    "publisher": "le Livre de poche",
+    "publishedDate": "1974",
+    "pageCount": 450,
+    "language": "fr",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2253001171"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782253001171"
+      }
+    ],
+    "canonicalVolumeLink": "http://catalogue.bnf.fr/ark:/12148/cb351296830",
+    "lookupSource": "bnf",
+    "description": "Robert Langdon, un eminent specialiste de symbologie de Harvard, est convoque d'urgence au Louvre. On a decouvert un message code sur le cadavre du conservateur en chef, retrouve assassine au milieu de la Grande Galerie. Pour examiner la serie de pictogrammes, il est epaule par Sophie Neveu, une brillante cryptographe membre de la police. A leur grande surprise, les premiers indices les conduisent a l'oeuvre de Leonard de Vinci. En dechiffrant le code, Langdon va mettre au jour l'un des plus grands mysteres de notre temps... et devenir un homme traque.",
+    "categories": [
+      "Fiction"
+    ],
+    "imageLinks": {
+      "smallThumbnail": "https://books.google.com/books/content?id=dEZOrgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "https://books.google.com/books/content?id=dEZOrgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
   }
 ]
