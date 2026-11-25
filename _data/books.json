@@ -53,6 +53,8 @@
       }
     ],
     "canonicalVolumeLink": "http://catalogue.bnf.fr/ark:/12148/cb47489823t",
-    "lookupSource": "bnf"
+    "lookupSource": "bnf",
+    "slug": "révélation",
+    "cover_local": "/books/révélation/cover.jpg"
   }
 ]
