@@ -77,6 +77,8 @@
       }
     ],
     "canonicalVolumeLink": "http://catalogue.bnf.fr/ark:/12148/cb474419898",
-    "lookupSource": "bnf"
+    "lookupSource": "bnf",
+    "slug": "piranèse",
+    "cover_local": "/books/piranèse/cover.jpg"
   }
 ]
